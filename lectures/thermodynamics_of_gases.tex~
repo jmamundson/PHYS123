@@ -1,0 +1,117 @@
+\section{THERMODYNAMICS OF GASES}
+So far this semester we've focused exclusively on solids. We're going to spend a fair bit of time over the next few weeks talking about fluids and gases. As a way to segue into those topics, I'd like to talk about the thermodynamics of gases.
+
+\subsection*{Ideal Gas Law}
+In describing how refrigerators work, I made use of the fact that the temperature of a gas changes when it is compressed or expanded. The easiest way to see this is through the ideal gas law: 
+
+$$PV=nRT$$
+
+$P$ is pressure [1 N/m$^2=1$ Pa]\\
+$V$ is volume [m$^3$]\\
+$n$ is the number of moles of gas in a container\\
+$R$ is the gas constant (8.31 J/(mol$\cdot$K))\\
+$T$ is temperature [K]
+
+Although originally discovered experimentally, the ideal gas law can be derived by considering elastic collisions of (numerous) particles within a closed container. The ideal gas law works well for gases that are monatomic and have high temperature and low pressure. It neglects molecular size and intermolecular interactions.
+
+What is pressure and where does it come from? Essentially, the molecules in a gas are constantly colliding with the walls of the container. This means that there are contact forces between the molecules and the container. If you add up the forces from all of the collisions that are occurring at any one instant, and divide by the surface area, you get the pressure:
+$$P=\frac{F}{A}$$
+or equivalently, the force due to the gas pressure is
+$$F=PA$$
+
+Often we are interested in the pressure difference between the inside and outside of a container. 
+$$F_{net}=F_2-F_1=P_2A-P_1A=(P_2-P_1)A=\Delta{P}A$$
+It is this pressure difference that creates ``suction''.
+
+Atmospheric pressure is actually quite large --- about 101.3 kPa at sea level. 
+
+\subsection*{Demo: Magdeburg hemisphere}
+Pump air out of Magdeburg hemispheres, essentially creating a vacuum. By pumping air out, we are removing molecules and therefore reducing the number of collisions with the container, and so the pressure goes to 0. What is the force that is needed to overcome air pressure and pull apart the hemisphere?
+
+Pressure acts perpendicular to a surface. Here, we are really only concerned with the component of the pressure force that is parallel to the direction of the applied forces. So the area of interest is the cross-sectional area of the sphere.
+
+Let's say that the radius of the hemisphere is 4 cm. The cross-sectional area is therefore $\pi(0.05)^2=0.008\mbox{ m}^2$. This means that the force (from the atmospheric pressure) acting on either side of the hemisphere is $F=PA=800\mbox{ N}$. That force acts on both sides; you would need to apply a force of 1600 N to be able to open the hemisphere. (For comparison, the gravitational force acting on me is about 750 N.)
+
+\subsection*{Back to the ideal gas law...}
+What is $n$? Its the number of moles of gas in a particle.
+$$n=\frac{N}{N_a}$$
+where $N$ is the number of basic particles in a gas and $N_a$ is Avogadro's number ($6.02\times 10^{23}\mbox{ mol}^{-1}$). (This is based on the number of basic particles in 12 g of $^{12}$C, which is equal to 1 mole...)
+
+If we deal with closed containers, then $n$ will be constant. So let's rearrange the ideal gas law:
+$$\frac{PV}{T}=nR=\mbox{constant for closed containers}$$
+
+If we do something to the container (e.g., change its shape or heat it up), then the pressure, volume, and temperature have to adjust their values so that
+$$\frac{P_fV_f}{T_f}=\frac{P_iV_i}{T_i}$$
+
+
+\subsection*{How gases change with time}
+Often we are interested in knowing how a gas changes with time. There are three end-member possibilities:
+
+(1) Constant volume (isochoric or isovolumetric or isometric): increase temperature, pressure increases
+
+(2) Constant pressure (isobaric): increase volume, temperature increases
+
+(3) Constant temperature (isothermal): increase volume, decrease pressure
+
+\clearpage
+[Insert PV diagram showing what these processes look like.]
+\vspace{5cm}
+
+
+\subsection*{Connection to thermodynamics}
+(1) For gases, the specific heat depends on whether a heat transfer is occurring to a system that is at constant pressure or constant volume. $c_p$ is commonly about 50\% greater than $c_v$.
+
+(2) Isochoric processes involve heat transfer into or out of a system.
+
+(3) Isobaric and isothermal processes do work on the environment (or the environment does work on the gas) because the volume of the container changes.
+
+Let's think about this in terms of the first law of thermodynamics:
+$$Q+W=\Delta{E}$$
+
+\subsubsection*{Isochoric processes}
+I haven't shown this, but from statistical mechanics we know that the thermal energy of an ideal gas is proportional to temperature:
+$$\Delta{E_{th}}=\frac{3}{2}nR\Delta T$$
+For isochoric processes acting on a container at rest, we only have to worry about heat transfer into the container.
+$$Q=\Delta{E_{th}}=\frac{3}{2}nR\Delta T$$
+
+Huh, this looks a lot like the equation that we saw for specific heat ($Q=mc\Delta{T}$). For processes occurring at constant volume, the molar specific heat for monatomic gases is $c_v=3R/2$, and we write $Q=nc_v\Delta{T}$.
+
+The temperature change is proportional to the amount of heat transfer.
+$$\Delta{T}=\frac{2Q}{3nR}=T_2-T_1$$
+
+And for ischoric processes, we have
+$$\frac{P_1}{T_1}=\frac{P_2}{T_2}$$
+With some algebra, we arrive at
+$$\Delta{P}=\frac{P_1}{T_1}\frac{2Q}{3nR}$$
+In other words, the change in pressure depends on the heat transfer and the initial pressure and temperature.
+
+\subsubsection*{Isobaric processes}
+In isobaric processes, the volume can change in response to pressure differentials. Let's think about the work done by the gas on the environment. First,
+$$W_{gas}=-W$$
+so the first law of thermodynamics becomes
+$$Q-W_{gas}=\Delta{E}$$
+We can figure out $W_{gas}$ for a constant pressure (isobaric) process by considering the expansion of a piston.
+$$W_{gas}=F_{gas}\Delta{x}=P_{gas}A_{piston}\Delta{x}=P\Delta{V}$$
+Notice that the work done by the gas is the area under the PV graph (this is always true)... Anyway, this gives
+$$Q-P\Delta{V}=\Delta{E}=\Delta{E_{th}}$$
+If there is no heat transfer between the gas and the environment, or the change in volume occurs rapidly, then $Q=0$ and
+$$-P\Delta{V}=\frac{3}{2}nR\Delta{T}$$
+This is referred to as an adiabatic process (there is no heat transfer to the surroundings).
+
+If $\Delta V>0$ then $\Delta T<0$ (expansion leads to lower temperature)\\
+If $\Delta V<0$ then $\Delta T>0$ (compression leads to higher temperature)
+
+Example: Air masses sometimes move up and down adiabatically.
+
+In cases where $Q$ is not equal to zero,
+$$Q=\frac{3}{2}nR\Delta{T}+P\Delta{V}=\frac{3}{2}nR\Delta{T}+nR\Delta{T}=\frac{5}{2}nR\Delta{T}$$
+Again, this looks a lot like the equation for specific heat, but this is for constant pressure. Here, $c_p=5R/2$ for monatomic gases and we write $Q=nc_p\Delta{T}$.
+
+\subsubsection*{Isothermal processes}
+In isothermal processes, the temperature remains constant. So
+$$Q-W_{gas}=\Delta{E_{th}}=0$$
+This means that 
+$$W_{gas}=Q$$
+In other words, in order for the temperature to remain constant, the area under the PV curve must equal the heat transfer into the system. And because temperature is constant, $P\propto{1/V}$.
+
+\clearpage

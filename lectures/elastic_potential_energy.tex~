@@ -1,0 +1,148 @@
+\section{ELASTIC POTENTIAL ENERGY}
+Last class:
+\begin{itemize}
+\item Work: $W=Fd=\Delta{E}=\Delta{K}+\Delta{U_g}+\Delta{E_{th}}+...$
+\item Translational kinetic energy: $K_{trans}=\frac{1}{2}mv^2$
+\item Rotational kinetic energy: $K_{rot}=\frac{1}{2}I\omega^2$
+\item Gravitational potential energy: $\Delta{U_g}=mg\Delta{y}$; always from some reference state
+\item Thermal energy due to friction: $\Delta{E_{th}}=F_k d$
+\end{itemize}
+
+Today I'm going to introduce one more type of energy, but before doing so let's do a couple of exercises.
+
+%Example: Last class I did an example problem of a person sliding down a hill. The hill was 3 m high and frictionless. The ground at the bottom of the hill was horizontal and had a friction coefficient of $\mu_k=0.05$. Using conservation of energy, we figured out that the person would slide a distance of
+%$$\Delta{x}=\frac{H}{\mu_k}=60\mbox{ m}$$
+%What if the hill had the same coefficient of friction as the bottom of the hill? We can still do this with conservation of energy. Define the system to be the Earth and the sled, so that there are no external forces. Then,
+%$$\Delta{E}=0=\Delta{K}+\Delta{U_g}+\Delta{E_{th}}$$
+%If we define the start and stop to be the top of the hill and after the sled has come to a stop, then $\Delta{K}=0$. This means that
+%$$0=\Delta{U_g}+\Delta{E_{th}}=mg\Delta{y}+F_kd=-mgH+F_kd$$
+%The change in gravitational potential energy is the same as before, but now we have to think about how much energy goes into friction as the sled slides down the hill. So in other words,
+%$$F_k d=F_{k,h}d_{h}+F_{k,b}d_{b}$$
+%The frictional force on the hill is
+%$$F_{k,h}=\mu_kF_{n,h}=\mu_kmg\cos\theta,$$
+%and the length of the hill is
+%$$d_h=\frac{H}{\sin\theta}.$$
+%Putting these two things together gives
+%$$F_{k,h}d_h=\mu_kmgH\cot\theta.$$
+%At the bottom of the hill, the normal force equals the gravitational force, and therefore
+%$$F_{k,b}d_b=\mu_kmgd_b.$$
+%We're trying to solve for $d_b$. Putting all of this together,
+%$$0=-mgH+\mu_kmgH\cot\theta+\mu_kmgd_b\Rightarrow=0=-H+\mu_kH\cot\theta+\mu_kd_b$$
+%Finally,
+%$$\boxed{d_b=\frac{H}{\mu_k}-H\cot\theta}$$
+%What does $\cot\theta$ look like?
+%Infinitely large at $\theta=0$, and decreases to 0 at $\theta=90^{\circ}$. This means that for gradual hills you will lose a lot of energy as you are going down the hill. Let's pick $\theta=10^\circ$, which would be a beginner slope at a ski area (but still a pretty fast sledding hill). This gives $d_b=43.0\mbox{ m}$. If instead $\theta=30^\circ$, then $d_b=54.8\mbox{ m}$.
+
+%What does this mean? If the hill is frictionless, it doesn't matter how steep it is. If friction is significant, and you want to go fast, then pick the steepest part of the hill!
+
+\subsection*{Example: Object rolling down a ramp}
+Let's look at the velocity of an object {\it rolling} down a ramp. Define the system as the being the object and the ramp, so there are no external forces. We will assume that the object starts at rest.
+$$\Delta{E}=0=\Delta{K}+\Delta{U_g}$$
+In this problem, there is no sliding, and so $\Delta{E_{th}}=0$. In this problem we have to worry about rotational kinetic energy.
+$$0=\Delta{K_{trans}}+\Delta{K_{rot}}+\Delta{U_g}=\frac{1}{2}mv_f\ds^2+\frac{1}{2}I\omega_f\ds^2+mg\Delta y$$
+We have seen previously that 
+$$v_t=\omega r.$$
+In this problem, $v>0$, but $\omega<0$. This means that 
+$$\omega=\frac{-v}{r}.$$
+Plugging this into the energy balance equation gives
+$$0=\frac{1}{2}mv_f\ds^2+\frac{1}{2}I\left(\frac{v_f}{r}\right)^2+mg\Delta y=v_f\ds^2\left(m+\frac{I}{r^2}\right)+2mg\Delta{y}$$
+Rearranging,
+$$v_f\ds^2=\frac{-2mg\Delta{y}}{m+\frac{I}{r^2}}$$
+or
+$$\boxed{v_f=\sqrt{\frac{-2mg\Delta{y}}{m+\frac{I}{r^2}}}}$$
+
+We did essentially the same exercise earlier in the semester, and during lab. Let's write this in terms of acceleration by using the kinematic equations for constant acceleration.
+$$v_f\ds^2-v_i\ds^2=2a\Delta{x}\Rightarrow a=\frac{v_f\ds^2}{2\Delta{x}}$$
+$$a=\frac{1}{2\Delta{x}}\frac{-2mg\Delta{y}}{m+\frac{I}{r^2}}=\frac{2mg(-\Delta{y}/\Delta{x})}{m+\frac{I}{r^2}}$$
+Notice that $-\Delta{y}/\Delta{x}=\sin\theta$, so this gives
+$$\boxed{a=\frac{2mg\sin\theta}{m+\frac{I}{r^2}}}$$
+This is exactly the same solution as what we arrived at previously.
+
+\subsection*{Demo: Tennis ball bouncing off of a basketball}
+Mass of tennis ball = 0.075 kg
+Mass of basketball = 0.50 kg
+
+[Insert diagram.]
+\vspace{5cm}
+
+Assume: perfectly elastic collisions ($K_i=K_f$) and that $v_{2i}\approx -v_{1i}$.
+
+From conservation of momentum:
+$$m_1v_{1i}+m_2v_{2i}=m_1v_{1f}+m_2v_{2f}$$
+and so
+$$m_1v_{1i}-m_2v_{1i}=m_1v_{1f}+m_2v_{2f}$$
+or equivalently,
+$$\boxed{(m_1-m_2)v_{1i}=m_1v_{1f}+m_2v_{2f}}$$
+
+We are trying to relate $v_{1f}$ to $v_{1i}$. Need another equation in order to remove $v_{2f}$. Since we are assuming that the collision is \textit{perfectly elastic}, we can set $\Delta K_1+\Delta K_2 = 0$.
+That is,
+$$\frac{1}{2}m_1v_{1i}^2+\frac{1}{2}m_2v_{2i}^2=\frac{1}{2}m_1v_{1f}^+\frac{1}{2}m_2v_{2f}^2$$
+Make same substitution as before and multiply by two, so that
+$$\boxed{(m_1+m_2)v_{1i}^2 = m_1v_{1f}^2+m_2v_{2f}^2}$$
+
+Now do a bunch of messy algebra to arrive at
+$$\boxed{v_{1f}=\left(\frac{m_1-3m_2}{m_1+m_2}\right)v_{1i}}$$
+
+For the masses given,
+$$v_{1f}\approx -2.5v_{1i}$$ 
+
+\subsection*{Elastic potential energy}
+We need to define one more type of energy (for now), which is elastic potential energy. Springs store energy. If we compress or extend the spring at a constant rate, we can find how much energy is stored in the spring. We'll apply an external force to the spring, so that
+$$W=\Delta{E}=\Delta{U_s}$$
+$W$ is the work needed to compress or extend the spring, and is
+$W=F_{avg}\Delta{x},$
+where $\Delta{x}$ is the displacement of the spring. The force that we apply to compress or extend the spring has to balance the spring force (recall that $F_s=-k\Delta{x}$).
+
+[Insert diagram of applied force, varying linearly with $x$.]
+\vspace{5cm}
+
+
+From this figure, we can see that the average force is
+$$F_{avg}=\frac{1}{2}k\Delta{x}$$
+and so the elastic potential is
+$$\Delta{U_s}=\frac{1}{2}k\Delta{x}\ds^2$$
+We typically define $U_s=0$ when the spring is in its equilibrium length, so we can write
+$$\boxed{U_s=\frac{1}{2}k\Delta{x}\ds^2}$$
+Note that this is always positive. The spring stores energy whether it is in extension or compression.
+
+\subsection*{Example: How much energy stored in a spring?}
+How far must you stretch a spring to store 200 J if $k=1000$ N/m?
+
+$$U_s=\frac{1}{2}k\Delta{x}^2$$
+$$\Delta{x}=\sqrt{\frac{2U_s}{k}}=0.63\mbox{ m}$$
+
+\subsection*{Example: Spring shoots marble off a table}
+A spring is clamped to a table. You compress the spring a distance of 0.2 m, and use the spring to shoot a marble horizontally. The marble, which has a mass of 0.02 kg, travels a distance of 5 m (horizontally) and 1.5 m (vertically). What is the spring constant?
+
+There are (at least) a couple of ways to solve this, both making use of $\Delta{E}=0$.
+
+Most direct way: let $t_i$ be when the spring is fully compressed, and $t_f$ be the time when the marble hits the ground. Conservation of energy tells us that:
+
+$$0=\Delta{E}=\Delta{K}+\Delta{U_g}+\Delta{U_s}=\frac{1}{2}mv_f\ds^2-\frac{1}{2}mv_i\ds^2+mg\Delta{y}-\frac{1}{2}k\Delta{x}\ds^2$$
+
+We know that $v_i=0$, so this reduces to
+$$0=\frac{1}{2}mv_f\ds^2+mg\Delta{y}+\frac{1}{2}k\Delta{x}\ds^2$$
+
+What is $v_f$? It is the final speed, so we need to find
+$$v_f=\sqrt{v_{x,f}\ds^2+v_{y,f}\ds^2}.$$
+
+We can figure out $v_{x,f}\ds^2$ and $v_{y,f}\ds^2$ using kinematics. First let's find that it takes the marble to fall to the ground.
+$$\Delta{y}=v_{y,i}\Delta{t}+\frac{1}{2}a_y\Delta{t}^2\Rightarrow \boxed{\Delta{t}^2=\frac{-2\Delta{y}}{g}}$$
+So
+$$v_{x,f}\ds^2=\left(\frac{L}{\Delta{t}}\right)^2\Rightarrow \boxed{v_{x,f}\ds^2=\frac{gL^2}{-2\Delta{y}}}$$
+
+How about $v_{y,f}\ds^2$?
+$$v_{y,f}-v_{y,i}=a_y\Delta{t}$$
+$$v_{y,f}^2=g^2\Delta{t}^2=g^2\frac{-2\Delta{y}}{g}\Rightarrow \boxed{v_{y,f}\ds^2=-2g\Delta{y}}$$
+
+This means that
+$$\boxed{v_f\ds^2=\frac{gL^2}{-2\Delta{y}}-2g\Delta{y}}$$
+
+Now, plugging this into the conservation of energy equation,
+$$0=\frac{1}{2}m\left(\frac{gL^2}{-2\Delta{y}}-2g\Delta{y}\right)+mg\Delta{y}-\frac{1}{2}k\Delta{x}^2$$
+$$0=\frac{mgL^2}{-4\Delta{y}}-mg\Delta{y}+mg\Delta{y}-\frac{1}{2}k\Delta{x}^2$$
+$$0=\frac{mgL^2}{-4\Delta{y}}-\frac{1}{2}k\Delta{x}^2$$
+$$k=\frac{mgL^2}{-2\Delta{y}\Delta{x}^2}=\boxed{48.9\mbox{ N/m}^2}$$
+
+
+\clearpage

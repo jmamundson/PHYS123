@@ -1,0 +1,119 @@
+\section{Oscillations}
+Objectives:
+\begin{itemize}
+\item simple harmonic motion
+\item linear restoring forces: spring, bobbing icebergs, pendulums
+\item equations of motion
+\end{itemize}
+
+We've now discussed motion of solids and fluids. We'll now talk about a type of motion that is common to both: oscillations and waves (waves are a type of oscillation). We'll start by studying simple harmonic motion.
+
+\subsection{Springs}
+Consider the forces acting on a mass that is on a frictionless, horizontal surface and is connected to a spring.
+
+[Insert digram.]\nopagebreak
+\vspace{5cm}
+
+$$\sum F_x = F_{sp}=ma$$
+$$\sum F_x = -kx = ma$$
+Here, I have define $x=0$ as the location of the end of the spring when it is in equilibrium. Acceleration is the rate of change velocity, and velocity is the rate of change of position. In calculus, you would express $a_x$ as a second derivative.
+$$-kx=m\frac{d^2x}{dt^2}$$
+This is a second-order, ordinary differential equation. This is the sort of equation that you would learn to solve in MATH 302: Differential Equations.
+
+If you stretch the spring to an initial displacement $x_i$ and release it from rest, the solution to this differential equation is
+$$x=x_i\cos\left(\sqrt{\frac{k}{m}}t\right)$$
+
+[Sketch of $x(t)$.]\nopagebreak
+\vspace{4cm}
+
+From this graph, its apparent that the period of oscillation is 
+$$\boxed{T=2\pi\sqrt{\frac{m}{k}}}$$
+and the frequency is
+$$\boxed{f=\frac{1}{2\pi}\sqrt{\frac{k}{m}}}$$
+
+The velocity will be high when the displacement is 0, and vice-versa. This suggests that the velocity varies as a sine function, with the same frequency:
+$$v = v_{max}\sin\left(\sqrt{\frac{k}{m}}t\right)$$
+Let's use conservation of energy to find $v_{max}$.
+$$0=\Delta K + \Delta U_s=\frac{1}{2}m\left(v_f^2-v_i^2\right)+\frac{1}{2}k\left(x_f^2-x_i^2\right)$$
+When $x=x_i$, $v=0$ and when $v=v_{max}$, $x=0$. Therefore,
+$$mv_{max}^2=kx_i^2\Rightarrow \boxed{v_{max}=x_i\sqrt{\frac{k}{m}}}$$
+
+Since the acceleration is slope of velocity, we expect it to vary as a cosine function. We can show this quite easily using Newton's second law.
+$$\sum F_x = -kx = ma$$
+$$a = -\frac{k}{m}x = -x_i\frac{k}{m}\cos\left(\sqrt{\frac{k}{m}}t\right)$$
+
+Demo: The period of oscillation is large for large masses and small spring constants. 
+
+Any system that oscillates sinusoidally, such as a spring, is referred to as a \textit{simple harmonic oscillator}. Simple harmonic motion occurs when you have a \textit{linear restoring force}.
+
+\subsection{Simple pendulums}
+Pendulums are also (approximately) simple harmonic oscillators.
+
+[Insert diagram.]\nopagebreak
+\vspace{5cm}
+
+The force-balance along the trajectory of the pendulum is
+$$\sum F=-F_g\sin\theta=ma_s=m\frac{d^2s}{dt^2}$$
+If $\theta$ is ``small'', then $\sin\theta\approx \theta$ and therefore
+$$-mg\theta=m\frac{d^2s}{dt^2}$$
+The angle $\theta$ is related to the arc length by $s=L\theta$, so
+$$-mg\theta=mL\frac{d^2\theta}{dt^2}$$
+and therefore the gravitational force is a \textit{linear restoring force}. Simplifying,
+$$-g\theta=L\frac{d^2\theta}{dt^2}$$
+which should look kind of familiar. If we start at rest at $\theta=\theta_i$, then the solution is
+$$\theta=\theta_i\cos\left(\sqrt{\frac{g}{L}}t\right)$$
+and the period of oscillation is
+$$\boxed{T=2\pi\sqrt{\frac{L}{g}}}$$
+
+Note that $\sqrt{g}\approx \pi$, so a simple rule of thumb is that
+$$T=2\sqrt{L}$$
+
+In lab I asked you to try to find a mathematical relationship between period and length by plotting period vs. length using a log-log scale. Taking the logarithms of both sides of the equation,
+$$\log T = \log 2 + \log \sqrt{L} = \log 2 + \frac{1}{2}\log L$$
+$$T^\prime = 0.3 + 0.5L^\prime$$
+
+
+\subsubsection{Biological application}
+Biological application: Part of walking involves letting your legs swing like pendulums under the influence of gravity. The more you ``use'' gravity, the less work that your muscles have to do. This is accomplished by moving your legs at their ``natural frequency''. For example, if your leg length is $L=0.75\mbox{ m}$, $T_=1.74\mbox{ s}$. It should be easy for you to take two steps in 1.7 s. Moving it more or less quickly takes extra work from your muscles. 
+
+Thus the speed that animals walk depends on the length of their legs. 
+
+[Diagram of swinging leg, with angles and distances indicated.]\nopagebreak
+\vspace{5cm}
+
+$$v=\frac{\Delta{x}}{\Delta{t}}$$
+Let $\Delta{t}=T$, where $T$ is the amount of time it takes to make two steps (one with each foot). The distance traveled is $4L\sin\theta\approx 4L\theta$. Therefore,
+$$v\approx\frac{4L\theta}{2\pi\sqrt{L/g}}=\frac{2\theta}{\pi}\sqrt\frac{g}{L}\approx 2\theta\sqrt{L}$$
+
+[Sketch $v$ vs $L$.]\nopagebreak
+\vspace{5cm}
+
+If $\theta=10^{\circ}$ and $L=0.75\mbox{ m}$, then 
+$$\boxed{v=0.30\mbox{ m/s}=1.09\mbox{ km/h}}$$
+
+\subsection{Physical pendulums}
+How is the situation different for a physical pendulum (an pendulum that has weight distributed along its length)? We can address this using torque.
+
+[Diagram of a physical pendulum.]\nopagebreak
+\vspace{4cm}
+
+$$\sum \tau = -mgl\sin\theta = I\alpha = I\frac{d^2\theta}{dt^2}$$
+Again use the small angle approximation,
+$$-mgl\theta = I\frac{d^2\theta}{dt^2}$$
+which is very similar to the equations we wrote down previously. The solution is
+$$\theta = \theta_i\cos\left(\sqrt{\frac{mgl}{I}}t\right)$$
+where
+$$\boxed{T=2\pi\sqrt{\frac{I}{mgl}}}$$
+
+Recall that the moment of inertia of a point mass is $I=mL^2$ and note that its center of mass is a distance of $l=L$ from the axis of rotation. Thus,
+$$T=2\pi\sqrt{\frac{mL^2}{mgL}}=2\pi\sqrt{\frac{L}{g}}$$
+
+A better estimate for a human leg would be a cylinder that rotates around its end. The moment of inertia of cylinder rotating around its end is $I=(1/3)mL^2$ and the center of mass is located at $l=L/2$.
+
+The natural period of oscillation is
+$$T=2\pi\sqrt{\frac{(1/3)mL^2}{mgL/2}}=2\pi\sqrt{\frac{2L}{3g}}$$
+Again using $L=0.75$~m, we find that the period is $T=1.42$~s.
+
+Multiply $v$ from previous calculation by $\sqrt{3/2}$ to find walking speed, which gives $v=1.33$~km/h.
+
+\clearpage

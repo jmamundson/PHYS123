@@ -1,0 +1,152 @@
+\section{Thermodynamics II}
+Objectives:
+\begin{itemize}
+\item Review from last class
+\item Practice problems
+\end{itemize}
+
+\subsection{Laws of thermodynamics; specific heat and latent heat}
+Last class I introduced the first and second laws of thermodynamics and discussed what happens when heat is transferred into or out of a system.
+\begin{itemize}
+\item First Law of Thermodynamics: $W+Q=\Delta{E}$, where $Q$ is \textit{heat} that is transferred into or out of the system (which can occur in several ways). Think of heat as the transfer of thermal energy.
+\item Second Law of Thermodynamics: 
+	\begin{itemize}
+	\item Entropy (disorder) of a \textit{closed} system can never decrease; in other words, order tends toward disorder.
+	\item Heat flows from hot objects to cold objects, which causes the thermal energy of the objects to change.
+	\item Mechanical energy (kinetic, gravitational potential, etc) tends to turn into thermal energy. This transformation is not reversible.
+	\end{itemize}
+\item When heat enters or exits a system, the objects in the system change temperature and/or phase.
+\item The heat need to produce a temperature change is $Q=mc\Delta{T}$, where $c$ is the specific heat (a material property). Rearranging, this is also $\Delta{T}=Q/(mc)$, which might be more intuitive.
+\item The needed to change the phase of a material is $Q_f=\pm mL_f$ (for solid to liquid or vice-versa) and $Q_v=\pm mL_v$ (for liquid to gas or vice-versa). $L_f$ and $L_v$ are the latent heats of fusion and vaporization (also material properties). $L_v>>L_f$.
+\end{itemize}
+
+I'd like to spend some time today thinking about these ideas by way of example problems.
+
+\subsection{Example \#1: Melting snowpack}
+Consider a melting snowpack in spring. The snow is below 0$^\circ$C but the air is warmer than that. The surface snow melts first, and the water percolates downward. It freezes when it comes into contact with cold snow and in doing so releases latent heat to the surrounding snow pack. This causes the surrounding snowpack to warm up to a uniform temperature (basically, 0$^\circ$C), and then melting can happen much more quickly. Wet snow avalanches happen occur in spring when the entire snowpack warms up and becomes saturated. The process can be exacerbated by rainfall.
+
+
+[Insert diagram of spring snowpack.]\nopagebreak
+\vspace{5cm}
+
+\subsection{Example \#2: Place ice in water}
+You place 50 g of ice at -10$^\circ$C into 200 g of water at 20$^\circ$C. What happens? Does the ice melt? What is the final temperature of the system? Again will we will assume that the glass is perfectly insulated so that we don't have to worry about energy exchanges with the environment.
+
+Given:\\
+$c_i=2220$ J/(kg K)\\
+$c_w=4200$ J/(kg K)\\
+$L_f=334\times 10^3$ J/kg
+
+What happens:\\
+(1) Amount of heat that the water can lose: $Q_{water}=m_wc_w\Delta{T_w}=16800\mbox{ J}$\\
+(2) Amount of heat needed to warm up the ice to 0$^\circ$C: $Q_i=m_ic_i\Delta{T_i}=1110\mbox{ J}$\\
+(3) Amount of heat needed to melt all of the ice: $Q_f=mL_f=16700$
+
+The sum of (2) and (3) is greater than the amount of heat that the water can lose. This means that not all of the ice melts and that the final temperature will be 0$^\circ$C. How much ice melts?
+
+After warming up the ice, the water can still release 15700 J before it starts to freeze. From (3),
+$$m=\frac{Q_f}{L_f}=47\mbox{ g}$$
+There are 3 g of ice remaining.
+
+As you solve this type of problem, you need to ask a series of ``if, then'' questions.
+
+
+\subsection{Example \#3: Place hot metal in water}
+Consider what happens when hot steel is placed in water in a perfectly insulated cup with no gas (i.e., any void space is essentially a vacuum). The Second Law of Thermodynamics tells us that heat is transferred from the hot metal to the water until the temperatures are uniform. What is the final temperature of the system?
+
+Let: $m_{s}=0.05$~kg, $m_w=0.2$~kg, $T_s=100^\circ$~C, $T_w=20^\circ$C, $c_s=420$~J/(kg$\cdot$K), and $c_w=4200$~J/(kg$\cdot$K)
+
+We can solve for this using the First Law of Thermodynamics, i.e.,
+$$Q+W=\Delta{E}$$
+There are no external forces acting on the system, so $W=0$, and because this is an isolated system, $\Delta{E}=0$. This means that $Q=0$ (which I guess we already knew because the system is insulated).
+
+However, there is heat flowing from the metal to the water. The metal cools down and the water warms up. So let's call $Q_m$ the amount of heat released by the metal, and $Q_w$ is the amount of heat transferred into the water.
+$$Q=Q_s+Q_w=0$$
+$$m_sc_s(T_f-T_s)+m_wc_w(T_f-T_w)=0$$
+Here, $T_s$ and $T_w$ are the initial temperatures of the steel and the water. Solving for $T_f$:
+
+$$T_f=\frac{m_sc_sT_s+m_wc_wT_w}{m_sc_s+m_wc_w}=294\mbox{ K}=22^\circ\mbox{C}$$
+
+Alternatively, you could measure the temperatures and masses, and if you know the specific heat of water you can figure out the specific heat of the metal (and maybe identify the metal).
+
+\subsection{Bomb calorimeter}
+Similar ideas are used in calorimetry.
+
+[Insert diagram of a bomb calorimeter.]
+\vspace{5cm}
+
+Essentially, you burn the sample and observe the water heating up. The heat released by the sample equals the heat absorbed by the water. 1 food calorie is the amount of heat needed to increase 1 kg of water by 1 K.
+$$1\mbox{ food calorie} = 1\mbox{ kcal} = 1\mbox{ Calorie}= 4200\mbox{ J}$$
+
+\subsection{Climbing Mt. Juneau}
+We've spent the last couple of classes discussing the First and Second Laws of Thermodynamics, and what happens when heat is transferred into or out of a system or object (change in temperature or change in phase).
+
+One of the super useful things about thermodynamics is that it connects different branches of science. For example, we can ask questions like, ``How many Snickers bars does it take me to climb Mt. Juneau?'' and ``During the climb, how much would my body temperature change if I don't have an efficient way of transferring heat away from my body?''. Let's say that I weigh 75 kg and the mountain is 1000 m tall.
+
+How would we go about addressing these questions? What do we need to know to address these questions?
+
+\begin{itemize}
+\item The amount of energy it takes to climb Mt. Juneau.
+\item The amount of (chemical) energy stored in a Snickers bar.
+\item The efficiency of the human body.
+\end{itemize}
+
+Overview:
+
+If no heat loss, $W+Q=0=\Delta{U_g}+\Delta{E_{ch}}+\Delta{E_{th}}$
+
+If heat loss, $Q=\Delta{U_g}+\Delta{E_{ch}}$
+
+
+The amount of energy that I need is
+$\Delta{U_g}=mg\Delta{y}\approx 7.5\times 10^5\mbox{ J}$
+
+There are about 250 kcal in a Snickers bar, or $1.05\times 10^6\mbox{ J}$. 
+
+So, from conservation of energy,
+$$W+Q=0=\Delta{E}=\Delta{U_g}+\Delta{E_{ch}}+\Delta{E_{th}}$$
+
+Let's set $\Delta{E_{ch}}=n\Delta{E_{Snickers}}$, where $n$ is the number of of Snickers bars that I eat. The change in chemical energy depends on how many Snickers bars are consumed. We can think of chemical energy as stored energy. In this case, the change in chemical energy is a negative number, indicating that I am using up stored energy.
+
+If my body is 100\% efficient, then no energy is ``lost'' to thermal energy, and so 
+$$0=\Delta{U_g}+n\Delta{E_{Snickers}}$$
+Therefore
+$$n=\frac{-\Delta{U_g}}{\Delta{E_{Snickers}}}=0.72\mbox{ Snickers}$$
+
+Hmm... I think I'm going to be pretty hungry by the time that I get to the top. In reality, the human body is closer to 25\% efficiency. (You can figure out a person's efficiency by doing experiments similar to the one that was used to figure out how much energy is in food. Feed somebody some food and watch their body temperature change. Okay, its a little more complicated than that, but you get the idea.)
+
+This means that 75\% of the energy that I get from the Snickers (from chemical energy) will be transformed into thermal energy. So let's set
+$$\Delta{E_{th}}=-\frac{3}{4}n\Delta{E_{Snickers}}.$$
+Our energy balance is
+$$0=\Delta{U_g}+\Delta{E_{chem}}+\Delta{E_{th}}$$
+$$0=\Delta{U_g}+n\Delta{E_{Snickers}}-\frac{3}{4}n\Delta{E_{Snickers}}=\Delta{U_g}+\frac{1}{4}n\Delta{E_{Snickers}}$$
+Solving for $n$ gives
+$$n=\frac{-4\Delta{U_g}}{\Delta{E_{Snickers}}}=\boxed{2.86\mbox{ Snickers}}$$
+
+That sounds better!
+
+How much thermal energy is generated?
+$$\Delta{E_{th}}=\boxed{2.25\times 10^6\mbox{ J}}$$
+
+If I don't have an efficient way to get rid of this, my body temperature will change.
+$$Q=mc\Delta{T}$$
+Or
+$$\Delta{T}=\frac{Q}{mc}$$
+Usually we use $Q$ to refer to heat that is transferred into or out of a system, but we can also use it to describe heat transfer between components within a system...
+
+For mammals, $c\approx 3400\mbox{ J/(kg}\cdot\mbox{K)}$.
+
+Using my mass and the change in thermal energy,
+$$\boxed{\Delta{T}=8.8\mbox{ K!!!}}$$
+
+We better figure out a way to get rid of the excess thermal energy. (Unless its winter and we want to keep that thermal energy....)
+
+The way that our bodies do that is by sweating. Sweat transfers some of the heat to the outside of our bodies. The sweat then evaporates. This evaporation occurs below the boiling point. Why? Because some of the hotter than average molecules (which have high energy) manage to escape. This helps to keep us cool. We can calculate how much sweat must evaporate to keep the body temperature constant.
+
+During the climb up Mt. Juneau, I generated $2.25\times 10^6\mbox{ J}$ of thermal energy. We want to get rid of all of that via evaporation.
+$$Q=mL_v$$
+$$m=\frac{Q}{L_v}$$
+
+The latent heat of vaporization for water is $2.26\times 10^6\mbox{ J/kg}$. This means that I need to produce about 1 kg (1 L) of sweat. To stay hydrated I would need to drink that same amount. Also sounds quite reasonable.
+
+\clearpage

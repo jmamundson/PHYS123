@@ -1,0 +1,85 @@
+\section{TORQUE}
+Last class we discussed how forces can produce circular motion. Essentially, you need a force that produces a centripetal acceleration. This force can be any type of force or combination of forces that points toward the center of a circle.
+$$\sum F_r=\frac{mv^2}{r}=m\omega^2r$$
+
+Forces can also cause rigid bodies to rotate around some axis of rotation. We will use the term \textit{torque} to refer to the ability of a force to cause a rotation. From the conservation of angular momentum (a concept we have not yet seen), it can be shown that 
+$$\boxed{\tau=rF_\perp}$$
+where $\tau$ is torque and has units of N$\cdot$m, $r$ is the radial distance from the axis of rotation to the point at which the force is being applied, and $F_\perp$ is the component of the force that is perpendicular to $r$. Following standard conventions, $\tau>0$ for counter-clockwise rotation. You can also add torques in much the same way as you add forces.
+
+
+\subsection*{Example: You use a wrench to loosen a bolt} 
+[Include diagram of the wrench and forces.]
+\vspace{5cm}
+
+If you apply force $F$ at a distance $r$ from the center of the bolt, and $r\perp F$, then you are exerting a torque $\tau=rF>0$.  If you exert the force at an angle $\theta=45^\circ$ relative to the radial axis, then $\tau=rF\sin\theta$ (in this case, $r\perp F\sin\theta$). If you double the radius, then $\tau=2rF$.
+
+\subsection*{Example: Two forces act on a rod}
+Two forces act on a rod that pivots about its center. Force $F_2$ is perpendicular to the rod and is a distance $l$ from the axis of rotation. Force $F_1$ has a magnitude of 20 N and is oriented at a 45$^\circ$ angle to the rod. The force is acting on the other side of the axis of rotation and at a distance of $2l$ from the axis. What should $F_2$ be so that $\tau_{net}=0$?
+\clearpage
+[Include diagram.]
+\vspace{5cm}
+
+$$\sum\tau=2lF_1\sin\theta-lF_1=0$$
+$$F_2=2F_1\sin\theta=28\mbox{ N}$$
+
+\subsection*{Example: Rank forces in order of smallest to largest torque}
+Various forces act on a rod. The rod can pivot around one of its ends. Rank the forces in order of smallest to largest torque.
+
+[Insert diagram.]
+
+\vspace{5cm}
+
+\subsection*{Torque and rotational motion}
+The real reason to discuss torque (now) is that it affects the rotational motion of an object. To see how, let's start with a really simple system consisting of a point mass, $m$, attached to a massless rod of length $l$. The rod can rotate around its end.
+\clearpage
+[Insert diagram.]
+\vspace{5cm}
+
+A force is exerted on the mass; the force is perpendicular to the rod. It therefore produces a tangential acceleration of the mass.
+$$F_\perp=ma_t$$
+Recalling that $a_t=\alpha r$,
+$$F_\perp=m\alpha r.$$
+Since $\tau=rF_\perp$,
+$$F_\perp=\frac{\tau}{r}=m\alpha r\Rightarrow \boxed{\tau=mr^2\alpha}$$
+
+What about a system of particles, or a solid object?
+
+[Insert diagram showing forces acting a rotating object.]
+\vspace{5cm}
+
+From this we have $\tau_1=r_1F_1=m_1r_1\ds^2\alpha$, $\tau_2=m_2r_2\ds^2\alpha$, $...$ Because this is rigid body rotation, all points on the body have the same angular acceleration. The net torque is $\tau_{net}=\tau_1+\tau_2+\tau_3+...$
+$$\tau_{net}=\alpha\sum_{i=1}^Nm_ir_i\ds^2$$
+The summation can only be calculated analytically for simple objects. So instead we replace the summation with
+$$I=\sum_{i=1}^Nm_ir_i\ds^2,$$
+where $I$ is the moment of inertia, giving
+$$\tau_{net}=I\alpha$$
+or equivalently,
+$$\boxed{\sum\tau=I\alpha}$$
+Does this look at all familiar? It is Newton's Second Law for rotation. The moment of inertia is a rotational equivalent to mass; it is an object's resistance to rotation. The moment of inertia can be calculated for some objects, for others it must be measured. Some that can be calculated:
+
+Solid cylinder: $I=\frac{1}{2}MR^2$\\
+Thin-walled cylinder: $I=MR^2$\\
+Solid sphere: $I=\frac{2}{5}MR^2$\\
+Spherical shell: $I=\frac{2}{3}MR^2$
+
+Note that they all have a dependence on mass and radius squared.
+
+\subsection*{Example: torque on rotating disk}
+A 0.2 kg, 0.2-m-diameter disk is spun around its central axis by a motor. What torque must the motor supply to take the disk from 0 to 1800 rpm in 4.0 s?
+
+$$\tau_{net}=\sum\tau=I\alpha$$
+$$\alpha=\frac{\Delta\omega}{\Delta t}$$
+
+Given:\\
+$\omega_i=0$\\
+$\omega_f=1800\mbox{ rpm}\times\frac{1\mbox{ min}}{60\mbox{ s}}\times\frac{2\pi}{1\mbox{ rev}}=188.5\mbox{ rad/s}$\\
+$\Delta t=4.0\mbox{ s}$
+
+So, from this $\boxed{\alpha=47.1\mbox{ rad/s}^2}$.
+
+The moment of inertia can be calculated for a disk: $I=\frac{1}{2}mr^2=1\times 10^{-3}\mbox{ kg}\cdot\mbox{m}^2$.
+
+Inserting into the expression for $\tau$, we get that $\boxed{\tau_{net}=0.05\mbox{ N}\cdot\mbox{m}}$.
+
+
+\clearpage

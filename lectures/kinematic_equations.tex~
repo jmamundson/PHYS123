@@ -1,0 +1,168 @@
+\section{KINEMATIC EQUATIONS}
+Objectives:
+\begin{enumerate}
+\item Describing motion with graphs
+\item Transforming between displacement, velocity, and acceleration
+\end{enumerate}
+
+
+\subsection*{Relationship between velocity and position}
+We already saw that $\Delta{x}=x_f-x_i$, $v=\Delta{x}/\Delta{t}$, and $a=\Delta{v}/\Delta{t}$. How do we go the other way? Graphs help us to visualize motion, and will allow us to determine these relationships.\\
+
+[Insert position-time graph]
+\vspace{5cm}
+
+
+[Insert velocity-time graph derived from previous graph]\\
+\vspace{5cm}
+
+That is pretty straightforward, and is just based on the definitions of $\Delta{x}$ and $v$. Note that the velocity is just the slope of the position-time graph.
+
+What if we want to go the other direction?\\
+\clearpage
+[Insert velocity-time graph]
+\vspace{5cm}
+
+[Insert position-time graph derived from previous graph]\\
+\vspace{5cm}
+
+To create this position-time graph, we had to make use of the initial position, the velocity (which is the slope of the position-time graph), and the time interval. Let's take a closer look at our definition of velocity:
+
+$$v=\frac{\Delta x}{\Delta t}=\frac{x_f-x_i}{\Delta t}.$$
+
+Now rearranging, we find that
+$$x_f=v\Delta{t}+x_i,$$
+which is just the equation of a straight line. Another way to write this, which might be more clear, is to set $t_0=0$ and replace $x_f$ with $x(t)$, so that
+$$x(t)=vt+x_i.$$
+Notice anything else about the relationship between velocity and displacement? From the graphs, we can see that displacement is the area under the velocity-time graph.
+
+This linear relationship between velocity and position assumes that velocity is constant, which is rarely true. Often we are interested in the instantaneous velocity at some instant in time. Position is generally a smooth curve.
+
+\clearpage
+[Insert smooth position-time graph]
+\vspace{5cm}
+
+Here, $v=\Delta{x}/\Delta{t}$ is the average velocity over the interval $\Delta{t}$. To find the instantaneous velocity, let $\Delta t\rightarrow 0$. As $\Delta{t}$ gets smaller, you are calculating the average velocity over a smaller and smaller time interval. Eventually it becomes difficult to read $\Delta{x}$ and $\Delta{t}$ off of the graph. The solution then is to draw a tangent curve and to determine the slope of the tangent.
+
+The key point of this is that the velocity is the slope of the position-time graph.
+
+
+\subsection*{Relationship between acceleration, velocity, and position}
+If the position-time graph is not straight, then the velocity will vary with time and therefore the acceleration is non-zero. Based on everything that I've already said, you should be able to figure out how to generate an acceleration-time graph based on a position-time graph. Let's try.
+
+[Insert smooth position-time graph, velocity-time graph, and acceleration-time graph]
+\vspace{8cm}
+
+What you should've realized is that the relationship between acceleration and velocity is identical to the relationship between velocity and position. Recall that
+$$a=\frac{\Delta{v}}{\Delta{t}}=\frac{v_f-v_i}{\Delta{t}}.$$
+Rearranging, we find that
+$$v_f=a\Delta{t}+v_i,$$
+or, perhaps more clearly,
+$$v(t)=at+v_i.$$
+
+If acceleration is constant, then velocity follows a straight line. Although acceleration doesn't have to be constant, we will find many examples where it is (essentially) constant. So okay, how do we relate displacement to acceleration? We've already seen that displacement is the area under the velocity-time graph for constant velocity --- it turns out that this is true for all velocity curves. (It also turns out that change in velocity is the area under the acceleration curve.)
+
+[Insert example with constant velocity]
+\vspace{4cm}
+
+The area under the curve is the displacement, so $\Delta{x}=v\Delta{t}$.
+
+If we had constant acceleration, the velocity-time graph would be a straight, non-horizontal line. And let's consider the case where the $v_i\neq{0}$.
+
+[Insert example with linear velocity]
+\vspace{4cm}
+
+The area under the curve consists of two parts: a rectangle and a triangle. Therefore,
+$$\Delta{x}=v_i\Delta{t}+\frac{1}{2}(v_f-v_i)\Delta{t}.$$
+But we've already seen that $\Delta{v}=a\Delta{t}$, so this becomes
+$$\Delta{x}=v_i\Delta{t}+\frac{1}{2}a\Delta{t}^2.$$
+We can derive one more relationship that comes in handy when we don't know $\Delta{t}$.
+$$a=\frac{v_f-v_i}{\Delta{t}}\Rightarrow\Delta{t}=\frac{v_f-v_i}{a}.$$
+Inserting this into the previous equation gives
+$$\Delta{x}=v_i\frac{v_f-v_i}{a}+\frac{1}{2}a\left(\frac{v_f-v_i}{a}\right)^2.$$
+Rearranging and cancelling terms, we find that
+$$2a\Delta{x}=v_f^2-v_i^2.$$
+
+To reiterate, for constant acceleration we have the following kinematic equations:
+$$\Delta{v}=a\Delta{t}$$
+$$\Delta{x}=v_i\Delta{t}+\frac{1}{2}a\Delta{t}^2$$
+$$2a\Delta{x}=v_f^2-v_i^2$$
+
+What happens if $a=0$? Is this consistent with what we found previously?
+
+%Before we continue on, let's spend a couple of minutes thinking about the sign of acceleration and what it tells you.
+
+%[Insert four plots of velocity. Ask students to determine whether the object is speeding up or slowing down, and is the acceleration positive or negative.]
+
+%Can you come up with a simple expression that tells you if an object is speeding up or slowing down?
+
+%Solution:\\
+%If $a\cdot{v}>0$, then the object is speeding up. If $a\cdot{v}<0$, then the object is slowing down.\\
+
+\hrulefill\\
+Example problem (have students attempt it first):\\
+A 747 has a length of 59.7 m. The plane lands on a runway that intersects another runway. The width of the intersection is 25.0 m. The plane decelerates through the intersection at 5.70 m/s$^2$ and clears the intersection with a final speed of 45.0 m/s. How long does it take the plane to clear the intersection.
+
+Approach to solving problems:
+\begin{enumerate}
+\item Draw a diagram if applicable.
+\item Write down what is known.
+\item Write down what you want to find out.
+\item Try to figure out what equations to use. This is often the most difficult part. Keep in mind what equations we have available to us. Often we will be making a choice from just a few equations. 
+\item Solve problem algebraically as much as possible. This is easier than carrying numbers around, makes it easier for others (especially me) to figure out what you did, and sometimes results in a simple and elegant algebraic solution.
+\item After arriving at a solution, check that it makes sense.
+\end{enumerate}
+
+Given:\\
+$x_i=0.0$ m\\
+$x_f=25.0\mbox{ m }+\mbox{ }59.7\mbox{ m }=\mbox{ }84.7\mbox{ m}$\\
+$v_f=45.0\mbox{ m/s}$\\
+$a=-5.70\mbox{ m/s}^2$\\
+
+Want to know $\Delta{t}$; note that $v_i$ is not given.
+
+We can calculate $v_i$ from $2a\Delta{x}=v_f^2-v_i^2$.
+$$v_i=\sqrt{v_f^2-2a\Delta{x}}$$
+Then, using $a=\Delta{v}/\Delta{t}$,
+$$\Delta{t}=\frac{\Delta{v}}{a}=\frac{v_f-v_i}{a}=\frac{v_f-\sqrt{v_f^2-2a\Delta{x}}}{a}=1.7\mbox{ s}$$
+
+Does this make sense? How might you check? Use approximation and check units.
+
+
+\subsection*{Gravitational acceleration: A special case of constant acceleration}
+Free fall is an important example of motion under constant acceleration. Near the surface of the Earth, objects accelerate downward at about $g=9.81\mbox{ m/s}^2$.
+
+\begin{enumerate}
+\item $g>0$ (always positive); it is a magnitude
+\item If the coordinate system points upward, then $a=-g$
+\item $g=9.81\mbox{ m/s}^2$ only on Earth, and only near the surface of the Earth
+\item Use kinematic equations for constant acceleration.
+\end{enumerate}
+
+Example:
+A ball is shot vertically from the ground at a speed of 50 m/s. (1) What elevation will the ball reach? (2) How long will it take the ball to hit the ground? (3) What will its speed be when it hits the ground?
+
+Given:\\
+$v_i=50\mbox{ m/s}$\\
+$x_i=0\mbox{ m}$\\
+$a=-g=-9.81\mbox{ m/s}^2$
+
+(1) The ball will have a speed of 0 m/s when it reaches its peak. Therefore,
+$$v_{\mbox{peak}}\displaystyle^2-v_i^2=2a\Delta{y}$$
+$$\Delta{y}=\frac{-v_i\displaystyle^2}{2a}=127\mbox{ m}$$
+
+(2) To calculate the time to peak, we'll again make use of the fact that $v_{\mbox{peak}}=0$.
+$$a=\frac{\Delta{v}}{\Delta{t}}$$
+$$\Delta{t}=\frac{\Delta{v}}{a}=\frac{v_{\mbox{peak}}-v_i}{a}=\frac{-v_i}{a}=5.1\mbox{ s}$$
+
+(3)To calculate the speed when it hits the ground, we can use the kinematic equation that doesn't include $\Delta{t}$. That way we don't have to calculate how long it takes the ball to travel up and down.
+$$v_f\displaystyle^2-v_i\displaystyle^2=2a\Delta{y}$$
+Since $\Delta{y}=0$,
+$$v_f\displaystyle^2=v_i\displaystyle^2$$
+and so
+$$v_f=\pm v_i.$$
+The direction that the ball is travelling has changed, so 
+$$v_f=-v_i=50\mbox{ m/s}.$$
+
+\clearpage
+

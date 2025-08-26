@@ -1,0 +1,107 @@
+\section{Fluid dynamics II}
+Objectives:
+\begin{itemize}
+  \item Apply ideas from last class
+    \begin{enumerate}
+    \item Ideal fluid: incompressible, laminar, inviscid
+    \item Flux continuity: $Q=vA=\mbox{constant}$
+    \item Bernoulli's equation: $P+\frac{1}{2}\rho v^2+\rho gh=\mbox{constant}$
+    \end{enumerate}
+  \item Viscosity
+\end{itemize}
+
+
+\subsection{Demo using Venturi tube}
+One really useful application of the Bernoulli's Equation is that it can be used to measure fluid flow through pipes.
+
+[Insert diagram.]
+\vspace{5cm}
+
+If we look at the streamline that passes through the center of this tube,
+$$P_1+\frac{1}{2}\rho v_1\ds^2+\rho gy_1=P_2+\frac{1}{2}\rho v_2\ds^2+\rho gy_2$$
+But points 1 and 2 are at the same elevation, so $y_1=y_2$, and so
+$$P_1+\frac{1}{2}\rho v_1\ds^2=P_2+\frac{1}{2}\rho v_2\ds^2$$
+We can re-arrange this so that
+$$P_2-P_1=\frac{1}{2}\rho(v_2\ds^2-v_1\ds^2)$$
+
+From flux continuity, 
+$$v_1A_1=v_2A_2$$
+so 
+$$v_2=v_1\left(\frac{A_1}{A_2}\right)$$
+
+Plugging this into Bernoulli's equation gives
+$$P_2-P_1=\frac{1}{2}\rho\left(v_1\ds^2-\left(\frac{A_1}{A_2}\right)^2v_1\ds^2\right)=\frac{1}{2}\rho v_1\ds^2\left(1-\left(\frac{A_1}{A_2}\right)^2\right)$$
+
+What is $P_2-P_1$? The air pressure doesn't change much with elevation (in part because there is no flow in the vertical direction). This means that
+$$P_1+\rho gh=P_2$$
+where $h$ is the difference in height of the columns of water. Rearranging,
+$$P_2-P_1=\rho gh$$
+Inserting this into Bernoulli's equation,
+$$\rho gh=\frac{1}{2}\rho v_2\ds^2\left(1-\left(\frac{A_2}{A_1}\right)^2\right)$$
+
+Dividing by $\rho$ and solving for $v_2$ gives
+$$\boxed{v_1=\sqrt{\frac{2gh}{1-\left(\frac{A_1}{A_2}\right)^2}}}$$
+
+For this problem, $h=0.1$~m, $\rho=1000\mbox{ kg/m}^3$, $r_1=0.01$~m, $r_2=0.03$~m, and therefore $A_1/A_2=1/9$.
+
+And this means that
+$$\boxed{v_1=1.4\mbox{ m/s}}$$
+
+What is the flux?
+$$Q=v_1A_1 = v_1\pi r_1^2 = 0.00044\mbox{ m}^3\mbox{/s}$$
+
+Human lungs hold about 6 L of air, or 0.006~m$^3$. With this flux, it would take
+13.5~s to empty your lungs ($\Delta t = V_{lung}/Q$).
+
+\subsection{Viscosity}
+Let's see what happens if we relax the condition that the fluid is inviscid, but maintaining the other conditions.
+
+[Insert diagram of fluid flow through a pipe with friction.]
+\vspace{5cm}
+
+
+From conservation of energy:
+$$W=\Delta{K}+\Delta{U_g}+\Delta{E_{th}}$$
+Following the same steps as when we derived Bernoulli's equation,
+$$(P_1-P_2)\Delta{V}=\frac{1}{2}\rho\Delta V(v_2\ds^2-v_1\ds^2)+\rho g(h_2-h_1)+\Delta{E_{th}}$$
+If we consider a horizontal pipe with uniform diameter, $h_1=h_2$ and flux continuity requires that $v_1=v_2$. Therefore,
+$$\Delta{E_{th}}=(P_1-P_2)\Delta{V}$$
+
+Friction within the fluid, and between the fluid and walls of the pipe, cause $\Delta E_{th}>0$. This means that $P_2<P_1$.
+
+Experiments show that the pressure difference needed to drive a viscous fluid through a pipe is
+$$P_1-P_2=8\pi\eta\frac{Lv_{avg}}{A}$$
+where $\eta$ is the fluid viscosity and has units of Pa$\cdot$s. The viscosity of water is about 10$^{-3}$ Pa$\cdot$s, while the viscosity of honey is 20--600 Pa$\cdot$s. This equation is referred to as Poiseuille's Equation. It tells us two things: first, the average velocity of fluid flowing through a section of pipe is 
+$$v_{avg}=\frac{(P_1-P_2)}{L}\frac{A}{8\pi\eta}$$
+In other words, you need a pressure gradient to drive flow, large pipes provide less resistance, and fluids with high viscosity flow slowly. How do you keep the velocity high?
+
+Examples:
+\begin{enumerate}
+\item Alaska pipeline: Use pump stations to create large pressure gradients.
+\item Clogged arteries: Use blood thinner to reduce $\eta$, or scraping out arteries to increase $A$.
+\end{enumerate}
+
+We can also relate this to the amount of thermal energy that is produced in a section of fluid.
+$$\Delta E_{th}=8\pi\eta\frac{Lv_{avg}}{A}\Delta{V}$$
+where $\Delta{V}=A\Delta x$, so
+$$\Delta E_{th}=8\pi\eta Lv_{avg}\Delta{x}$$
+The amount of thermal energy that is generated in the fluid is proportional to the viscosity, length of pipe, velocity, and displacement of the fluid.
+
+So I've now just opened a can of worms... Viscosity is generally highly temperature dependent, and density is sometimes temperature dependent (so assumption of incompressibility is questionable).
+
+\subsection*{Example: Application of Poiseuille's equation}
+Example: A stiff, 10-cm long tube with an inner diameter of 3.0 mm is attached to a small hole in the side of a tall beaker. The tube sticks out horizontally and is open at one end. The beaker is filled with with 20$^\circ$C water ($\eta=10^{-3}\mbox{ Pa}\cdot\mbox{s}$) to a level 45 cm above the hole, and is continually topped off to maintain that level. What is the volume flow rate (flux) through the tube?
+
+The pressure difference between the end of the tube is
+$$P_1-P_2=(P_{atm}+\rho gh)-(P_{atm})=\rho gh$$
+
+Poiseuille's equation tells us how the pressure difference relates to the flow of the water.
+$$P_1-P_2=8\pi\eta\frac{v_{avg}L}{A}=\rho gh$$
+So 
+$$v_{avg}=\frac{\rho ghA}{8\pi\eta L}$$
+And so
+$$Q=\frac{\rho ghA^2}{8\pi\eta L}=\frac{\rho gh\pi^2r^4}{8\pi\eta L}=2.0\times 10^{-8}\mbox{ m}^3/\mbox{s}$$
+
+
+
+\clearpage

@@ -1,0 +1,106 @@
+\section{STATIC EQUILIBRIUM}
+We've spent the last couple of lectures discussing torque, which has many important consequences for physiology.
+
+Demo: If stand with your toes against a wall, you can't stand on your tip-toes. Why?
+
+Demo: If you stand with your back against a wall, you can't pick up something off the floor a little ways in front of you without falling over. Why?
+
+Other examples:
+\begin{itemize}
+\itemsep 0pt
+\item Trees have to support large forces and torques (due to the weight of the brances) This affects the development of trees. Apparently tree trunks are structurally different than branches.
+\item Muscles in your body exert torque on your limbs whenever you move.
+\end{itemize}
+
+\subsection*{Introduction}
+I'd like to spend the next couple of lectures discussing equilibrium, stability, and elasticity --- topics that we've briefly touched on. I won't really be introducing much new material.
+
+What do we know about object's that are at rest?
+
+$$\sum F_x = 0$$
+$$\sum F_y = 0$$
+$$\sum \tau = 0$$
+
+These equations tell us that an object is fixed in space relative to some reference frame that may or may not be moving.
+
+We have already done problems where $\sum \vec{F}=0$. Now we'll also enforce that the objects don't rotate. We've already seen that $\tau=rF_\perp$. But if the object isn't rotating, what do we choose as our axis of rotation? Turns out that it doesn't matter, we pick any point that we want! We just have to be careful with the sign of the torques.
+
+
+\subsection*{Example: Board lying across two scales}
+A 64-kg person stands on a 2-m long board that is lying across two scales. Assume that the board is light (i.e., massless) and rigid. What are the readings on the scales when the person stands 0.5 m from one of the boards (and 1.5 m from the other)?
+
+\clearpage
+[Insert diagram.]
+\vspace{5cm}
+
+We need to add the forces and torques acting on the board.
+
+The force-balance equations give us one equation and two unknowns:
+$$\sum F_x = 0$$
+$$\sum F_y = F_{n,1}+F_{n,2}-F_g=0$$
+
+The torque balance gives us one additional equation. We are free to pick a convenient rotation axis. Let's pick a point where one of the unknown forces is acting.
+$$\sum \tau = F_{n,1}\cdot{0}+F_{n,2}\cdot{2\mbox{ m}}-F_g\cdot{1.5\mbox{ m}}=0$$
+
+We now have three equations and three unknowns ($F_g$ can be readily calculated). From the torque balance, we can find that
+$$F_{n,2}=\frac{3}{4}F_g=\frac{3}{4}mg\Rightarrow \boxed{F_{n,2}=470\mbox{ N}}$$.
+
+From the force balance,
+$$F_{n,1}+\frac{3}{4}F_g-F_g=0\Rightarrow F_{n,1}=\frac{1}{4}F_g\Rightarrow \boxed{F_{n,1}=160\mbox{ N}}$$
+
+
+What if we had picked a different rotation axis? Let's try using the point where $F_{n,2}$ makes contact with the board. In that case,
+
+$$\sum\tau = -F_{n,1}\cdot{2\mbox{ m}}+F_g\cdot{0.5\mbox{ m}} = 0$$
+$$F_{n,1}=\frac{1}{4}F_g \Rightarrow \boxed{F_{n,1}= 160\mbox{ N}}$$
+
+We can actually use the torque balance equation multiple times to come up with additional equations --- this problem can be solved with summing the forces in the $x-$ or $y-$directions.
+
+\subsection*{Demo: balancing meter stick}
+Use fingers to hold meter stick horizontally. Bring them together, and they will arrive at the stick's center of mass. Why?
+
+\subsection*{Example: ladder leaning against a wall}
+A 3-m long ladder leans against a frictionless wall. The coefficient of static friction between the floor and the ladder is $\mu_s=0.2$. At what angle does the ladder start to slide?
+
+[Insert diagram.]
+\vspace{5cm}
+
+Identify forces and sum the forces and torques.
+$$\sum F_x = F_w-F_s=0 \Rightarrow F_s=F_w$$
+$$\sum F_y = F_n - F_g=0 \Rightarrow F_n=F_g$$
+
+We want to know at what angle does $F_w$ exceed $\max F_s$. Let's play with these equations for a minute before dealing with torque. We know that
+$$\max F_s=\mu_sF_n=\mu_sF_g$$
+So we need to know when $F_w$ exceeds $\mu_sF_g$.
+
+When can calculate $F_w$ by summing the torques. We can pick any axis of rotation. What would be a convenient one here?
+$$\sum \tau=-F_wl\cos\theta+\frac{1}{2}F_gl\sin\theta=0$$
+$$F_w=\frac{1}{2}F_g\tan\theta$$
+
+When is
+$$\frac{1}{2}F_g\tan\theta > \mu_s F_g?$$
+$$\tan\theta > 2\mu_s$$
+$$\theta > \tan\ds^{-1}(2\mu_s)=21.8^\circ$$
+
+We could also use this to calculate the coefficient of static friction (demo).
+
+
+
+
+\subsection*{Example: person standing near the end of a table}
+How close can a 70-kg person stand to the end of a 56-kg table before it tips over?
+
+[Insert diagram of the table.]
+
+$$\sum F_x = 0$$
+$$\sum F_y = F_{n,1}+F_{n,2}-F_{g,t}-F_{g,p}=0$$
+$$\sum \tau = F_{g,t}l_1-F_{n,1}l_2-F_{g,p}L=0$$
+Rearranging the torque balance gives
+$$F_{n,1}=\frac{F_{g,t}l_1-F_{g,p}L}{l_2}=0$$
+(When $F_{n,1}=0$, the table is just starting to tip.) Solving for $L$
+$$L=\frac{F_{g,t}}{2F_{g,p}}=\frac{m_t}{2m_p}=0.4\mbox{ m}$$
+$L$ is the distance from the leg of the table. The person can therefore stand 0.15 m from the end of the table.
+
+
+
+\clearpage

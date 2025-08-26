@@ -1,0 +1,119 @@
+\section{HEAT TRANSFER}
+Recall:
+\begin{itemize}
+\item First Law of Thermodynamics: $W+Q=\Delta E$
+\item Heat transfer into or out of a system changes the temperature and/or phase of the material in the system
+\end{itemize}
+
+Mechanisms for heat transfer?
+
+Three basic types of heat transfer, and all depend on temperature differences:
+\begin{itemize}
+\item conduction
+\item convection/advection
+\item electromagnetic radiation
+\end{itemize}
+
+\subsection*{Conduction}
+When there is a temperature difference across an object, energy is transferred from the warm side (w/ fast molecules) to the cool side (w/ slow molecules). (We already saw this.)
+
+[Insert diagram; rod with fire on one end and ice on the other.
+\vspace{5cm}
+  
+The \textit{rate} at which heat is transferred depends on the object's composition, length, cross-sectional area, and the temperature difference.
+$$\frac{Q}{\Delta{t}}=\left(\frac{kA}{L}\right)\Delta{T},$$
+where $k$ is the thermal conductivity (a material property) and has units of W/(m K).
+
+Copper: $k=400$ W/(m$\cdot$K)\\
+Wood: $k=0.2$ W/(m$\cdot$K)\\
+
+This is why you typically use a wood spoon when cooking. 
+
+Notice that the rate of heat transfer depends on $\Delta{T}$. What happens when two objects equilibrate?
+
+[Sketch of $\Delta{Q}/\Delta{t}$ of two objects equilibrating.]
+\vspace{5cm}
+
+\subsection*{Example: Heat transfer through a floor.}
+We can think about the rate at which heat travels through a floor. Let's say that the room temperature is 19.6$^\circ$C, the temperature below the floor is 16.2$^\circ$C, and the floor has an area of 22 m$^2$ and is 0.018 m thick.
+
+The rate of heat transfer is 
+$$\frac{Q}{\Delta{t}}=\left(\frac{kA}{L}\right)\Delta{T}=830\mbox{ J/s}=830\mbox{ W}$$
+
+(Rate at which energy is changing is the power, and has units of watts.)
+
+\subsection*{Advection/convection}
+Advection $\rightarrow$ transport of heat by a moving material
+Convection $\rightarrow$ vertical transport of heat (e.g., heat a pot of water from below)
+
+Advection and convection are especially important for fluids and gases. In order to fully understand this method of heat transport, you have to model both fluid flow and thermodynamics. And advection and convection are often linked to conduction.
+
+For example, consider warm water flowing through a pipe.
+
+[Diagram of pipe.]
+\vspace{4cm}
+
+The warm water is carrying heat; this is advection. If the water is warmer than the air on the outside of the pipe, then heat will conduct through the pipe and radiate into the environment.
+
+\subsection*{Electromagnetic radiation}
+(We'll talk about this in much more detail next semester.) Basically what you need to know now is that object's emit electromagnetic waves. The energy that the waves carry, as well as the wavelength of the waves, depends on the material properties, the surface area, and the temperature.
+
+$$\frac{Q}{\Delta{t}}=e\sigma AT^4$$
+
+(We find this equation by modifying some other equations that we haven't seen yet...)
+
+$e$ is the emissivity (unitless); it is the ratio of energy radiated to energy absorbed. $e=0.97$ for humans\\
+$\sigma$ is the Stefan-Boltzmann constant; $\sigma=5.67\times 10^{-8}\frac{\mbox{W}}{\mbox{m}^2\mbox{K}^4}$\\
+$A$ is the surface area\\
+$T$ is temperature in Kelvin
+
+Because the environment is also radiating based on its temperature, the net radiation from an object is
+$$\frac{Q_{net}}{\Delta{t}}=e\sigma A(T^4-T_0^4),$$
+where $T_0$ is the temperature of the environment. If $T>T_0$, the object cools; if $T<T_0$, the object warms up.
+
+There is an important feedback here that comes into play when thinking about the temperature of a planet. If you increase the temperature of the planet, you also increase the rate at which it radiates energy outward (and a small change in temperature results in a big change in radiation) which counteracts the warming of the planet. This helps to stabilize a planet's temperature.
+
+\subsection*{Evaporative cooling}
+A fourth way that you can transfer energy out of a system is by evaporation. Let's discuss this by way of an example.
+
+A 68 kg woman cycles at a constant 15 km/h. All of the metabolic energy that does not go to forward propulsion is converted to thermal energy in her body. If the only way her body has to keep cool is by evaporation, how many kilograms of water must she lose to perspiration each hour to keep her body temperature constant?
+
+The metabolic power of a 68 kg cyclist going 15 km/h is 480 W (480 J/s). This is the rate at which the cyclist is using energy and is essentially determined experimentally. 75\% of this is transformed into thermal energy. So 360 W of thermal energy is produced; this much must be released by evaporation to keep the cyclists temperature constant. So
+$$\frac{Q}{\Delta{t}}=\frac{mL_v}{\Delta{t}}$$
+$$\frac{m}{\Delta{t}}=\frac{Q}{\Delta{t}}\frac{1}{L_v}=1.5\times 10^{-4}\mbox{ kg/s}=0.54\mbox{ kg/hr}$$
+
+This is about half a liter per hour. Seems reasonable.
+
+When you perspire, warm water (sweat) moves to the outside of your body. It then evaporates; evaporation requires heat, so it reduces the thermal energy of the sweat that is left behind...
+
+
+\subsection*{Refrigerators}
+How do refrigerators work? By making use of the thermodynamics of gases and liquids to get heat to flow from a cold reservoir to a warm reservoir. In particular, they utilize electromagnetic radiation, advection, conduction, and latent and specific heats.
+
+\clearpage
+[Insert diagram.]
+\vspace{6cm}
+
+
+Steps:
+\begin{itemize}
+\item Vapor flows through a compressor, which increases the temperature of the gas.
+\item The vapor then flows through a condenser (coils on the back of a refrigerator). The vapor in the condensor is warmer than surrounding air, so energy is radiated into the air. $Q<0$, so $\Delta E<0$. The temperature of the vapor decreases (specific heat) and eventually the vapor condenses into liquid (latent heat).
+\item The liquid then flows through an expansion valve; the associated decrease in pressure results in some of the liquid turning into vapor. This results in a mixture of liquid and vapor at low pressure and low temperature.
+\item The mixture travels through the evaporator, where it comes in contact with ``warm'' air from the cold reservoir (conduction). The warm air causes the remaining liquid to evaporate. $Q>0$ so $\Delta E>0$.
+\item The cycle repeats.
+\end{itemize}
+
+Need to carefully select your refrigerant for your particular application. For example, you want:
+\begin{itemize}
+\item The boiling point to be below the target temperature so that air from the cold reservoir can turn liquid into vapor.
+\item A high latent heat of vaporization to release a lot of energy in condenser.
+\end{itemize}
+
+
+
+
+
+
+
+\clearpage

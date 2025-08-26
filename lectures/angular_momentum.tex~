@@ -1,0 +1,82 @@
+\section{ANGULAR MOMENTUM AND CONSERVATION OF ANGULAR\\ MOMENTUM}
+We've been treating momentum as a linear (but two-dimensional quantity). The momentum $\vec{p}$ of an particle spinning in a circle is not conserved, even if it moves at constant speed, because its velocity vector is continuously changing direction as a result of some external force. However, there is a quantity called the angular momentum that is conserved.
+
+Today I'll talk about angular momentum and conservation of angular momentum, and also try to give you some more insights into the relationship between torque and force.
+
+Recall the definition of torque,
+$$\tau=rF\sin\theta$$
+We saw that by summing the torques acting on an object,
+$$\ds\sum\tau=\tau_{net}=I\alpha.$$
+The angular acceleration is the rate of change of angular velocity,
+$$\alpha=\frac{\Delta\omega}{\Delta{t}}.$$
+To account for the possibility that $\alpha$ can change with time, we can write the net torque as
+$$\tau_{avg}=I\frac{\Delta\omega}{\Delta{t}}.$$
+Rearranging,
+$$\tau_{avg}\Delta{t}=I\Delta{\omega}.$$
+This is analogous to what we had for linear motion:
+$$\vec{F}_{avg}\Delta{t}=m\Delta{\vec{v}}.$$
+So let's define angular momentum as
+$$\boxed{L=I\omega}.$$
+This equation tells us that, just like with linear momentum, an object can have a large angular momentum if it is spinning fast or has a large moment of inertia. What gives an object a large moment of inertia?
+
+Putting this altogether,
+$$\boxed{\tau_{avg}\Delta{t}=\Delta{L}}$$
+which is the rotation equivalent of
+$$F_{avg}\Delta{t}=\Delta{p}$$
+
+If the net torque acting on a {\textit system} of objects is zero, then
+$$\tau_{avg}\Delta{t}=0=I\Delta\omega=\Delta{L}.$$
+This equation says that the change in angular momentum is zero if there is no external torque acting on the system. This is exactly analogous to the law of conservation of momentum, and we call this the law of conservation of angular momentum. Another way to write this is
+$$\boxed{I_f\omega_f=I_i\omega_i}.$$
+
+\subsection*{Example: figure skater}
+A common example of the conservation of angular momentum that you've all seen is that of a figure skater spinning in circles. When they hold their arms and legs out they spin slowly, and when they pull them in tight they spin more quickly. To analyze this situation, let's treat a figure skater's hands as point masses and ignore the rest of their body. (This allows us to work with analytical expressions for the moment of inertia.)
+
+A skater spins around on the tips of his blades while holding 5.0-kg weights in each hand. He begins with his arms straight out from his body and his hands 140 cm apart. While spinning at 2 rev/s, he pulls the weights in and holds them 50 cm apart against his shoulder. If we neglect the mass of the skater, how fast is he spinning when he pulls the weights in?
+
+[Insert diagram of skater from above.]
+\vspace{5cm}
+
+There are no external torques acting on the skater (we're ignoring the friction between the skates and the ice, and any air resistance). This means that the skater's rotation follows the law of conservation of angular momentum, and so
+$$I_i\omega_i=I_f\omega_f.$$
+For a point mass moving in a circle, the moment of inertia is $mr^2$. Since we have two point masses, $I=2mr^2$. Plugging this into the above equation yields
+$$2mr_i\ds^2\omega_i=2mr_f\ds^2\omega_f.$$
+We want to solve for $\omega_f$. So
+$$\omega_f=\frac{r_i\ds^2}{r_f\ds^2}\omega_i=16\mbox{ rev/s}=32\pi\mbox{ rad/s}.$$
+
+\hrulefill\\
+Example: Pick another example...
+
+\subsection*{Demos with rotating stand}
+Note that if there are no external forces, then $L_i=L_f$. Discuss vector notation for $\vec L$.
+\begin{enumerate}
+\item Rotate in place and stand rotates the other direction. Think about how to define the system.
+
+Initially, $L_i=0$, which means that $L_f=0$. If I rotate counterclockwise, the stand has to rotate the opposite direction.
+
+[Diagram inidicating momentum vectors.]
+\vspace{5cm}
+
+\item Stand with rotating wheel, and cause it to rotate the other direction. Why does this happen? It again has to do with conservation of angular momentum. I change the direction that it rotates, so the system has to respond by rotating the opposite direction.
+
+[Diagram indicating momentum vectors.]
+\vspace{5cm}
+
+
+\item Gyroscopic effect: Rotating wheel that doesn't fall. Why not?
+
+If I spin the wheel, there is angular momentum that is oriented along the wheel's axis. Once I start hanging this from a string, there is also a gravitational torque that is trying to cause downward rotation. Recall that 
+$$\tau=I\alpha$$
+Let's keep this simple and think of $\alpha$ as a constant. Therefore,
+$$\tau=I\frac{\Delta\omega}{\Delta t}.$$
+Rearranging,
+$$\tau\Delta{t}=I\Delta\omega=\Delta{L}.$$
+So in other words, torque causes a change in angular momentum. The change in angular momentum caused by the gravitational torque points perpendicular to the wheel's angular momentum. After some amount of time, $\Delta t$, the new angular momentum becomes
+$$L_{new}=L+\Delta{L}$$
+
+[Draw vectors showing how this changes momentum vector. This means that the wheel must change direction.]
+\vspace{5cm}
+
+What if the wheel isn't spinning very fast? Then $\Delta L$ is quite a bit larger than $L$, and so $L_{new}\approx \Delta L$. The wheel doesn't rotate around the vertical axis very much, it just falls downward.
+\end{enumerate}
+\clearpage

@@ -1,0 +1,117 @@
+\section{MOTION IN 2-DIMENSIONS, CTD}
+Objectives:
+\begin{itemize}
+\item Selection of coordinate system
+\item Object moving up/down a ramp
+\end{itemize}
+
+Today I'm going to talk about motion down ramps, but before we do that let's get our brains going by talking some more about gravitational acceleration and projectile motion.
+
+\subsection{Demo of falling washers}
+
+I previously accelerated that gravitational acceleration is constant near the Earth's surface. How can we demonstrate that using kinematics?
+
+\subsection{Example: Monkey getting hit by cannonball.}
+The cannon was pointed directly at the monkey. The speed with which the cannon was fired doesn't actually matter --- it only affects at what height the monkey gets hit. Can we prove that? What do we know? (By the way, this is kind of a tricky problem. I wouldn't ask a question like this on an exam unless I gave you a lot of hints.)
+
+[Insert diagram of falling monkey.]
+\vspace{5cm}
+
+Let's start with the monkey:\\
+$v_{y,i}=0$\\
+$\Delta{y_m}=\frac{1}{2}a_y\Delta{t}\ds^2=-\frac{1}{2}g\Delta{t}\ds^2$\\
+$\Delta{y_m}=H-y_m$, where $y_m$ is the monkey's position when it gets hit.
+
+Now let's analyze the cannon:\\
+$v_{x}=V_i\cos\theta=\frac{\Delta{x}}{\Delta{t}}$\\
+$v_{y,i}=V_i\sin\theta$\\
+$\Delta{y_c}=y_c-0=y_c=v_{y,i}\Delta{t}+\frac{1}{2}a_y\Delta{t}\ds^2=V_i\sin\theta\Delta{t}-\frac{1}{2}g\Delta{t}\ds^2$
+
+We can make a few substitutions. Note that $\Delta{t}=\Delta{x}/(V_i\cos\theta)$. So, this means that
+$$y_c=\frac{V_i\sin\theta}{V_i\cos\theta}\Delta{x}+(y_m-H),$$
+which reduces to
+$$y_c=\Delta{x}\tan\theta+y_m-H$$.
+But $\tan\theta=H/\Delta{x}$... So,
+$$y_c=\frac{H}{\Delta{x}}\Delta{x}+y_m-H=H+y_m-H=y_m.$$
+When the cannonball has travelled a distance $\Delta{x}$, it will be at the same height above the ground as the monkey, and you will hear the monkey screach!
+
+\subsection{Example: Projectile motion}
+You are throwing a ball from the top of a 10-m high cliff. You can throw the ball at a speed of $V_i=30\mbox{ m/s}$. At what angle relative to horizontal should you throw the ball to maximize the speed at which it hits the ground? Upward, downward, or horizontally?
+
+For the $x-$direction, we have a constant velocity of
+$$v_x=V_i\cos\theta$$
+
+For the $y-$direction, we have
+$$2a\Delta{y}=v_{y,f}\ds^2-v_{y,i}\ds^2$$
+The velocity in the $y-$direction changes with time. $a=-g$, and $\Delta{y}=-10\mbox{ m}$.
+$$2gH=v_{y,f}\ds^2-(V_i\sin\theta)\ds^2\Rightarrow v_{y,f}\ds^2=2gH+(V_i\sin\theta)\ds^2$$
+We don't need to take the square root to find $v_{y,f}$, because we would want to square it in the next step.
+
+The speed that the rock hits the ground at will be
+$$V_f=\sqrt{v_x\ds^2+v_{y,f}\ds^2}$$
+So, inserting the above results
+$$V_f=\sqrt{V_i\ds^2\cos^2\theta+2gH+V_i\ds^2\sin^2\theta}=\sqrt{V_i\ds^2(\cos^2\theta+\sin^2\theta)+2gH} = \sqrt{V_i\ds^2+2gH}$$
+
+It doesn't matter what angle you throw the ball at, just throw it fast!
+
+This is a great example of why it pays off to do the algebra before plugging in any numbers. We ended up with an elegant, insightful, and surprising solution.
+
+\subsection{Objects moving along ramps}
+Another type of horizontal motion that we'll encounter frequently is that of objects moving along ramps. So let's consider a box sliding down a ramp.
+
+\clearpage
+[Insert diagram of box sliding on a ramp.]
+\vspace{4cm}
+
+Gravity acts downward on the ramp, but the object will move down the ramp (not just vertically downward). To simplify the problem, we can make use of vector components and the fact that we are free to orient our coordinate system whatever way we choose. We will be turning a 2-dimensional problem into a one-dimensional problem.
+
+Steps:\\
+(1) Let $x$ arbitrarily point down the ramp, and $y$ point perpendicular up from the ramp.\\
+(2) Split $g$ into vector components. One component points in the $+x-$direction, the other points in the $-y-$direction. Show that $a_x=g\sin\theta$.\\
+(3) The ramp doesn't allow for motion in the $y-$direction, so we only have to deal with motion in the $x-$direction. This has become a one-dimensional problem.
+
+Let's say that the box is released from a height of $H$, and that the ramp has an angle of $\theta$. What is the speed of the box when it reaches the end of the ramp?
+
+Given:\\
+$a_x=g\sin\theta$\\
+$x_i=0$\\
+$x_f=\frac{H}{\sin\theta}$\\
+$v_i=0$\\
+
+Want to know $v_f$. This is a problem where it pays to go through the algebra.
+
+$$v_f\ds^2-v_i\ds^2=2a\Delta{x}=2g\sin\theta\frac{H}{\sin\theta}=2gH$$
+$$v_f=\sqrt{2gH}$$
+
+The final speed depends \textit{only} on the height from which the box is released!
+
+\subsection{Example: Box sliding along track}
+A slightly more difficult problem:
+
+A block slides along a frictionless track with speed $V=2\mbox{ m/s}$. Assume that it turns all corners smoothly with no loss of speed.
+
+\clearpage
+[Insert diagram of block on track.]
+
+\vspace{6cm}
+
+(a) What is the maximum height of the ramp that the block can slide up?
+
+To solve this, we will rotate the coordinate system so that $x$ points up hill. This will become a one-dimensional problem.
+
+Given:\\
+$v_i=V$\\
+$a=-g\sin\theta$\\
+$\Delta{x}=\frac{H}{\sin\theta}$
+
+If it just reaches the top of the hill, then $v_f=0$
+
+We only need one equation to solve this.
+$$2a\Delta{x}=v_f\ds^2-v_i\ds^2$$
+$$-2g\sin\theta\frac{H}{\sin\theta}=-v_i\ds^2$$
+$$2gH=v_i\ds^2$$
+$$H=\frac{v_i\ds^2}{2g}=\frac{(2\mbox{ m/s})\ds^2}{2\times 9.81\mbox{ m/s}\ds^2}\approx 0.2\mbox{ m}$$
+
+
+
+\clearpage

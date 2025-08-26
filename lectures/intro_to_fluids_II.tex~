@@ -1,0 +1,133 @@
+\section{INTRODUCTION TO FLUIDS, PART 2}
+Last class:
+\begin{itemize}
+\item Density: $\rho=\frac{m}{V}$
+\item Hydrostatic pressure: $P=\rho gh$, where $h$ is depth. Units are in Pa. Pressure acts in all directions.
+\item Convenient reference: The pressure beneath 1 m of water is $\sim 10^4$ Pa, or 10\% of atmospheric pressure. They are approximately equal at 10 m depth.
+\end{itemize}
+
+
+\subsection*{Sinking/floating objects}
+From these ideas, we can talk about why objects sink or float.
+
+Let's look at the forces acting on an object in water. 
+
+[Diagram...]
+\vspace{5cm}
+
+$$\sum F_y=F_{\mbox{below}}-F_g-F_{\mbox{above}}=F_{net}=ma_y$$
+The forces from below and above the object are due to pressure (recall that $F=PA$).
+$$\rho_w g(h+L)A-\rho_w ghA-\rho_o gLA=ma_y$$
+$$\rho_w gLA-\rho_o gLA=\rho_oLAa_y$$
+The upward force is referred to as the buoyant force. Notice that it is equal to the weight of the displaced fluid. This is referred to as ``Archimedes' Principle''. If the buoyant force exceeds the object's weight, the object will rise; if it is lower than the object's weight, the object will sink. 
+
+Dividing by $LA$ and re-arranging, we arrive at
+$$\frac{(\rho_w-\rho_o)}{\rho_o}g=a_y$$
+
+An object that is more dense than water will sink, and the rate at which it sinks depends on the density differences. (If this we an object falling through air, $\rho_o>>\rho_w$ and so $a_y=-g$.
+
+\subsection*{Icebergs}
+I'm sure you've all heard that 90\% of an iceberg is below the water surface. We can explain that using Archimedes' principle.
+
+We'll consider an iceberg floating at rest at the water surface, and ask how much of the iceberg sticks out of the water.
+
+[Insert diagram.]
+\vspace{5cm}
+
+$$\sum F_y=F_b-F_g=0$$
+
+$$F_b=m_dg=\rho_wV_dg,$$
+where $V_d$ is the volume of displaced water.
+
+$$F_g=m_ig=\rho_iV_ig$$
+
+Combining these gives
+$$\rho_wV_dg-\rho_iV_ig=0$$
+Dividing by $g$ and re-arranging gives
+$$\frac{V_d}{V_i}=\frac{\rho_i}{\rho_w}\approx 0.9$$
+90\% of the iceberg is submerged.
+
+\subsection*{Measuring gass pressure}
+Fluids are often used to measure gas pressure (such as atmospheric pressure)
+
+\clearpage
+\subsection*{Manometer}
+[Insert diagram.]
+\vspace{5cm}
+
+In a fluid that is in hydrostatic equilibrium, the pressure is constant along horizontal lines. (If this wasn't the case the fluid would move upward or downward...)
+
+So in a manometer, this means that 
+$$P_1=P_2$$
+where
+$$P_1=P_{gas}$$
+and
+$$P_2=P_o+\rho gh$$
+Therefore, the gas pressure is
+$$P_{gas}=P_o+\rho gh.$$
+
+For this to work though, we need to know the atmospheric pressure. For that, we need a barometer.
+
+\subsection*{Barometer}
+[Insert diagram of a barometer.]
+\vspace{5cm}
+
+In a barometer, 
+$$P_o=\rho gh,$$
+where $\rho$ is the fluid density and $h$ is the height of the column.
+
+You could use any fluid, but its best to use really dense fluids (that way the barometer can be small). If you use water (with a density of 1000 kg/m$^3$), you would need a column that is
+$$h=\frac{P_o}{\rho g}=10\mbox{ m}$$
+
+Mercury has a density of 13,534 kg/m$^3$. The column of mercury that you need is only 0.76 m tall --- this is about 30 in of mercury...
+
+\subsection*{Example: Ranking exercise} 
+Example: Rank in order, from largest to smallest, the densities of blocks a, b, and c.
+
+[Insert diagram.]
+\vspace{5cm}
+
+\subsection*{Example: sphere submerged in water}
+A sphere completely submerged in water is tethered to the bottom with a string. The tension in the string is one-third the weight of the sphere. What is the density of the sphere?
+
+[Insert diagram.]
+\vspace{5cm}
+
+$$\sum F_y = F_b-F_g-F_t = ma_y = 0$$
+$$F_t = \frac{1}{3}F_g$$
+$$F_b-\frac{4}{3}F_g = 0$$
+$$\rho_wgV-\frac{4}{3}\rho gV=0$$
+$$\rho=\frac{3}{4}\rho_w=\boxed{750\mbox{ kg/m}^3}$$
+
+
+\subsection*{Introduction to fluid dynamics}
+That's basically all that I have to say about hydrostatics. Its more interesting to talk about fluid dynamics, or fluid motion. To do this, we are going to consider an ideal fluid. We will assume three things:
+\begin{enumerate}
+\item The fluid is incompressible. This is a good approximation for many fluids, especially water.
+\item The fluid flow is steady (laminar) and non-turbulent.
+[Insert diagram.]
+The transition from laminar to turbulent flow depends on the fluid properties, the flow speed, and the geometry of the flow.
+\item The fluid is non-viscous. Viscosity is a fluid's resistance to flow; think of it as internal friction. Water has a low viscosity, syrup has a high viscosity.
+\end{enumerate}
+
+Because the fluid flow is assumed incompressible, we will have a convenient equation that describes mass continuity.
+
+The amount of fluid that enters the upstream end of a pipe in time $\Delta{t}$ has to equal the amount of fluid that pass through the downstream end of a pipe.
+
+Volume $V_1$ enters the pipe in time $\Delta{t}$; volume $V_2$ exits the pipe in the same amount of time. Due to incompressibility, $V_1=V_2$.
+$$V_1=A_1\Delta{x_1}=A_1v_1\Delta{t}$$
+$$V_2=A_2\Delta{x_2}=A_2v_2\Delta{t}$$
+Because we are dealing with an ideal fluid, the velocity across each cross-section is constant.
+And so
+$$\boxed{A_1v_1=A_2v_2}$$
+If $A_2<A_1$, as is the case for the diagram that I've drawn, then the fluid velocity increases.
+
+We'll define a new term, called the flux, or volume flux, as 
+$$Q=\frac{V}{\Delta{t}}=Av$$
+
+The flux is constant in a tube.
+
+
+
+
+\clearpage

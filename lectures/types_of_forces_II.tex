@@ -1,0 +1,148 @@
+\section{Types of forces II}
+Objectives:
+\begin{itemize}
+\item Kinetic friction
+\item Static friction
+\item Drag
+\end{itemize}
+
+Last class:
+\begin{itemize}
+\item Gravitational force: $F_g=\frac{Gm_1m_2}{r^2}$, but use $F_g=mg$ near the Earth's surface.
+\item Normal force: $F_n>0$, points perpendicular to surface.
+\item Tensional force: $F_t$, points in direction of string. Massless string approximation allows us to assume that the tensional force is constant through the string.
+\end{itemize}
+
+\subsection{Kinetic friction}
+The normal force is very important when dealing with friction, which is known through experiments.
+
+Consider this problem of a box sliding down a ramp:
+
+[Insert diagram.]
+\vspace{5cm}
+
+We can solve for the frictional force.
+
+Summing the forces in the $y$-direction:
+$$\sum F_y = F_n-F_g\cos\theta=ma_y=0$$
+$$F_n=F_g\cos\theta$$
+
+Summing the forces in the $x$-direction:
+$$\sum F_x=F_g\sin\theta-f_k=ma_x\neq 0$$
+$$F_k=m(a_x-g\sin\theta)$$
+
+This means that we can measure $F_n$ and $F_k$ experimentally. If we do lots of experiments, we find that $F_k$ is proportional to $F_n$.
+
+[Insert diagram of $F_k$ vs. $F_n$; plots as straight line with $y-$intercept of 0.]
+\vspace{5cm}
+
+
+This means that
+$$\boxed{ F_k = \mu_k F_n}$$
+where $\mu_k$ is the coefficient of kinetic friction. It is a constant for a given system (combination of surfaces) and is determined experimentally. This is just a model for friction; its actually quite a bit more complicated and is still an active area of research. People that study earthquakes worry about friction a lot!
+
+What makes something have a high coefficient of friction?
+
+\subsection{Static friction}
+We should also consider the case in which the block isn't moving at all. This means that friction balances whatever forces would tend to cause acceleration (in this case, down the ramp). In our example, this would mean that
+$$\sum F_x=F_g\sin\theta-F_s=0$$
+I've set $ma_x=0$ and switched $F_k$ to $F_s$ to refer to static friction. Thus,
+$$F_s=F_g\sin\theta.$$
+The block will be in static equilibrium until a certain threshold is exceeded. That threshold is determined experimentally to be
+$$\boxed{\max F_s=\mu_s F_n}$$
+
+If you want to solve a problem in which a box isn't sliding initially, do the following:
+\begin{enumerate}
+\item Calculate the force that will tend to accelerate the box.
+\item Does this force exceed $\max F_s$? If no, then the frictional force $F_s$ will be . If yes, then the box will start sliding and you will have frictional force $F_k=\mu_k F_n$.
+\end{enumerate}
+In general, $\mu_s>\mu_k$. In other words, its easier to keep an object moving than it is to get it moving in the first place.
+
+\subsection{Drag}
+I just want to briefly touch on drag since it is something that we are all familiar with, and you are probably also familiar with the concept of terminal velocity. Now that we have a basic understanding of forces, we can discuss where the idea of terminal velocity comes from.
+
+Drag is a really complicated subject because it deals with fluid dynamics and turbulence --- turbulence is still considered to be a pretty big mystery.
+
+From experiments, though, we have a pretty simple expression that describes the drag force under certain circumstances:
+\begin{enumerate}
+\item The object is between a few millimeters and few meters in diameter.
+\item The object's speed is less than a few hundred meters per second (100 m/s = 223 mph).
+\item The object is moving through air near the Earth's surface.
+\end{enumerate}
+Under these circumstances, we can write that
+$$\boxed{F_d=\frac{1}{2}C_D\rho Av^2}$$
+where $F_d$ is the drag force, $C_D$ is a drag coefficient that depends on the object's shape, $\rho=1.22\mbox{ kg/m}^3$ is the density of air at sea level, $A$ is the cross-sectional area of the object, and $v$ is the object's speed. The drag force points opposite the direction of motion. For many objects, the drag coefficient is approximately 1/2. We'll assume that is the case, and so
+$$\boxed{F_d=\frac{1}{4}\rho Av^2}.$$
+The drag force increases with the square of the speed of the object!
+
+Let's consider an object that is falling straight down.
+
+[Insert diagram.]
+\vspace{5cm}
+
+There are two forces acting on the object, $F_g$ and $F_d$. They point in opposite directions. From Newton's second law,
+$$\sum F_y=F_d-F_g=ma_y.$$
+As the object accelerates, the drag force will become increasingly large and eventually $F_d$ and $F_g$ will cancel out (i.e., the object will stop accelerating, but it will not stop moving). When this happens
+$$F_d-F_g=0\Rightarrow F_d=F_g.$$
+Substituting in for $F_d$ and $F_g$ gives
+$$\frac{1}{4}\rho Av^2=mg$$
+$$\boxed{v_{\mbox{term}}=\sqrt{\frac{4mg}{\rho A}}}$$
+What does this equation tell us?
+\begin{enumerate}
+\item If two different objects are the same size and shape, the heavier object will fall faster.
+\item Cross-sectional area increases the drag and decreases the terminal velocity.
+\item If we removed the Earth's atmosphere, the terminal velocity would go to $\infty$.
+\end{enumerate}
+
+Unfortunately, we can't really do anything more with drag without using calculus and differential equations. Let's see why by returning to the original force balance equation:
+$$\sum F_y=F_d-F_g=ma_y$$
+$$\frac{1}{4}\rho Av^2-mg=ma_y$$
+We don't have the tools to solve this equation --- the acceleration is not constant --- so we can't immediately compute the velocity as a function of time.
+
+
+\subsection{Example \#1: pull box across a horizontal surface}
+You pull a box with a rope across a horizontal surface. The box is initially at rest, but you are able to overcome the maximum static friction. Plot the frictional force as a function of time. Let $m=100\mbox{ kg}$, $\mu_s=0.3$, and $\mu_k=0.2$.
+
+[Insert diagram.]
+\vspace{5cm}
+
+Before and after the box starts moving,
+$$\sum F_y = F_n-F_g=0\Rightarrow F_n=F_g=mg$$
+
+Before the box starts moving,
+$$\sum F_x=F_t-F_s=0\Rightarrow F_s=F_t$$
+
+Let's assume that we gradually increase $F_t$ until the box starts moving. This occurs once $F_t\geq \max F_s=\mu_s F_n=\mu_s mg=0.3\times 100\mbox{ kg}\times 9.81\mbox{ m/s}^2\approx 300\mbox{ N}$. Once the box starts moving, we switch to kinetic friction: $F_k=\mu_k mg=0.2\times 100\mbox{ kg}\times 9.81\mbox{ m/s}^2\approx 200\mbox{ N}$.
+
+[Insert plot of results.]
+\vspace{5cm}
+
+\subsection{Example \#2: Calculate the coefficient of friction of a block sliding over the table}
+Do this as a demonstration.
+
+What do we need?
+
+Forces on sliding block:
+$$\sum F_x=F_t-F_k=m_1a_x$$
+$$F_k=F_t-m_1a_x$$
+
+$$\sum F_y=F_n-F_g=0\Rightarrow F_n=F_g$$
+
+Forces on falling block:
+$$\sum F_y=F_t-F_g=m_2a_y$$
+$$F_t=m_2a_y+m_2g$$
+
+$F_t$ on the falling block is the same as $F_t$ on the sliding block. We have an additional constraint, which is that $a_x=-a_y=a$.
+
+So this means that
+$$F_k=m_2a_y+m_2g-m_1a_x=m_2g-(m_1+m_2)a=\mu_kF_n=\mu_km_1g$$
+$$\mu_k=\frac{m_2g-(m_1+m_2)a}{m_1g}$$
+
+We need to measure the acceleration.
+$$\Delta{x}=v_i\Delta{t}+\frac{1}{2}a\Delta{t}^2\Rightarrow a=\frac{2\Delta{x}}{\Delta{t}^2}$$
+
+We can just as easily measure the vertical displacement.
+
+
+
+\clearpage
