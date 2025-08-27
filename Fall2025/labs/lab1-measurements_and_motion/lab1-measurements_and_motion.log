@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  25 AUG 2025 10:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.12.3)  26 AUG 2025 16:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -429,12 +429,12 @@ Package pdftex.def Info: ./bell_curve.pdf  used on input line 176.
 [8] [9
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
 
  []
 
 [10] [11]
-Overfull \hbox (13.13475pt too wide) in paragraph at lines 309--309
+Overfull \hbox (13.13475pt too wide) in paragraph at lines 311--311
 [] \OT1/cmtt/m/n/10.95 >> hold all % Keeps the plot on the graph. The next plot
  will be a different color. 
  []
@@ -444,7 +444,7 @@ Overfull \hbox (13.13475pt too wide) in paragraph at lines 309--309
 ] [13
 
 ]
-Overfull \hbox (17.51506pt too wide) in paragraph at lines 375--375
+Overfull \hbox (17.51506pt too wide) in paragraph at lines 377--377
  [] \OT1/cmtt/m/n/10.95 >> p = polyfit(log10(x),log10(y),1); % find the coeffic
 ients of a best-fit line 
  []
@@ -476,7 +476,7 @@ ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on lab1-measurements_and_motion.pdf (14 pages, 255762 bytes).
+Output written on lab1-measurements_and_motion.pdf (14 pages, 255863 bytes).
 PDF statistics:
  280 PDF objects out of 1000 (max. 8388607)
  193 compressed objects within 2 object streams

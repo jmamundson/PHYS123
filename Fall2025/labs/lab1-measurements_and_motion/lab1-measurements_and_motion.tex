@@ -68,7 +68,7 @@ LoggerPro and MATLAB are both installed on the university build, which you can a
 Keep in mind that when using the virtual machine you should save files to your Z drive (or google drive or email them to yourself). If you save them elsewhere on the machine the files will disappear when you log out.
 
 \subsubsection*{What you should turn in:}
-An informal lab report. You may submit a group report if you'd like. Answer the questions and submit graphs where indicated. You can submit your answers on this handout or typed in a separate document. In particular, I am looking for: 
+An informal lab report. You may submit a group report if you'd like. Answer the questions and submit graphs where indicated. You can submit your answers on this handout or typed in a separate document. If you submit your report electronically, submit it through Blackboard and not through e-mail. In particular, I am looking for: 
 \begin{itemize}
 \setlength{\parskip}{3pt}
 \item Section 1: Measurements and instrument uncertainties [2 pts]
@@ -86,19 +86,19 @@ An informal lab report. You may submit a group report if you'd like. Answer the 
 \begin{itemize}
 \setlength{\parskip}{3pt}
 \item Ruler
-\item Vernier calipers
+\item Micrometer
 \item LabQuest interface, cables, and motion sensor
 \end{itemize}
 
 \section{MEASUREMENT AND RESOLUTION}
-When making measurements it's always important to understand the limitations of the instruments that you are using. In part 1 you will gain a better understanding of instrument resolution by making measurements with a ruler and with a calipers. These instruments have different levels of resolution:
+When making measurements it's always important to understand the limitations of the instruments that you are using. In part 1 you will gain a better understanding of instrument resolution by making measurements with a ruler and with a micrometer. These instruments have different levels of resolution:
 \begin{table}[h]
 \begin{tabular}{ll}
 Instrument \hspace*{5mm} & resolution\\
 \hline
 Ruler & 1 mm\\
-Calipers & 0.05 mm\\
-%Micrometer & 0.01 mm\\
+%Calipers & 0.05 mm\\
+Micrometer & 0.01 mm\\
 \hline
 \end{tabular}
 \end{table}\\
@@ -122,7 +122,7 @@ If you follow these rules correctly, the last digit will be the only uncertain d
 \vspace{6cm}
 
 
-\question{} Repeat Experiment 1 using the vernier calipers to measure some dimension of an object (again, note which object). Repeat the \textit{same} measurement 10 times (yes, this is tedious, but you will use this data in Section 2.3 to estimate error).
+\question{} Repeat Experiment 1 using the micrometer to measure the thickness of some of an object (again, note which object). Repeat the \textit{same} measurement 10 times (yes, this is tedious, but you will use this data in Section 2.3 to estimate error).
 
 
 
@@ -178,7 +178,7 @@ where $x_i$ indicate the individual measurements, $\overline{x}$ is the average 
 \caption*{Example of a bell-shaped curve. In this example, the mean is $\overline{x}=0$ and the standard deviation is $s=1$. There is a 68.2\% probability that all measurements will fall within the shaded region (between $x=-1$ and $x=1$). The values of the mean and standard deviation depend on your data set.}
 \end{figure}
 
-Calculate the mean and standard deviation of your caliper measurements (problem 1.2). Is the standard deviation larger or small than the uncertainty associated with individual measurements?
+Calculate the mean and standard deviation of your micrometer measurements (problem 1.2). Is the standard deviation larger or small than the uncertainty associated with individual measurements?
 
 Use MATLAB to calculate the standard deviations using the following commands (in the command window). You do not need to submit anything for each of these steps; this is just to give you some feel for making calculations with MATLAB.
 
@@ -243,6 +243,8 @@ Time is stored in the first column of data.
 
 Position is stored in the second column of data.
 \begin{verbatim}>> pos = data(:,2);\end{verbatim}
+
+Alternatively, import the data using the ``import data'' button.
 
 Generate a position-time graph.
 \begin{verbatim}>> plot(t,pos);\end{verbatim}
