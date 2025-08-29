@@ -13,10 +13,10 @@
 \contentsline {subsection}{\numberline {2.4 }Terms used to describe motion}{8}{}%
 \contentsline {subsubsection}{\numberline {2.4.1 }Example \#1: Going from position to acceleration}{10}{}%
 \contentsline {section}{\numberline {3 }Kinematic equations}{11}{}%
-\contentsline {subsection}{\numberline {3.1 }Relationship between velocity and position}{11}{}%
-\contentsline {subsection}{\numberline {3.2 }Relationship between acceleration, velocity, and position}{13}{}%
-\contentsline {subsection}{\numberline {3.3 }Example \#1: Airplane crossing a runway}{15}{}%
-\contentsline {subsection}{\numberline {3.4 }Gravitational acceleration}{16}{}%
+\contentsline {subsection}{\numberline {3.1 }Constant velocity}{11}{}%
+\contentsline {subsection}{\numberline {3.2 }Constant acceleration}{13}{}%
+\contentsline {subsection}{\numberline {3.3 }Example \#1: Airplane crossing a runway}{14}{}%
+\contentsline {subsection}{\numberline {3.4 }Gravitational acceleration}{15}{}%
 \contentsline {section}{\numberline {4 }Motion in two dimensions}{17}{}%
 \contentsline {subsection}{\numberline {4.1 }Kinematic equations in 1D}{17}{}%
 \contentsline {subsection}{\numberline {4.2 }Vectors}{17}{}%

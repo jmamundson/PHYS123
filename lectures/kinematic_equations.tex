@@ -5,9 +5,14 @@ Objectives:
 \item Transforming between displacement, velocity, and acceleration
 \end{enumerate}
 
+Demos:
+\begin{enumerate}
+\item Falling washers to demonstrate that gravitational acceleration is constant
+\end{enumerate}
 
-\subsection{Relationship between velocity and position}
-We already saw that $\Delta{x}=x_f-x_i$, $v=\Delta{x}/\Delta{t}$, and $a=\Delta{v}/\Delta{t}$. How do we go the other way? Graphs help us to visualize motion, and will allow us to determine these relationships.\\
+
+\subsection{Constant velocity}
+We saw that $\Delta{x}=x_f-x_i$ and $v=\Delta{x}/\Delta{t}$. $v$ as defined here are the average velocity over some time period $\Delta t$. To compute the instantaneous velocity, let $\Delta t\rightarrow 0$. In other words, velocity is the slope of the position-time graph. % How do we go the other way? Graphs help us to visualize motion, and will allow us to determine these relationships.\\
 
 [Insert position-time graph]
 \vspace{5cm}
@@ -16,72 +21,69 @@ We already saw that $\Delta{x}=x_f-x_i$, $v=\Delta{x}/\Delta{t}$, and $a=\Delta{
 [Insert velocity-time graph derived from previous graph]\\
 \vspace{5cm}
 
-That is pretty straightforward, and is just based on the definitions of $\Delta{x}$ and $v$. Note that the velocity is just the slope of the position-time graph.
-
-What if we want to go the other direction?\\
+That is pretty straightforward, and is just based on the definitions of $\Delta{x}$ and $v$. Note that the velocity is just the slope of the position-time graph. What if we want to go the other direction?\\
 \clearpage
-[Insert velocity-time graph]
+[Insert velocity-time graph with constant velocity]
 \vspace{5cm}
+
+For the case of constant velocity (and therefore no acceleration), we can write
+$$\Delta x = v\Delta t$$
+
+Previously we defined $\Delta x=x_f-x_i$ and $\Delta t = t_f-t_i$. However, we can apply this equation for all increments of time by replacing $x_f$ with $x$ and $t_f$ with $t$. This means
+$$x-x_i = v(t-t_i) \Rightarrow x = v(t-t_i) + x_i$$
+which is the equation for a straight line. To create the position-time graph, we need to also know the object's position at $t_i$.
 
 [Insert position-time graph derived from previous graph]\\
 \vspace{5cm}
 
-To create this position-time graph, we had to make use of the initial position, the velocity (which is the slope of the position-time graph), and the time interval. Let's take a closer look at our definition of velocity:
+Notice anything else about the relationship between velocity and displacement? From the graphs, we can see that displacement is the area under the velocity-time graph. This is always the case, regardless if the velocity is constant or not.
 
-$$v=\frac{\Delta x}{\Delta t}=\frac{x_f-x_i}{\Delta t}.$$
+This linear relationship between velocity and position assumes that velocity is constant, which is rarely true. If the velocity is varying, you can calculate the position by breaking the velocity-time graph into many small time intervals, computing the displacement during each of those time intervals, and cumulatively adding the displacements (i.e., computing an integral). 
 
-Now rearranging, we find that
-$$x_f=v\Delta{t}+x_i,$$
-which is just the equation of a straight line. Another way to write this, which might be more clear, is to set $t_0=0$ and replace $x_f$ with $x(t)$, so that
-$$x(t)=vt+x_i.$$
-Notice anything else about the relationship between velocity and displacement? From the graphs, we can see that displacement is the area under the velocity-time graph.
+%% \clearpage
+%% [Insert smooth position-time graph]
+%% \vspace{5cm}
 
-This linear relationship between velocity and position assumes that velocity is constant, which is rarely true. Often we are interested in the instantaneous velocity at some instant in time. Position is generally a smooth curve.
+%% Here, $v=\Delta{x}/\Delta{t}$ is the average velocity over the interval $\Delta{t}$. To find the instantaneous velocity, let $\Delta t\rightarrow 0$. As $\Delta{t}$ gets smaller, you are calculating the average velocity over a smaller and smaller time interval. Eventually it becomes difficult to read $\Delta{x}$ and $\Delta{t}$ off of the graph. The solution then is to draw a tangent curve and to determine the slope of the tangent.
 
-\clearpage
-[Insert smooth position-time graph]
-\vspace{5cm}
-
-Here, $v=\Delta{x}/\Delta{t}$ is the average velocity over the interval $\Delta{t}$. To find the instantaneous velocity, let $\Delta t\rightarrow 0$. As $\Delta{t}$ gets smaller, you are calculating the average velocity over a smaller and smaller time interval. Eventually it becomes difficult to read $\Delta{x}$ and $\Delta{t}$ off of the graph. The solution then is to draw a tangent curve and to determine the slope of the tangent.
-
-The key point of this is that the velocity is the slope of the position-time graph.
+To recap: velocity is the slope of the position-time graph, and displacement equals the area under the velocity-time graph.
 
 
-\subsection{Relationship between acceleration, velocity, and position}
-If the position-time graph is not straight, then the velocity will vary with time and therefore the acceleration is non-zero. Based on everything that I've already said, you should be able to figure out how to generate an acceleration-time graph based on a position-time graph. Let's try.
+\subsection{Constant acceleration}
+We defined acceleration as $a=\Delta v/\Delta t$; as defined here $a$ is the average acceleration over some time interval $\Delta t$. To computer the instantaneous velocity, let $\Delta t\rightarrow 0$. If the position-time graph is not straight, then the velocity will vary with time and therefore the acceleration is non-zero. Based on everything that I've already said, you should be able to figure out how to generate an acceleration-time graph based on a position-time graph.
 
 [Insert smooth position-time graph, velocity-time graph, and acceleration-time graph]
 \vspace{8cm}
 
-What you should've realized is that the relationship between acceleration and velocity is identical to the relationship between velocity and position. Recall that
-$$a=\frac{\Delta{v}}{\Delta{t}}=\frac{v_f-v_i}{\Delta{t}}.$$
-Rearranging, we find that
-$$v_f=a\Delta{t}+v_i,$$
-or, perhaps more clearly,
-$$v(t)=at+v_i.$$
+The relationship between acceleration and velocity is identical to the relationship between velocity and position. Recall that
+$$a=\frac{\Delta{v}}{\Delta{t}}=\frac{v_f-v_i}{t_f-t_i}$$
+As before, replace $v_f$ with $v$ and $t_f$ with $t$ and rearrange, to find that
+$$v=a(t-t_i)+v_i$$
 
-If acceleration is constant, then velocity follows a straight line. Although acceleration doesn't have to be constant, we will find many examples where it is (essentially) constant. So okay, how do we relate displacement to acceleration? We've already seen that displacement is the area under the velocity-time graph for constant velocity --- it turns out that this is true for all velocity curves. (It also turns out that change in velocity is the area under the acceleration curve.)
+If acceleration is constant, then velocity follows a straight line. Although acceleration doesn't have to be constant, we will find many examples where it is (essentially) constant. So okay, how do we relate displacement to acceleration?
+%% We've already seen that displacement is the area under the velocity-time graph for constant velocity --- it turns out that this is true for all velocity curves. (It also turns out that change in velocity is the area under the acceleration curve.)
 
-[Insert example with constant velocity]
+%% \clearpage
+[Insert example with constant acceleration]
 \vspace{4cm}
 
-The area under the curve is the displacement, so $\Delta{x}=v\Delta{t}$.
+Since the acceleration is constant, we can calculate the velocity-time graph using the equation above, assuming that we know $v_i$.
 
-If we had constant acceleration, the velocity-time graph would be a straight, non-horizontal line. And let's consider the case where the $v_i\neq{0}$.
-
-[Insert example with linear velocity]
+[Insert linear velocity based on acceleration-time graph]
 \vspace{4cm}
 
-The area under the curve consists of two parts: a rectangle and a triangle. Therefore,
+
+As before, the displacement is the area under the velocity-time graph.
+The area consists of two parts: a rectangle and a triangle. Therefore,
 $$\Delta{x}=v_i\Delta{t}+\frac{1}{2}(v_f-v_i)\Delta{t}.$$
-But we've already seen that $\Delta{v}=a\Delta{t}$, so this becomes
-$$\Delta{x}=v_i\Delta{t}+\frac{1}{2}a\Delta{t}^2.$$
+But we've already seen that $\boxed{\Delta{v}=a\Delta{t}}$, so this becomes
+$$\boxed{\Delta{x}=v_i\Delta{t}+\frac{1}{2}a\Delta{t}^2}$$
 We can derive one more relationship that comes in handy when we don't know $\Delta{t}$.
 $$a=\frac{v_f-v_i}{\Delta{t}}\Rightarrow\Delta{t}=\frac{v_f-v_i}{a}.$$
 Inserting this into the previous equation gives
 $$\Delta{x}=v_i\frac{v_f-v_i}{a}+\frac{1}{2}a\left(\frac{v_f-v_i}{a}\right)^2.$$
 Rearranging and cancelling terms, we find that
-$$2a\Delta{x}=v_f^2-v_i^2.$$
+$$\boxed{2a\Delta{x}=v_f^2-v_i^2}$$
 
 To reiterate, for constant acceleration we have the following kinematic equations:
 $$\Delta{v}=a\Delta{t}$$
