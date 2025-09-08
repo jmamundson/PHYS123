@@ -1,46 +1,48 @@
 \section{Relative motion}
 Objectives:
 \begin{enumerate}
-\item Relative position, velocity, and acceleration
-\item Relative motion in 1-D and 2-D
+\item Relative position, velocity, and acceleration in 1-D and 2-D
 \end{enumerate}
 
 \subsection{Relative motion in 1-D}
-In physics we often encounter problems where we need to know the motion of an object relative to another object. In order to talk about relative motion, we need to be comfortable with vectors. Should I review vectors again?
+In physics we often encounter problems where we need to know the motion of an object relative to another object. In order to talk about relative motion, we need to be comfortable with vectors.
+
+Visit ophysics.com to do exercises on vector components and vector addition and subtraction.
+
 
 \begin{enumerate}
 \item Motion of an object is always relative to some reference frame. 
-\item Reference frames \textit{can} move. (If a reference frame is accelerating, then we have to use Einstein's theory or general relativity. Don't worry, we're not going to do that.)
+\item Reference frames \textit{can} move. (If a reference frame is accelerating, then we have to use Einstein's theory of general relativity.)
 \end{enumerate}
 
 You've all experienced relative motion in one way or another. For example, if you're sitting in a parked car, and the car next to you starts to move, you sometimes get the sensation that you've started moving.
 
 We are going to start with relative motion in one-dimension, because this is easier to understand than motion in two-dimensions.
 
-For example, Alex and Barbara each have their own reference frame; they are located at the origin of their reference frames. We will assume that Alex and Barbara are stationary.
+For example, Alex and Barbara each have their own reference frame; they are located at the origin of their reference frames. We will assume that Alex and Barbara are stationary and facing the same direction. There is an object located at point P; it also has a reference frame that is oriented in the same direction as Alex and Barbara's reference frames.
 
-[Insert diagram of Alex and Barbara and point P.]
+[Insert diagram of Alex and Barbara and object at point P.]
 \vspace{4cm}
 
 
 For Alex, $P$ is at a positive position, whereas $P$ is at a negative position for Barbara. We can relate the relative position of $P$ to Alex with the relative position of $P$ to Barbara.
 $$x_{pa}=x_{pb}+x_{ba}$$
-The order of indices here matters --- $x_{pa}=-x_{ap}$. Why does this expression make sense?
+The order of indices matters. Note that $x_{pa}=-x_{ap}$. Why does this expression make sense?
 
-Ok, so what if point $P$ is moving? Can we write down a similar expression using velocities? What are $v_{pa}$ and $v_{pb}$?
+What if point $P$ is moving? Can we write down a similar expression using velocities? What are $v_{pa}$ and $v_{pb}$?
 $$v_{pa}=\frac{\Delta{x_{pa}}}{\Delta{t}}$$
 $$v_{pb}=\frac{\Delta{x_{pb}}}{\Delta{t}}$$
 $$v_{ba}=\frac{\Delta{x_{ba}}}{\Delta{t}}$$
 We already saw that $x_{pa}=x_{pb}+x_{ba}$, so
-$$v_{pa}=\frac{\Delta(x_{pb}+x_{ba})}{\Delta{t}}=\frac{\Delta{x_{pb}}}{\Delta{t}}+\frac{\Delta{x_{ba}}}{\Delta{t}}$$
+$$v_{pa}=\frac{\Delta(x_{pb}+x_{ba})}{\Delta{t}}=\frac{\Delta x_{pb} + \Delta x_{ba}}{\Delta t} = \frac{\Delta{x_{pb}}}{\Delta{t}}+\frac{\Delta{x_{ba}}}{\Delta{t}}$$
 $$\boxed{v_{pa}=v_{pb}+v_{ba}}$$
 
 What if point $P$ is accelerating? What is the relative acceleration of point $P$?
 $$a_{pa}=\frac{\Delta{v_{pa}}}{\Delta{t}}$$
 $$a_{pb}=\frac{\Delta{v_{pb}}}{\Delta{t}}$$
 $$a_{ba}=\frac{\Delta{x_{ba}}}{\Delta{t}}$$
-And now combining these,
-$$\frac{\Delta{v_{pa}}}{\Delta{t}}=\frac{\Delta{v_{pb}}+\Delta{v_{ba}}}{\Delta{t}}=\frac{\Delta{v_{pb}}}{\Delta{t}}+\frac{\Delta{v_{ba}}}{\Delta{t}}$$
+And now combining these, like we did when going from displacement to velocity,
+$$\frac{\Delta{v_{pa}}}{\Delta{t}}=\frac{\Delta(v_{pb}+v_{ba})}{\Delta t} = \frac{\Delta{v_{pb}}+\Delta{v_{ba}}}{\Delta{t}}=\frac{\Delta{v_{pb}}}{\Delta{t}}+\frac{\Delta{v_{ba}}}{\Delta{t}}$$
 $$a_{pa}=a_{pb}+a_{ba}$$
 
 We will only deal with situations in which the reference frames are NOT accelerating. This means that $a_{ba}=0$, and therefore that 
@@ -68,7 +70,7 @@ $$v_{cg}=v_{cb}+v_{bg}=6-5=1\mbox{ km/h}$$
 Relative motion is exactly identical in two dimensions, but now we have to use vectors. So, for example,
 $$\vec{x}_{pa}=\vec{x}_{pb}+\vec{x}_{ba}.$$
 
-You are trying to cross a river with a boat and would like to be exactly on the opposite side of the river. Your boat can travel 20 m/s (relative to the water). The river is flowing 2 m/s and is 1000 m wide. What angle should you leave shore at, and how long will it take you to reach the other side?
+You are trying to cross a river with a boat and would like to be exactly on the opposite side of the river. Your boat can travel 20 m/s (relative to the water). The river is flowing 2 m/s and is 1000 m wide. What angle should you leave shore at, and how long will it take you to reach the other side? (Note that ophysics has a simulation that shows this as well.)
 
 [Insert diagram showing what happens if you go straight across the river.]
 \vspace{4cm}

@@ -24,11 +24,9 @@
 \contentsline {subsection}{\numberline {4.4 }Demo: Free-fall apparatus}{19}{}%
 \contentsline {subsection}{\numberline {4.5 }Example: What angle to throw a ball?}{20}{}%
 \contentsline {section}{\numberline {5 }Motion in two dimensions II}{22}{}%
-\contentsline {subsection}{\numberline {5.1 }Demo of falling washers}{22}{}%
-\contentsline {subsection}{\numberline {5.2 }Example: Monkey getting hit by cannonball.}{22}{}%
-\contentsline {subsection}{\numberline {5.3 }Example: Projectile motion}{23}{}%
-\contentsline {subsection}{\numberline {5.4 }Objects moving along ramps}{23}{}%
-\contentsline {subsection}{\numberline {5.5 }Example: Box sliding along track}{24}{}%
+\contentsline {subsection}{\numberline {5.1 }Example: Projectile motion}{22}{}%
+\contentsline {subsection}{\numberline {5.2 }Objects moving along ramps}{23}{}%
+\contentsline {subsection}{\numberline {5.3 }Example: Box sliding along track}{24}{}%
 \contentsline {section}{\numberline {6 }Relative motion}{26}{}%
 \contentsline {subsection}{\numberline {6.1 }Relative motion in 1-D}{26}{}%
 \contentsline {subsection}{\numberline {6.2 }Example \#1: Boat traveling upriver}{27}{}%
