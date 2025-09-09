@@ -69,7 +69,7 @@ Include the following in a single document separate from the lab hand-out. You c
 \setlength{\parskip}{3pt}
 \item Section 1.2: One velocity-time and one acceleration-time graph with short descriptions [2 pts]
 \item Section 1.3: One velocity-time and one acceleration-time graph with short descriptions [2 pts]
-\item Section 1.4: Discussion of numerical derivatives [4 pts]
+\item Section 1.4: Discussion of calculating velocities from data [4 pts]
 \item Section 2.1: One position-time and one velocity-time graph, and calculations of $g$ [4 pts]
 \item Section 2.2: Measurements and calculations of $g$ [4 pts]
 \item Section 2.3: A derivation showing how you can calculate your reaction time; results of your experiments [2 pts]
@@ -145,7 +145,7 @@ Write a short description of this plot. In addition, state a general rule (eithe
  
 %\question{Search on MathWorks (\verb+http://www.mathworks.com/help/matlab/+) to figure out how MATLAB calculates derivatives using the \verb+diff+ and \verb+gradient+ commands. Briefly summarize the difference. How do the velocity vectors computed by LoggerPro compare to what you calculated? Does LoggerPro use something like \verb+diff+ or \verb+gradient+? Or something different?}
 
-\section{GRAVITATION ACCELERATION}
+\section{GRAVITATIONAL ACCELERATION}
 In this section of the lab you will attempt to determine the acceleration due to gravity, $g$, experimentally.
 
 \question{Tilt the cart track and, after measuring the tilt angle with an inclinometer (or using trigonometry), release the cart from rest. The cart will roll down the incline as it is pulled by gravity. The component of gravity that is parallel to the track (the cart's direction of motion) is $g\sin\theta$, which represents the acceleration of the cart (neglecting friction). \textbf{Remove any excess data collected before the cart starts moving or after it stops moving. Then plot the position-time and velocity-time graphs of this motion.} Use \verb+polyfit+ to fit a quadratic equation through your position data. To use \verb+polyfit+,
