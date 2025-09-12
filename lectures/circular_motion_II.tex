@@ -1,8 +1,8 @@
 \section{Circular and rotational motion II}
-Last class I introduced several terms used to describe circular motion (e.g., a satellite orbiting the Earth).
+Recall terms used to describe circular motion (e.g., a satellite orbiting the Earth).
 \begin{itemize}
 \itemsep 0pt
-\item Angular position, $\theta$ [rad], measured counterclockwise from positive $x-$axis
+\item Angular position, $\theta$ [rad], measured counterclockwise from positive $x-$axis; recall that $\theta=s/r$
 \item Angular displacement, $\Delta\theta$ [rad]
 \item Angular velocity, $\omega=\frac{\Delta\theta}{\Delta{t}}$ [rad/s]
 \item Relationship between frequency and angular velocity, $\omega=2\pi f =2\pi/T$
@@ -26,93 +26,184 @@ Or, in vector notation:
 
 $$\boxed{\vec x=\langle{r\cos\theta,r\sin\theta}\rangle}$$
 
+[Diagram of position vector.]
+\vspace{5cm}
+
 \textbf{Velocity:}
 $$\boxed{\vec{v}=\langle{-r\omega\sin\theta,r\omega\cos\theta}\rangle}$$
 
 The speed is the magnitude of the velocity:
 $$v=|\vec{v}|=\sqrt{(-r\omega\sin\theta)^2+(r\omega\cos\theta)^2}=\sqrt{r^2\omega^2(\sin^2\theta+\cos^2\theta)}$$
-$$\boxed{|\vec{v}|=|\omega| r} \mbox{ or, in shorter notation } \boxed{v=\omega r}$$
+$$\boxed{|\vec{v}|=|\omega| r} \mbox{ or, in shorter notation } \boxed{v_t=\omega r}$$
 
-\clearpage
 [Insert diagram of velocity vector.]
 \vspace{5cm}
 
 \textbf{Acceleration:}
-$$\vec a = \langle{-r\omega^2\cos\theta-r\alpha\sin\theta,-r\omega^2\sin\theta+r\alpha\cos\theta\rangle}$$
+%% $$\vec a = \langle{-r\omega^2\cos\theta-r\alpha\sin\theta,-r\omega^2\sin\theta+r\alpha\cos\theta\rangle}$$
 
-The acceleration consists of two parts: a component that cause the velocity vector to change direction (centripetal acceleration), and a component that cause the magnitude of the velocity vector to change (tangential acceleration). Let's seperate the net acceleration into a centripetal acceleration and a tangential acceleration.
+The acceleration consists of two parts: tangential and centripetal acceleration. %: a component that cause the velocity vector to change direction (centripetal acceleration), and a component that cause the magnitude of the velocity vector to change (tangential acceleration). Let's seperate the net acceleration into a centripetal acceleration and a tangential acceleration.
+\bigskip
+%% $$\vec a=\langle{-r\omega^2\cos\theta,-r\omega^2\sin\theta}\rangle+\langle{-r\alpha\sin\theta,r\alpha\cos\theta}\rangle=\vec{a}_c+\vec{a}_t$$
 
-$$\vec a=\langle{-r\omega^2\cos\theta,-r\omega^2\sin\theta}\rangle+\langle{-r\alpha\sin\theta,r\alpha\cos\theta}\rangle=\vec{a}_c+\vec{a}_t$$
+\textit{Tangential acceleration}
 
-Note that the centripetal acceleration is non-zero as long as the object is moving in a circle. The tangential acceleration is only non-zero when the object's speed is changing.
+If an object is traveling in a circle and it is speeding up or slowing down, then it is experiencing tangential acceleration. We already saw that the magnitude of the tangential velocity is given by
+$$v_t = \omega r$$
+The magnitude of the tangential acceleration is simply the change in tangential velocity divided by time,
+$$a_t = \frac{\Delta v_t}{\Delta t} = \frac{\Delta \omega}{\Delta t}r = \alpha r$$
 
-[Insert diagram showing direction of the acceleration vectors, and pointing out that $\vec{a}_c$ always points inward and that $\vec{a}_c\perp\vec{a}_t$.]
+[Diagram of tangential acceleration vector.]
+\vspace{3cm}
+
+
+\textit{Centripetal acceleration}
+
+If an object is traveling in a circle with constant velocity, it still experiences an acceleration. Why? Recall that acceleration is a \textit{vector} that represents the rate of change of the velocity \textit{vector}. Centripetal acceleration causes the velocity vector to change direction. It must be perpendicular to the direction of motion, otherwise the object would change \textit{speed}.
 
 \clearpage
+[Diagram of centripetal acceleration vector.]
+\vspace{5cm}
 
-The magnitude of the centripetal acceleration is
-$$|\vec{a}_c|=\sqrt{(-r\omega^2\cos\theta)^2+(-r\omega^2\sin\theta)^2)}=\sqrt{r^2\omega^4(\cos^2\theta+\sin^2\theta)}$$
-$$\boxed{a_c=\omega^2r=\frac{v^2}{r}}$$
+For simplicity, use $v$ to represent $|\vec{v}|$. The diagram contains two similar triangles, from which we can deduce that
+$$\frac{d}{r}=\frac{\Delta v}{v}$$
+The distance $d$ is approximately given by
+$$d\approx v\Delta t$$
+which means that
+$$\frac{v\Delta t}{r}\approx\frac{\Delta v}{v}$$
+This becomes an equality as $\theta\rightarrow 0$. Rearranging,
+$$\frac{v^2}{r}=\frac{\Delta v}{\Delta t}=a_c$$
 
-The magnitude of the tangential acceleration is
-$$|\vec{a}_t|=\sqrt{(-r\alpha\sin\theta)^2+(r\alpha\cos\theta)^2}=\sqrt{r^2\alpha^2(\sin^2\theta+\cos^2\theta)}$$
-$$\boxed{a_t=\alpha r}$$
+The centripetal acceleration is non-zero as long as the object is moving in a circle. The faster the object is moving and the tighter the circle, the greater the acceleration must be.
 
-The centripetal acceleration and tangential acceleration are perpendicular to each other. This means that you can add them together to find the magnitude of the net acceleration by using the Pythagorean theorem.
+[Diagram showing direction of the acceleration vectors, and pointing out that $\vec{a}_c$ always points inward and that $\vec{a}_c\perp\vec{a}_t$.]
+\vspace{3cm}
 
-$$a_{net}=\sqrt{a_c^2+a_t^2}$$
-$$a_{net}=\sqrt{(\omega^2 r)^2+(\alpha r)^2}$$
-$$\boxed{a_{net}=r\sqrt{\omega^4+\alpha^2}}$$
+\subsection{Circular vs. rotational motion}
+When discussing an object that is undergoing circular motion, we generally assume that the object is small relative to the radius of its orbit. We are therefore assuming that the entire object is traveling with the same velocity and acceleration.
+
+\clearpage
+[Diagram of circular motion.]
+\vspace{3cm}
+
+For an object undergoing rotational motion, the different parts of the object are experiencing different velocities and accelerations, depending on the distance from the axis of rotation.
+
+[Diagram of rotational motion.]
+\vspace{3cm}
 
 
-\subsection{Example \#1: disk in a hard drive}
-The disk in a hard drive in desktop computer rotates at 7200 rpm. The disk has a diameter of 13 cm. What is the angular speed of the disk? What is the speed of the outer edge of the disk? What is the centripetal acceleration of the outer edge of the disk?
 
-Given:\\
+
+%% The magnitude of the centripetal acceleration is
+%% $$|\vec{a}_c|=\sqrt{(-r\omega^2\cos\theta)^2+(-r\omega^2\sin\theta)^2)}=\sqrt{r^2\omega^4(\cos^2\theta+\sin^2\theta)}$$
+%% $$\boxed{a_c=\omega^2r=\frac{v^2}{r}}$$
+
+%% The magnitude of the tangential acceleration is
+%% $$|\vec{a}_t|=\sqrt{(-r\alpha\sin\theta)^2+(r\alpha\cos\theta)^2}=\sqrt{r^2\alpha^2(\sin^2\theta+\cos^2\theta)}$$
+%% $$\boxed{a_t=\alpha r}$$
+
+%% The centripetal acceleration and tangential acceleration are perpendicular to each other. This means that you can add them together to find the magnitude of the net acceleration by using the Pythagorean theorem.
+
+%% $$a_{net}=\sqrt{a_c^2+a_t^2}$$
+%% $$a_{net}=\sqrt{(\omega^2 r)^2+(\alpha r)^2}$$
+%% $$\boxed{a_{net}=r\sqrt{\omega^4+\alpha^2}}$$
+
+\subsection{Example \#1: bicycle chain}
+The wheels on a road bike are around 0.70 m in diameter. In order to travel 9~m/s (20 mph), how fast must the chain move? Consider two different sprockets, one with a diameter of 7~cm and another with a diameter of 14~cm. It is easiest to view this problem from the moving reference frame.
+
+[Diagram of wheel and sprocket.]
+\vspace{3cm}
+
+
+The entire wheel must rotate with the same angular velocity. During one rotation, a point on the edge of the wheel travels a distance of $2\pi R$, whereas a point on the sprocket travels $2\pi r$. The velocity of the edge of the wheel is
+$$v_w = \frac{2\pi R}{T} = \omega R$$
+as we've already seen. The velocity of the point on the sprocket is
+$$v_a = \frac{2\pi r}{T} = \omega r$$
+
+Solving both for $\omega$ and setting them equal to each other,
+$$\omega = \frac{v_a}{r} = \frac{v_w}{R}$$
+$$v_a = v_w\frac{r}{R}$$
+
+Plugging in values, we get 0.9~m/s for the small sprocket and 1.8~m/s for the large sprocket. The large sprocket is better for accelerating, but it is difficult to move fast with it because the chain must travel much faster than when it is on the small sprocket.
+
+
+
+\subsection{Example \#2: Earth's centripetal acceleration}
+Calculate the centripetal acceleration of the Earth due to its motion around the Sun, and compare to gravitational acceleration. Assume a circular orbit.
+
+$$a_c = \frac{v^2}{r}$$
+Note that
+$$v = \omega r$$
+and so
+$$a_c = \omega^2 r$$
+
+The radius is one astronomical unit,
+$$1 \mbox{ AU} = 1.496\times 10^{11}\mbox{ m}$$
+
+And recall that $\omega=2\pi f = 2\pi/T$. The period of the Earth's orbit is $86400\mbox{ s}\times 365.25\mbox{ d}=31557600\mbox{ s}$, which means that $\omega = 1.99\times 10^{-7}\mbox{ rad/s}$.
+
+Putting this together, we find that
+$$a_c = 0.0059\mbox{ m/s}^2$$
+which is really small. You don't sense this motion since it is several orders of magnitude smaller than $g$.
+
+
+\subsection{Example \#3: disk in a hard drive}
+The disk in a hard drive in desktop computer rotates at 7200 rpm. And it takes something like 4~ms ($4\times 10^{-3}$~s) to reach this frequency. The disk has a diameter of 13 cm. What is the tangential acceleration of the outer edge of the disk when it turns on? What is the centripetal acceleration of the outer edge of the disk? What is the maximum net acceleration of a point on the outer edge of the disk?
+
+\textit{Given:}\\
 $f=7200\mbox{ rpm}=120\mbox{ rev/s}$\\
 $r=0.13\mbox{ m}$
 
-Solution:\\
-$$\omega=2\pi f=750\mbox{ s}^{-1}$$
-$$v=\omega r = 49\mbox{ m s}^{-1}$$
+\textit{Solution:}\\
+Tangential acceleration is given by
+$$a_t = \alpha r = \frac{\Delta \omega}{\Delta t}r$$
+$$\omega=2\pi f=750\mbox{rad/s}$$
+This means that
+$$a_t = 12000\mbox{ m s}^{-2}$$
+
+The centripetal acceleration at full speed is
 $$a_c = \omega^2r = \frac{v^2}{r} = 37000\mbox{ m s}^{-2}$$
-This is a very high acceleration!
+
+The maximum possible acceleration would be when the tangential acceleration is still high and the disk is approaching 7200 rpm.
+$$a_{\rm max} = \sqrt{a_c^2+a_t^2} = 75000\mbox{ m s}^{-2}$$
 
 
-\subsection{Example \#2: Rope around axle of a cart}
-You wrap a rope around the axle of a cart. The axle is 8 cm in diameter, and the wheels on the cart are 1 m in diameter. Assume that there is perfect friction between the rope and axle; in other words, the wheels roll when you pull on the rope without slipping. If you pull the rope at 0.5 m/s, how quickly will the cart move (toward you!)? 
 
-Given:\\
-$r_{axle}=0.04\mbox{ m}$\\
-$r_{wheel}=0.5\mbox{ m}$\\
-$v_{t,axle}=1\mbox{ m/s}$
 
-Want to know: $v$
+%% \subsection{Example \#2: Rope around axle of a cart}
+%% You wrap a rope around the axle of a cart. The axle is 8 cm in diameter, and the wheels on the cart are 1 m in diameter. Assume that there is perfect friction between the rope and axle; in other words, the wheels roll when you pull on the rope without slipping. If you pull the rope at 0.5 m/s, how quickly will the cart move (toward you!)? 
 
-How do we solve this? Let's first think about rolling motion.
+%% Given:\\
+%% $r_{axle}=0.04\mbox{ m}$\\
+%% $r_{wheel}=0.5\mbox{ m}$\\
+%% $v_{t,axle}=1\mbox{ m/s}$
 
-[Insert diagram showing trajectory of a particle on the outside of the wheel.]
-\vspace{5cm}
+%% Want to know: $v$
 
-If the wheel rotates without slipping, during one revolution the center of the wheel will have moved forward a distance
-$$\Delta x=v\Delta t=2\pi R,$$
-and so
-$$v=\frac{\Delta x}{\Delta t}=\frac{2\pi R}{\Delta t}.$$
-Since the time to turn one revolution is the period, $T$, we find that
-$$v=\frac{2\pi R}{T}.$$
-Can we further simplify? Yes, we saw earlier that $\omega=2\pi/T$, so
-$$\boxed{v=\omega R}$$
-This is referred to as the rolling constraint.
+%% How do we solve this? Let's first think about rolling motion.
 
-From this analysis we can also deduce that rolling motion is a combination of translation and rotation.
+%% [Insert diagram showing trajectory of a particle on the outside of the wheel.]
+%% \vspace{5cm}
 
-[Insert diagram of translation + rotation = rolling.]
-\vspace{5cm}
+%% If the wheel rotates without slipping, during one revolution the center of the wheel will have moved forward a distance
+%% $$\Delta x=v\Delta t=2\pi R,$$
+%% and so
+%% $$v=\frac{\Delta x}{\Delta t}=\frac{2\pi R}{\Delta t}.$$
+%% Since the time to turn one revolution is the period, $T$, we find that
+%% $$v=\frac{2\pi R}{T}.$$
+%% Can we further simplify? Yes, we saw earlier that $\omega=2\pi/T$, so
+%% $$\boxed{v=\omega R}$$
+%% This is referred to as the rolling constraint.
 
-Back to our example problem: once we calculate the angular velocity of the wheel, it is straightforward to calculate its speed.
-$$v_{axle}=\omega r_{axle}$$
-$$\omega=\frac{v_{t,axle}}{r_{axle}}=25\mbox{ rad/s}$$
-$$v=\omega R=12.5\mbox{ m/s}$$
-This is slightly faster than a person can run.
+%% From this analysis we can also deduce that rolling motion is a combination of translation and rotation.
+
+%% [Insert diagram of translation + rotation = rolling.]
+%% \vspace{5cm}
+
+%% Back to our example problem: once we calculate the angular velocity of the wheel, it is straightforward to calculate its speed.
+%% $$v_{axle}=\omega r_{axle}$$
+%% $$\omega=\frac{v_{t,axle}}{r_{axle}}=25\mbox{ rad/s}$$
+%% $$v=\omega R=12.5\mbox{ m/s}$$
+%% This is slightly faster than a person can run.
 
 \clearpage
