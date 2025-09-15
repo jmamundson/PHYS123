@@ -7,9 +7,9 @@ Objectives:
 \end{itemize}
 
 \subsection{Background}
-I spent the first few weeks discussing \textit{kinematics}, which is the branch of physics that describes the motion of objects. We've talked about linear motion, two-dimensional motion, and circular/rotational motion. Today I'm going to start talking about \textit{dynamics}, which is the study of causes of motion and changes in motion. Kinematics and dynamics make up what we refer to as mechanics. We're now moving into the latter half of the 1600s, and we're adding a level of abstraction. We're also going to start being able to address much more interesting questions.
+I spent the first few weeks discussing \textit{kinematics}, which is the branch of physics that describes the motion of objects. We've talked about linear motion, two-dimensional motion, and circular/rotational motion. Today I'm going to start talking about \textit{dynamics}, which is the study of causes of motion and changes in motion. Kinematics and dynamics make up what we refer to as mechanics. We're now moving into the latter half of the 1600S. We're going to start being able to address much more interesting questions.
 
-We are going to use the term \textit{force} to describe the agent that causes motion --- or as we'll see in a minute, changes in motion. We usually write force as $\vec{F}$. Force is a vector, just like displacement, velocity, and acceleration. Therefore it has a magnitude and direction, and can be split into vector components: $\vec{F}=\langle{F_x,F_y}\rangle$.
+We'll use the term \textit{force} to describe the agent that causes motion --- or as we'll see in a minute, changes in motion. We usually write force as $\vec{F}$. Force is a vector, just like displacement, velocity, and acceleration. Therefore it has a magnitude and direction, and can be split into vector components: $\vec{F}=\langle{F_x,F_y}\rangle$.
 
 There are several different types of forces. We'll split them into two types: contact forces and body forces.
 
@@ -25,26 +25,26 @@ spring & \\
 \end{tabular}
 \end{table}
 
-[Make sketches of the forces.]
+[Sketches of the forces.]
 \clearpage
 
-In order to know how forces affect the motion of objects, we need Newton's Laws.
+Newton's Laws describe how forces affect the motion of objects.
 
 \subsection{Newton's First Law}
 The velocity of an object remains constant unless it is acted upon by an \textit{external} force. In other words,
 $$\sum\vec{F}=0\Rightarrow \vec{a}=0.$$
-This is only valid for ``inertial'' references frames (i.e., non-accelerating reference frames). We will usually use fixed references frames. 
+%% This is only valid for ``inertial'' references frames (i.e., non-accelerating reference frames). We will usually use fixed references frames. 
 
-The first law is a formalization of Galileo's work on kinematics.
+The first law is a formalization of Galileo's work on kinematics. Although this will look like a special case of the second law, it is really defining the reference frames for which we can apply the second law. The second law is only valid for inertial (i.e., non-accelerating) references. A reference frame is inertial if an object travels at constant velocity if the sum of the forces is 0. 
 
 \subsection{Newton's Second Law}
-The acceleration of an object is parallel and proportional to the net force and inversely proportional to the object's mass.
+In an inertial reference frame, the acceleration of an object is parallel and proportional to the net force and inversely proportional to the object's mass.
 $$\sum\vec{F}=m\vec{a}$$
 From this, we see that force has units of [kg$\cdot$m/s$^2$], which we refer to as a newton [N]. This Law is based on the work of Galileo, Kepler, Brahe, and others.
 
 This makes sense. Try pushing a penny and a piano. It takes much less effort to push a penny. Why? Because the penny has less mass. But what is mass???
 
-Newton's First Law can be thought of as a special case of the second law: if $\vec{a}=0$, then $\sum \vec{F}=0$.
+%% Newton's First Law can be thought of as a special case of the second law: if $\vec{a}=0$, then $\sum \vec{F}=0$.
 
 \subsection{Newton's Third Law}
 For every action, there is an equal and opposite reaction. In other words, the force exerted on object 2 by object 1 is equal and opposite to the force exerted on object 1 by object 2.
@@ -78,7 +78,11 @@ The key to solving problems using Newton's Laws is to draw free-body diagrams. T
 \subsection{Example problems}
 Let's go through some examples. We'll draw free-body diagrams and identify the equations that we would use, but won't do anything more (yet).
 
-\subsection*{Example \#1: A person is standing on the floor}
+\subsubsection*{Example \#1: A person is standing on the floor}
+[Diagram of person standing on floor.]
+\vspace{4cm}           
+
+
 Forces: Gravitational force pointing downward, and the normal force is pointing upward.
 
 Equations:
@@ -88,25 +92,37 @@ For this particular problem, $F_n=F_g$. In other words, the normal force equals 
 
 What if the person is on an elevator that is accelerating upward. Then what is the normal force?
 
+\clearpage
+[Diagram of person in an elevator.]
+\vspace{4cm}
+
 Equations:
 $$\sum F_y=F_n-F_g=ma_y$$
 $$F_n = F_g+ma_y$$
 Since the acceleration is positive, the normal force is greater than the person's weight. (If the acceleration was negative, then the normal force would be less than the person's weight.) This force, which is what the person feels on the bottom of their feet, is referred to as the apparent weight.
 
-\subsection{Example \#2: A box is sliding down a frictionless inclined plane}
-Forces: $\vec{F}_g$, $\vec{F}_k$, $\vec{F}_n$. Which way are they pointing? What is $\vec{a}$?
+\subsubsection*{Example \#2: A box is sliding down a frictionless inclined plane}
+[Diagram of box on ramp.]
+\vspace{4cm}
+
+Forces: $\vec{F}_g$ and $\vec{F}_n$. Which way are they pointing? What is $\vec{a}$?
 
 Equations:
-$$\sum F_x=F_g\sin\theta-F_k = ma_x$$
+$$\sum F_x=F_g\sin\theta = ma_x$$
 $$\sum F_y=F_n-F_g\cos\theta = ma_y$$
 
-\subsection{Example \#3: A box is pulled up a ramp}
+\subsubsection*{Example \#3: A box is pulled up a ramp}
 A box is pulled up a ramp by a falling mass that is connected by a string. For this problem, let's just identify the forces on the diagram.
 
 Forces: $\vec{F}_g$, $\vec{F}_n$, $\vec{F}_k$, $\vec{F}_t$\\
 To solve this type of problem, we need to balance forces on both objects.
 
-\subsection{Example \#4: Forces as vectors}
+\clearpage
+[Diagram of box on ramp, connected to falling mass.]
+\vspace{4cm}
+
+
+\subsubsection*{Example \#4: Forces as vectors}
 You are given two forces (draw vectors). Find the third force that would hold the object in equilibrium. The key to this problem is that for an object in equilibrium, $\sum \vec F=0$.
 
 \clearpage
