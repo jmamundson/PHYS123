@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.30)  18 SEP 2025 18:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.30)  21 SEP 2025 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -277,17 +277,17 @@ File: ./exam1_1a.pdf Graphic file (type pdf)
 <use ./exam1_1a.pdf>
 Package pdftex.def Info: ./exam1_1a.pdf  used on input line 24.
 (pdftex.def)             Requested size: 270.50995pt x 205.26636pt.
-<./exam1_1b_sol.pdf, id=2, 49.04265pt x 58.04723pt>
-File: ./exam1_1b_sol.pdf Graphic file (type pdf)
-<use ./exam1_1b_sol.pdf>
-Package pdftex.def Info: ./exam1_1b_sol.pdf  used on input line 35.
+<./exam1_1b.pdf, id=2, 49.04265pt x 58.04723pt>
+File: ./exam1_1b.pdf Graphic file (type pdf)
+<use ./exam1_1b.pdf>
+Package pdftex.def Info: ./exam1_1b.pdf  used on input line 36.
 (pdftex.def)             Requested size: 108.17549pt x 128.0374pt.
 
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./exam1_1a.pdf> <./exam1_1
-b_sol.pdf>]
+b.pdf>]
 
 [2]
 
@@ -311,8 +311,8 @@ L3 programming layer <2025-01-18>
  ) 
 Here is how much of TeX's memory you used:
  3649 strings out of 475135
- 56818 string characters out of 5765398
- 462622 words of memory out of 5000000
+ 56782 string characters out of 5765398
+ 462619 words of memory out of 5000000
  26623 multiletter control sequences out of 15000+600000
  562250 words of font info for 48 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -324,7 +324,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb>
-Output written on exam1.pdf (6 pages, 218677 bytes).
+Output written on exam1.pdf (6 pages, 218455 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
