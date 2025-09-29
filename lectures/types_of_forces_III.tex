@@ -1,7 +1,6 @@
 \section{Types of forces III}
 Objectives:
 \begin{itemize}
-\item Drag
 \item Spring force
 \end{itemize}
 
@@ -11,54 +10,13 @@ We have covered the following forces so far:
 \item Normal force: $F_n>0$, points perpendicular to surface.
 \item Tensional force: $F_t$, points in direction of string. Massless string approximation allows us to assume that the tensional force is constant through the string.
 \item Frictional force: $F_k=\mu_kF_n$ for moving objects, where $\mu_k$ is the coefficient of kinetic friction, and $\max F_s=\mu_sF_n$ is the maximum force that can hold an object in equilibrium, where $\mu_s$ is the coefficient of static friction. If the force exerted on the object is less than $\max F_s$, the frictional force will exactly balance the sum of the other forces. Both $\mu_k$ and $\mu_s$ are dimensionless and determined experimentally.
+\item Drag force: $F_d = \frac{1}{2}C_D\rho Av^2$, for objects ranging in size from a few mm to a few meters in size, traveling less than about 100 m/s, and traveling through air near the Earth's surface.
 \end{itemize}
 
-Today I will introduce two more types of forces: drag, which I will just touch on briefly, and the spring force. Then the first half of next week we will discuss how forces affect circular and rotational motion: the centripetal force, apparent weight, and torque. %(Talk about pulleys in the context of torque? I think so.)
+Today I will introduce the spring force, which is our last force for the semester.
 
-\subsection{Drag}
-I just want to briefly touch on drag since it is something that we are all familiar with, and you are probably also familiar with the concept of terminal velocity. Now that we have a basic understanding of forces, we can discuss where the idea of terminal velocity comes from.
 
-Drag is a really complicated subject because it deals with fluid dynamics and turbulence --- turbulence is still considered to be a pretty big mystery.
-
-From experiments, though, we have a pretty simple expression that describes the drag force under certain circumstances:
-\begin{enumerate}
-\item The object is between a few millimeters and few meters in diameter.
-\item The object's speed is less than a few hundred meters per second (100 m/s = 223 mph).
-\item The object is moving through air near the Earth's surface.
-\end{enumerate}
-Under these circumstances, we can write that
-$$\boxed{F_d=\frac{1}{2}C_D\rho Av^2}$$
-where $F_d$ is the drag force, $C_D$ is a drag coefficient that depends on the object's shape, $\rho=1.22\mbox{ kg/m}^3$ is the density of air at sea level, $A$ is the cross-sectional area of the object, and $v$ is the object's speed. The drag force points opposite the direction of motion. For many objects, the drag coefficient is approximately 1/2. We'll assume that is the case, and so
-$$\boxed{F_d=\frac{1}{4}\rho Av^2}.$$
-The drag force increases with the square of the speed of the object!
-
-Let's consider an object that is falling straight down.
-
-[Insert diagram.]
-\vspace{5cm}
-
-There are two forces acting on the object, $F_g$ and $F_d$. They point in opposite directions. From Newton's second law,
-$$\sum F_y=F_d-F_g=ma_y.$$
-As the object accelerates, the drag force will become increasingly large and eventually $F_d$ and $F_g$ will cancel out (i.e., the object will stop accelerating, but it will not stop moving). When this happens
-$$F_d-F_g=0\Rightarrow F_d=F_g.$$
-Substituting in for $F_d$ and $F_g$ gives
-$$\frac{1}{4}\rho Av^2=mg$$
-$$\boxed{v_{\mbox{term}}=\sqrt{\frac{4mg}{\rho A}}}$$
-What does this equation tell us?
-\begin{enumerate}
-\item If two different objects are the same size and shape, the heavier object will fall faster.
-\item Cross-sectional area increases the drag and decreases the terminal velocity.
-\item If we removed the Earth's atmosphere, the terminal velocity would go to $\infty$.
-\end{enumerate}
-
-Unfortunately, we can't really do anything more with drag without using calculus and differential equations. Let's see why by returning to the original force balance equation:
-$$\sum F_y=F_d-F_g=ma_y$$
-$$\frac{1}{4}\rho Av^2-mg=ma_y$$
-We don't have the tools to solve this equation --- the acceleration is not constant --- so we can't compute the velocity as a function of time.
-
-% include figure and discussion from Glimpses of Creatures in the Physical Worlds, if found...
-
-\subsection{Springs}
+\subsection{Hooke's ``Law''}
 When I started talking about types of forces, I used a spring to demonstrate the idea of a force and as an analogy for tensional forces and normal forces --- they can both be thought of as really stiff springs.
 
 Introduce spring force by demonstrating how the restoring force depends on the displacement.
@@ -67,13 +25,14 @@ What do we know about springs? If you pull a spring, it will pull back in the op
 $$\boxed{F_{sp}=-k\Delta{x}}$$
 where $k$ is an empirical spring constant and $\Delta{x}$ is the displacement of the spring from equilibrium. The spring force points in the direction of the spring. This expression is referred to as Hooke's Law, though its not really a law because it breaks down if you stretch the spring too much. The notation can be a little bit confusing. Because the spring force can point either direction (depending on whether the spring is stretched or compressed), you need to use this formula to figure out the direction of the force.
 
-[Insert several diagrams showing a spring being stretched or compressed, and discuss in terms of whether the force is positive or negative.]
+\clearpage
+[Diagrams showing a spring being stretched or compressed, and discuss in terms of whether the force is positive or negative.]
 \vspace{8cm}
 
-Hooke's Law tells us that the force applied to a spring is linearly related to the displacement of the spring. So if we double the force, we double the displacement. As an example, let's consider a mass hanging from a spring.
+Hooke's Law tells us that the force applied to a spring is linearly related to the displacement of the spring. If we double the force, we double the displacement. As an example, let's consider a mass hanging from a spring.
 
-\clearpage
-[Insert diagram of mass hanging from a spring.]
+
+[Diagram of a mass hanging from a spring.]
 \vspace{5cm}
 
 If the system is in equilibrium, then the mass is not accelerating, and therefore
@@ -81,12 +40,14 @@ $$\sum F_y = F_s-F_g=0$$
 $$-k\Delta{y}-mg=0\Rightarrow \Delta{y}=\frac{-mg}{k}<0$$
 Why is $\Delta{y}<0$? Because the spring is being stretched in the negative $y$-direction.
 
-[Insert diagram showing change in position of the end of the spring.]
+\clearpage
+[Diagram showing change in position of the end of the spring.]
 \vspace{5cm}
 
 Demo: If I double the mass, the displacement of the spring doubles (as long as my masses aren't too large!).
 
-\subsection{Example \#1: Scale used to weigh fish}
+\subsection{Example problems}
+\subsubsection*{Example \#1: Scale used to weigh fish}
 A scale used to weigh fish consists of a spring hung from a ceiling. The spring's equilibrium (unstretched length) is 30 cm. When a 4.0 kg fish is suspended from the spring, it stretches to a length of 42 cm.
 
 a) What is the spring constant?\\
@@ -101,10 +62,11 @@ Rearranging,
 $$\Delta{y}=\frac{-mg}{k}=-0.24\mbox{ m}$$
 The spring has been stretched downward by 24 cm. Its new length is therefore $\boxed{54\mbox{ cm}}$.
 
-\subsection{Example \#2: A toy train uses a spring}
+\subsubsection*{Example \#2: A toy train uses a spring}
 A toy train uses a spring to pull a 2.0 kg block across a horizontal surface. The train is motorized and moves forward at 5.0 cm/s. The spring constant has been measured to be 50 N/m, and the coefficient of static friction between the block and the surface is $\mu_s=0.60$. The spring is at its equilibrium length at $t=0$. Assume that at $t=0$, the train instantaneously accelerates from rest to 5.0 cm/s, and then moves forward at a constant rate. When does the block slip?
 
-[Insert diagram.]
+\clearpage
+[Diagram of the problem.]
 \vspace{5cm}
 
 $$\sum F_y = F_n-F_g=ma_y=0 \Rightarrow F_n=F_g=mg$$
@@ -117,5 +79,23 @@ $$\Delta{x}=\frac{\mu_s mg}{k}=0.235\mbox{ m}$$
 How long does it take the train to go that distance?
 $$\Delta{x}=v\Delta{t}\Rightarrow \Delta{t}=\frac{\Delta{x}}{v}=4.7\mbox{ s}$$
 
+\subsubsection*{Example \#3: Mass on a spring traveling in a circle}
+An unstretched spring has a length of 0.1~m and a spring constant of $k=50$~N/m. A 0.5~kg mass is attached to the spring, and it is spun in a horizontal circle with a constant angular velocity of $\omega = 2\pi$~rad/s, or $f=1$~Hz. Assume that it is sliding on a frictionless surface. How much does the spring stretch?
+
+\clearpage
+[Diagram of rotating mass.]
+\vspace{4cm}
+
+This is a centripetal acceleration problem. First we sum the forces in the radial direction.
+$$\sum F_r = ma_c = m\omega^2 r$$
+$$F_{sp} = m\omega^2 r$$
+The spring force is $k\Delta r$. Note that we have dropped the negative sign, which is because the radius is measured outward from the center of the circle but we are summing the forces that point toward the center of the circle.
+$$k\Delta r = m\omega^2r$$
+$$k(r_f-r_i) = m\omega^2r_f$$
+$$r_f(k-m\omega^2) = kr_i$$
+$$r_f = \frac{k}{k-m\omega^2}r_i = 0.165\mbox{ m}$$
+which means that the change in length is 0.065~m or 6.5~cm.
+
+There is (sort of) a problem with this derivation. What happens if $\omega$ gets large? $r_f$ starts to be come quite large, and eventually negative. This is a problem with our model and not with the derivation; Hooke's ``Law'' is only valid for small displacements.
 
 \clearpage
