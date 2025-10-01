@@ -12,25 +12,27 @@ $$\sum F_r=\frac{mv^2}{r}=m\omega^2r$$
 
 Forces can also cause rigid bodies to rotate around some axis of rotation. We will use the term \textit{torque} to refer to the ability of a force to cause a rotation. We will define torque as
 $$\boxed{\tau=rF_\perp}$$
-where $\tau$ is torque and has units of N$\cdot$m, $r$ is the radial distance from the axis of rotation to the point at which the force is being applied, and $F_\perp$ is the component of the force that is perpendicular to $r$. Following standard conventions, $\tau>0$ for counter-clockwise rotation. You can also add torques in much the same way as you add forces. This definition of torque will become more clear when we discuss conservation of energy.
+where $\tau$ is torque and has units of N$\cdot$m, $r$ is the radial distance from the axis of rotation to the point at which the force is being applied, and $F_\perp$ is the component of the force that is perpendicular to $r$. Following standard conventions, $\tau>0$ for counter-clockwise rotation. You can also add torques in much the same way as you add forces. % This definition of torque will become more clear when we discuss conservation of energy.
 
+[Demo with mass hanging at different points from a meter stick.]
 
-\subsection{Example \#1: You use a wrench to loosen a bolt} 
+\subsection{Examples of torque}
+\subsubsection*{Example \#1: You use a wrench to loosen a bolt} 
 [Diagram of wrench and forces.]
 \vspace{5cm}
 
 If you apply force $F$ at a distance $r$ from the center of the bolt, and $r\perp F$, then you are exerting a torque $\tau=rF>0$.  If you exert the force at an angle $\theta=45^\circ$ relative to the radial axis, then $\tau=rF\sin\theta$ (in this case, $r\perp F\sin\theta$). If you double the radius, then $\tau=2rF$.
 
-\subsection{Example \#2: Two forces act on a rod}
+\subsubsection*{Example \#2: Two forces act on a rod}
 Two forces act on a rod that pivots about its center. Force $F_2$ is perpendicular to the rod and is a distance $l$ from the axis of rotation. Force $F_1$ has a magnitude of 20 N and is oriented at a 45$^\circ$ angle to the rod. The force is acting on the other side of the axis of rotation and at a distance of $2l$ from the axis. What should $F_2$ be so that $\tau_{net}=0$?
 \clearpage
-[Include diagram.]
-\vspace{5cm}
+[Diagram of forces acting on a rod.]
+\vspace{3cm}
 
 $$\sum\tau=2lF_1\sin\theta-lF_1=0$$
 $$F_2=2F_1\sin\theta=28\mbox{ N}$$
 
-\subsection{Example \#3: Rank forces in order of smallest to largest torque}
+\subsubsection*{Example \#3: Rank forces in order of smallest to largest torque}
 Various forces act on a rod. The rod can pivot around one of its ends. Rank the forces in order of smallest to largest torque.
 
 [Insert diagram.]
@@ -38,9 +40,10 @@ Various forces act on a rod. The rod can pivot around one of its ends. Rank the 
 \vspace{5cm}
 
 \subsection{Torque and rotational motion}
-The real reason to discuss torque (now) is that it affects the rotational motion of an object. To see how, let's start with a really simple system consisting of a point mass, $m$, attached to a massless rod of length $l$. The rod can rotate around its end.
-\clearpage
-[Insert diagram.]
+Torque affects the rotational motion of an object. To see how, let's start with a really simple system consisting of a point mass, $m$, attached to a massless rod of length $l$. The rod can rotate around its end.
+
+%% \clearpage
+[Diagram of point mass at the end of a rod.]
 \vspace{5cm}
 
 A force is exerted on the mass; the force is perpendicular to the rod. It therefore produces a tangential acceleration of the mass.
@@ -52,7 +55,7 @@ $$F_\perp=\frac{\tau}{r}=m\alpha r\Rightarrow \boxed{\tau=mr^2\alpha}$$
 
 What about a system of particles, or a solid object?
 
-[Insert diagram showing forces acting a rotating object.]
+[Insert diagrams showing forces acting on translating and rotating objects.]
 \vspace{5cm}
 
 From this we have $\tau_1=r_1F_1=m_1r_1\ds^2\alpha$, $\tau_2=m_2r_2\ds^2\alpha$, $...$ Because this is rigid body rotation, all points on the body have the same angular acceleration. The net torque is $\tau_{net}=\tau_1+\tau_2+\tau_3+...$
@@ -72,7 +75,8 @@ Spherical shell: $I=\frac{2}{3}MR^2$
 
 Note that they all have a dependence on mass and radius squared.
 
-\subsection{Example \#4: torque on rotating disk}
+\subsection{Examples of rotational motion}
+\subsubsection*{Example \#4: torque on rotating disk}
 A 0.2 kg, 0.2-m-diameter disk is spun around its central axis by a motor. What torque must the motor supply to take the disk from 0 to 1800 rpm in 4.0 s?
 
 $$\tau_{net}=\sum\tau=I\alpha$$
@@ -89,5 +93,22 @@ The moment of inertia can be calculated for a disk: $I=\frac{1}{2}mr^2=1\times 1
 
 Inserting into the expression for $\tau$, we get that $\boxed{\tau_{net}=0.05\mbox{ N}\cdot\mbox{m}}$.
 
+\subsubsection*{Example \#5: falling meter stick}
+
+[Video of falling meter stick with coins on top of it.]
+
+The end of the meter stick accelerates downward faster than 9.81~m/s$^2$. To see where the break occurs, let's consider the torques on the meter stick at the instant that it starts to fall.
+$$\sum \tau = \frac{1}{2}Lmg = I\alpha$$
+For a stick rotating around its end, $I=mL^2/3$, and so
+$$\frac{1}{2}Lmg = \frac{1}{3}mL^2\alpha$$
+which means that the angular acceleration is
+$$\alpha=\frac{3}{2}\frac{g}{L}$$
+
+However, the tangential acceleration is not the same everywhere. Where is $a_t>g$? Recall that $a_t=\alpha r$. Set $a_t=g$ and solve for $r$.
+$$\frac{3}{2}\frac{g}{L}=\frac{a_t}{r}=\frac{g}{r}$$
+Solving for $r$,
+$$r=\frac{2}{3}L$$
+or two-thirds of the way down the meter stick.
+              
 
 \clearpage
