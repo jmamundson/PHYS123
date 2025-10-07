@@ -9,9 +9,9 @@ Objectives:
 \subsection{Background}
 We've spent the last couple of lectures discussing torque, which has many important consequences for physiology.
 
-Demo: If you stand with your toes against a wall, you can't stand on your tip-toes. Why?
+Demo: If you stand with your toes against a wall, you can't stand on your tip-toes.
 
-Demo: If you stand with your back against a wall, you can't pick up something off the floor a little ways in front of you without falling over. Why?
+Demo: If you stand with your back against a wall, you can't pick up something off the floor a little ways in front of you without falling over.
 
 Other examples:
 \begin{itemize}
@@ -20,7 +20,7 @@ Other examples:
 \item Muscles in your body exert torque on your limbs whenever you move.
 \end{itemize}
 
-I'd like to spend the next couple of lectures discussing equilibrium, stability, and elasticity --- topics that we've briefly touched on. I won't really be introducing much new material.
+I'll spend the next couple of lectures discussing equilibrium, stability, and elasticity --- topics that we've briefly touched on. I won't really be introducing much new material.
 
 What do we know about object's that are at rest?
 
@@ -33,43 +33,79 @@ These equations tell us that an object is fixed in space relative to some refere
 We have already done problems where $\sum \vec{F}=0$. Now we'll also enforce that the objects don't rotate. We've already seen that $\tau=rF_\perp$. But if the object isn't rotating, what do we choose as our axis of rotation? Turns out that it doesn't matter, we pick any point that we want! We just have to be careful with the sign of the torques.
 
 
-\subsection{Example \#1: Board lying across two scales}
-A 64-kg person stands on a 2-m long board that is lying across two scales. Assume that the board is light (i.e., massless) and rigid. What are the readings on the scales when the person stands 0.5 m from one of the boards (and 1.5 m from the other)?
+\subsection{Demos and example problems}
+\subsubsection*{Example \#1: Meter stick and mass hanging from two tension protractors}
+The force that is read by the tension protractors changes as you move the mass along the meter stick. However, the total force registered by both protractors remains constants---they still balance the combined weight of the meter stick and hanging mass. The individual forces change they because they are ensuring that the torque always adds up to zero.
 
 \clearpage
-[Insert diagram.]
-\vspace{5cm}
+[Diagram of tension protractors and meter sticks.]
+\vspace{3cm}
 
-We need to add the forces and torques acting on the board.
-
-The force-balance equations give us one equation and two unknowns:
+The tension protractors are 0.1 m from the ends of the meter stick. Regardless of where the mass is hung, the sum of the forces on the meter stick is
 $$\sum F_x = 0$$
-$$\sum F_y = F_{n,1}+F_{n,2}-F_g=0$$
+$$\sum F_y = T_1 + T_2 - F_{g,s} - F_{g,w} = 0$$
+$$T_1+T_2-m_sg-m_wg=0$$
 
-The torque balance gives us one additional equation. We are free to pick a convenient rotation axis. Let's pick a point where one of the unknown forces is acting.
-$$\sum \tau = F_{n,1}\cdot{0}+F_{n,2}\cdot{2\mbox{ m}}-F_g\cdot{1.5\mbox{ m}}=0$$
+The gravitational forces are easy to calculate, but the tensional forces are unknown and cannot be solved with just one equation.
 
-We now have three equations and three unknowns ($F_g$ can be readily calculated). From the torque balance, we can find that
-$$F_{n,2}=\frac{3}{4}F_g=\frac{3}{4}mg\Rightarrow \boxed{F_{n,2}=470\mbox{ N}}$$.
+Let's call the distance between the strings $L$, and the distance from the weight to one of the tension proctractors $l$. We can now sum the torques around any point that we wish. Typically we select a point that allows us to ignore some of the forces because the lever arm is zero. Let's use one of the points where the tension protractor is tied to the string.
+$$\sum \tau = LT_2 - \frac{L}{2}F_{g,s} + \frac{l}F_{g,w} = 0$$
+This means that
+$$T_2=\frac{1}{2}F_{g,s}-\frac{l}{L}F_{g,w}\rightarrow \boxed{T_2=\frac{1}{2}m_sg+\frac{l}{L}m_wg}$$
 
-From the force balance,
-$$F_{n,1}+\frac{3}{4}F_g-F_g=0\Rightarrow F_{n,1}=\frac{1}{4}F_g\Rightarrow \boxed{F_{n,1}=160\mbox{ N}}$$
+Plugging into our force balance equation,
+$$\frac{1}{2}m_sg+\frac{l}{L}m_wg  + T_1 - m_sg-m_wg=0$$
+$$T_1 = \frac{1}{2}m_sg + m_wg - \frac{l}{L}m_wg$$
+$$\boxed{T_1 = \frac{1}{2}m_sg + \left(1-\frac{l}{L}\right)m_wg}$$
+
+If the hanging mass is in the middle, the $l=L/2$ and we find that
+$$T_1 = \frac{1}{2}m_s g + \frac{1}{2}m_w g$$
+$$T_2 = \frac{1}{2}m_s g + \frac{1}{2}m_w g$$
+For a meter stick with mass $m_s=0.1455$~kg and hanging mass of $m_w=0.55$~kg, this gives
+$$\boxed{T_1=T_2 = 3.41\mbox{ N}}$$
+
+If we move the mass so that it is 0.2~m from string 1. Since $L=0.8$~m, this means that $l/L=0.25$. Therefore,
+$$T_1 = \frac{1}{2}m_sg + \frac{3}{4}m_wg \rightarrow \boxed{T_1= 4.76\mbox{N}}$$
+$$T_2 = \frac{1}{2}m_sg +\frac{1}{4}m_wg \rightarrow \boxed{T_2 = 2.06\mbox{ N}}$$
 
 
-What if we had picked a different rotation axis? Let's try using the point where $F_{n,2}$ makes contact with the board. In that case,
+%% \subsection{Example \#1: Board lying across two scales}
+%% A 64-kg person stands on a 2-m long board that is lying across two scales. Assume that the board is light (i.e., massless) and rigid. What are the readings on the scales when the person stands 0.5 m from one of the boards (and 1.5 m from the other)?
 
-$$\sum\tau = -F_{n,1}\cdot{2\mbox{ m}}+F_g\cdot{0.5\mbox{ m}} = 0$$
-$$F_{n,1}=\frac{1}{4}F_g \Rightarrow \boxed{F_{n,1}= 160\mbox{ N}}$$
+%% \clearpage
+%% [Insert diagram.]
+%% \vspace{5cm}
 
-We can actually use the torque balance equation multiple times to come up with additional equations --- this problem can be solved with summing the forces in the $x-$ or $y-$directions.
+%% We need to add the forces and torques acting on the board.
 
-\subsection{Demo: balancing meter stick}
-Use fingers to hold meter stick horizontally. Bring them together, and they will arrive at the stick's center of mass. Why? The normal force, and therefore frictional force, is greatest for the finger that is closest to the center of mass of the meter stick.
+%% The force-balance equations give us one equation and two unknowns:
+%% $$\sum F_x = 0$$
+%% $$\sum F_y = F_{n,1}+F_{n,2}-F_g=0$$
 
-\subsection{Example \#2: ladder leaning against a wall}
+%% The torque balance gives us one additional equation. We are free to pick a convenient rotation axis. Let's pick a point where one of the unknown forces is acting.
+%% $$\sum \tau = F_{n,1}\cdot{0}+F_{n,2}\cdot{2\mbox{ m}}-F_g\cdot{1.5\mbox{ m}}=0$$
+
+%% We now have three equations and three unknowns ($F_g$ can be readily calculated). From the torque balance, we can find that
+%% $$F_{n,2}=\frac{3}{4}F_g=\frac{3}{4}mg\Rightarrow \boxed{F_{n,2}=470\mbox{ N}}$$.
+
+%% From the force balance,
+%% $$F_{n,1}+\frac{3}{4}F_g-F_g=0\Rightarrow F_{n,1}=\frac{1}{4}F_g\Rightarrow \boxed{F_{n,1}=160\mbox{ N}}$$
+
+
+%% What if we had picked a different rotation axis? Let's try using the point where $F_{n,2}$ makes contact with the board. In that case,
+
+%% $$\sum\tau = -F_{n,1}\cdot{2\mbox{ m}}+F_g\cdot{0.5\mbox{ m}} = 0$$
+%% $$F_{n,1}=\frac{1}{4}F_g \Rightarrow \boxed{F_{n,1}= 160\mbox{ N}}$$
+
+%% We can actually use the torque balance equation multiple times to come up with additional equations --- this problem can be solved with summing the forces in the $x-$ or $y-$directions.
+
+\subsubsection*{Demo: balancing meter stick}
+Use fingers to hold meter stick horizontally. Bring them together, and they will arrive at the stick's center of mass. Why? The normal force, and therefore frictional force, is greatest for the finger that is closest to the center of mass of the meter stick. This means that force of static friction is largest there.
+
+\subsubsection*{Example \#2: ladder leaning against a wall}
 A 3-m long ladder leans against a frictionless wall. The coefficient of static friction between the floor and the ladder is $\mu_s=0.2$. At what angle does the ladder start to slide?
 
-[Insert diagram.]
+[Diagram of ladder leaning against a frictionless wall.]
 \vspace{5cm}
 
 Identify forces and sum the forces and torques.
@@ -94,10 +130,11 @@ We could also use this to calculate the coefficient of static friction (demo).
 
 
 
-\subsection{Example \#3: person standing near the end of a table}
+\subsubsection*{Example \#3: person standing near the end of a table}
 How close can a 70-kg person stand to the end of a 56-kg table before it tips over?
 
-[Insert diagram of the table.]
+[Diagram of the table with person standing on it.]
+\vspace{4cm}
 
 $$\sum F_x = 0$$
 $$\sum F_y = F_{n,1}+F_{n,2}-F_{g,t}-F_{g,p}=0$$
