@@ -69,7 +69,7 @@ You may submit a group report.
 \begin{enumerate}
 \setlength{\parskip}{3pt}
 \item Part 1: A free-body diagram [2 pts], the force balance equations and derivation you used to arrive at an equation for the moment of inertia [4 pts], and your measured and theoretical moments of inertia [4 pts].
-\item Part 2: A brief description of the experiment and qualitative observations [2 pts], a derivation of the time it takes the object to roll down the ramp [4 pts], a table of the expected and observed travel times [2 pts], and a discussion of how ``rolling friction'' influences the motion of an object (i.e., discuss what sort of object's are most influenced by rolling friction) [2 pts].
+\item Part 2: A derivation of the time it takes the object to roll down the ramp [4 pts], a table of the expected and observed travel times [2 pts], and a discussion of how ``rolling friction'' influences the motion of an object (i.e., discuss what sort of object's are most influenced by rolling friction) [2 pts].
 \end{enumerate}
 
 \subsubsection*{Equipment}
@@ -81,6 +81,43 @@ You may submit a group report.
 \item Rolling objects (disk and ring)
 \item 2-m stick
 \end{itemize}
+
+\pagebreak
+\subsubsection*{Additional background}
+The moment of inertia can be calculated analytically for objects that have a lot of symmetry. In the table below, $m$ indicates the mass of the object, $d$ is the distance of the object from the axis of rotation, $R$ is the radius of the object, and $L$ is the length of a rod.
+
+\renewcommand{\arraystretch}{2}
+\begin{table}[h]
+\begin{tabular}{|l|c|}
+\hline
+Object & Moment of inertia\\
+\hline
+Point mass & $md^2$\\
+Cylinder & $\frac{1}{2}mR^2$\\
+Thick-walled cylinder & $\frac{1}{2}m\left(R_{\rm inner}^2+R_{\rm outer}^2\right)$\\
+Solid sphere & $\frac{2}{5}mR^2$\\
+Spherical shell & $\frac{2}{3}mR^2$\\
+Rod (around the center) & $\frac{1}{12}mL^2$\\
+\hline
+\end{tabular}
+\end{table}
+
+In part 1 of the lab, you will estimate and measure the moment of inertia of a disk, a ring, and a system of two point masses. The masses of the disks and rings are shown in the following table.
+\begin{table}[h]
+\begin{tabular}{|l|c|}
+\hline
+Object & Mass [kg]\\
+\hline
+Gray ring & 4.297\\
+Gray disk & 4.825\\
+Blue ring & 4.359\\
+Blue disk & 4.975\\
+Brown disk & 4.869\\
+``Point'' masses & 2.703\\
+Rod & 0.832\\
+\hline
+\end{tabular}
+\end{table}
 
 \section{MEASURING AN OBJECT'S MOMENT OF INERTIA}
 For this part of the lab, a body is set in rotation about a vertical axis.  The applied
@@ -174,23 +211,22 @@ the moment of inertia of the ring and the disk.
 \hline Platform & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} & N/A\\
 \hline Disk & & & & & & \\
 \hline Ring & & & & & & \\
+\hline Rod & & & & & &\\
+\hline 2 point masses & & & & & &\\
 \hline
 \end{tabular}
 \end{table}
 
-Next, measure the mass $M$ and radius $R$ of the objects. \textbf{Use these values to calculate the theoretical moments of inertia} using the equations below.
-
-Cylinder:
-$$I=\frac{1}{2}MR^2$$
-Thick-walled cylindrical shell:
-$$I=\frac{1}{2}M(R_i^2+R_o^2)$$
+Next, calculate the theoretical moments of inertia using the formulas on page 2 of the handout.
 
 \begin{table}[h!]
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
 \hline
-& $M$ [kg] & $R_o$ [m] & $R_i$ [m] & $I_{theoretical}$ [kg$\cdot$m$^2$]\\
-\hline Ring & \hspace{1.5cm} & \hspace{1.5cm} & \hspace{1.5cm} &  \hspace{1.5cm}\\
-\hline Disk & & & N/A & \\
+& $I_{theoretical}$ [kg$\cdot$m$^2$]\\
+\hline Disk & \hspace{1.5cm}\\
+\hline Ring & \\
+\hline Rod & \\
+\hline 2 point masses & \\
 \hline
 \end{tabular}
 \end{table}
@@ -311,21 +347,11 @@ For this part of the lab, you will compare the motion of two solid cylinders and
 %v_f\approx\sqrt{gH}.
 %\end{equation}
 %This approximation was used in the momentum lab. 
-First, derive an expression for the time that it takes the object to roll down the ramp. The result will depend on the object's moment of inertia, which can be computed analytically for some shapes.
+First, derive an expression for the time that it takes the object to roll down the ramp. Assume that the objects roll without slipping. The result will depend on the object's moment of inertia, which can be computed using the equations on page 2 of the handout.
 
-Cylinder:
-$$I=\frac{1}{2}mr^2$$
+{\bf Derivation of the time that it takes the object to roll down the ramp}
 
-Thick-walled cylindrical shell:
-$$I=\frac{1}{2}m\left(r_{\rm inner}^2+r_{\rm outer}^2\right)$$
-
-Solid sphere:
-$$I=\frac{2}{5}mr^2$$
-
-Spherical shell:
-$$I=\frac{2}{3}mr^2$$
-
-\vspace{1cm}
+\clearpage
 
 Record the shape, mass, and radii of each of the four objects. For the hollow cylinders, you will need both the inner and outer radii.
 
@@ -354,18 +380,19 @@ Record the amount of time it actually takes the objects to roll down the ramp. D
 \end{tabular}
 \end{table}
 
+
+{\bf How does ``rolling motion'' influence the motion of an object? In other words, compare your results to what would happend with a frictionless surface, and discuss how the mass distribution affects your results. }
+
 Compare these results to the expected values of $\Delta{t}$. For which objects did the rotational motion have the biggest effect on travel time? How much did including rolling friction change your results?
 
 Note that you need to describe your observations both qualitatively and quantitatively. To help with interpreting the results (and as a check that your measurements and calculations are consistent), it may be helpful to do a series of head-to-head races with the different shapes. Which object accelerated most quickly? Least quickly?
 
-{\bf Description of the experiment and qualitative observations}
+
+
+
 
 \clearpage
-{\bf Derivation of the time that it takes the object to roll down the ramp}
-\vspace{10cm}
+\null
 
-\vspace{5cm}
-
-{\bf How does ``rolling motion'' influence the motion of an object? In other words, compare your results to what would happend with a frictionless surface, and discuss how the mass distribution affects your results.}
 
 \end{document}
