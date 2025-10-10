@@ -87,149 +87,148 @@
 \contentsline {section}{\numberline {17 }Equilibrium and elasticity}{79}{}%
 \contentsline {subsection}{\numberline {17.1 }Stability and center of mass}{79}{}%
 \contentsline {subsection}{\numberline {17.2 }Elasticity}{81}{}%
-\contentsline {subsection}{\numberline {17.3 }Example \#1: Elevator cable stretch}{82}{}%
-\contentsline {subsection}{\numberline {17.4 }Example \#2: Plank supported by a rope}{83}{}%
-\contentsline {section}{\numberline {18 }Impulse and momentum}{85}{}%
-\contentsline {subsection}{\numberline {18.1 }Demos}{85}{}%
-\contentsline {subsection}{\numberline {18.2 }Impulse}{86}{}%
-\contentsline {subsection}{\numberline {18.3 }Momentum}{86}{}%
-\contentsline {subsection}{\numberline {18.4 }Example \#1: Snowball sticks to wall}{87}{}%
-\contentsline {subsection}{\numberline {18.5 }Example \#2: Tennis ball bouncing off of a wall}{87}{}%
-\contentsline {subsection}{\numberline {18.6 }System vs. environment}{88}{}%
-\contentsline {section}{\numberline {19 }Conservation of momentum}{89}{}%
-\contentsline {subsection}{\numberline {19.1 }Example \#1: Impulse of ball hitting the ground}{89}{}%
-\contentsline {subsection}{\numberline {19.2 }Example \#2: Baseball struck by a bat}{90}{}%
-\contentsline {subsection}{\numberline {19.3 }Example \#3: Person running on a cart}{90}{}%
-\contentsline {subsection}{\numberline {19.4 }Example \#3: Ice skaters push off of each other}{91}{}%
-\contentsline {subsection}{\numberline {19.5 }Example \#4: Spaceship explodes into three parts}{92}{}%
-\contentsline {section}{\numberline {20 }Angular momentum}{93}{}%
-\contentsline {subsection}{\numberline {20.1 }Background}{93}{}%
-\contentsline {subsection}{\numberline {20.2 }Example \#1: Figure skater}{94}{}%
-\contentsline {subsection}{\numberline {20.3 }Example \#2: ???}{94}{}%
-\contentsline {subsection}{\numberline {20.4 }Demos with rotating stand}{95}{}%
-\contentsline {section}{\numberline {21 }Introduction to energy}{97}{}%
-\contentsline {subsection}{\numberline {21.1 }Work-energy theorem}{97}{}%
-\contentsline {subsection}{\numberline {21.2 }Work}{98}{}%
-\contentsline {subsubsection}{\numberline {21.2.1 }Example \#1: Pushing a book across a table}{98}{}%
-\contentsline {subsubsection}{\numberline {21.2.2 }Example \#2: Pulling a crate}{99}{}%
-\contentsline {subsection}{\numberline {21.3 }Kinetic Energy}{100}{}%
-\contentsline {subsection}{\numberline {21.4 }Gravitational Potential Energy}{100}{}%
-\contentsline {subsubsection}{\numberline {21.4.1 }Example \#3: Ball dropped from rest}{101}{}%
-\contentsline {subsubsection}{\numberline {21.4.2 }Example \#4: Box sliding down a frictionless ramp}{101}{}%
-\contentsline {section}{\numberline {22 }Thermal energy}{102}{}%
-\contentsline {subsection}{\numberline {22.1 }Background}{102}{}%
-\contentsline {subsection}{\numberline {22.2 }Thermal Energy Due to Friction}{102}{}%
-\contentsline {subsubsection}{\numberline {22.2.1 }Example \#1: Sledding down a hill}{103}{}%
-\contentsline {subsection}{\numberline {22.3 }Thermal energy of inelastic collisions}{104}{}%
-\contentsline {subsection}{\numberline {22.4 }Thermal Energy of Perfectly Elastic Collisions}{105}{}%
-\contentsline {subsection}{\numberline {22.5 }Thermal Energy of Elastic Collisions}{105}{}%
-\contentsline {subsubsection}{\numberline {22.5.1 }Example \#2: Ball bouncing on the ground}{106}{}%
-\contentsline {section}{\numberline {23 }Elastic potential energy}{107}{}%
-\contentsline {subsection}{\numberline {23.1 }Background}{107}{}%
-\contentsline {subsection}{\numberline {23.2 }Example \#1: Object rolling down a ramp}{107}{}%
-\contentsline {subsection}{\numberline {23.3 }Example \#2: Tennis ball bouncing off of a basketball}{108}{}%
-\contentsline {subsection}{\numberline {23.4 }Elastic potential energy}{109}{}%
-\contentsline {subsubsection}{\numberline {23.4.1 }Example \#3: How much energy stored in a spring?}{109}{}%
-\contentsline {subsubsection}{\numberline {23.4.2 }Example \#4: Spring shoots marble off a table}{110}{}%
-\contentsline {section}{\numberline {24 }Thermodynamics I}{111}{}%
-\contentsline {subsection}{\numberline {24.1 }Background}{111}{}%
-\contentsline {subsection}{\numberline {24.2 }First Law of Thermodynamics}{111}{}%
-\contentsline {subsection}{\numberline {24.3 }Second Law of Thermodynamics}{113}{}%
-\contentsline {subsection}{\numberline {24.4 }Specific and Latent Heat}{114}{}%
-\contentsline {subsubsection}{\numberline {24.4.1 }Example \#1: Vaporization of mercury}{115}{}%
-\contentsline {section}{\numberline {25 }Thermodynamics II}{116}{}%
-\contentsline {subsection}{\numberline {25.1 }Laws of thermodynamics; specific heat and latent heat}{116}{}%
-\contentsline {subsection}{\numberline {25.2 }Example \#1: Melting snowpack}{116}{}%
-\contentsline {subsection}{\numberline {25.3 }Example \#2: Place ice in water}{117}{}%
-\contentsline {subsection}{\numberline {25.4 }Example \#3: Place hot metal in water}{117}{}%
-\contentsline {subsection}{\numberline {25.5 }Bomb calorimeter}{118}{}%
-\contentsline {subsection}{\numberline {25.6 }Climbing Mt. Juneau}{118}{}%
-\contentsline {section}{\numberline {26 }Heat transfer}{121}{}%
-\contentsline {subsection}{\numberline {26.1 }Background}{121}{}%
-\contentsline {subsection}{\numberline {26.2 }Conduction}{121}{}%
-\contentsline {subsubsection}{\numberline {26.2.1 }Example \#1: Heat transfer through a floor.}{122}{}%
-\contentsline {subsection}{\numberline {26.3 }Advection/convection}{122}{}%
-\contentsline {subsection}{\numberline {26.4 }Electromagnetic radiation}{123}{}%
-\contentsline {subsection}{\numberline {26.5 }Evaporative cooling}{123}{}%
-\contentsline {subsection}{\numberline {26.6 }Refrigerators}{124}{}%
-\contentsline {section}{\numberline {27 }Thermodynamics of gases}{126}{}%
-\contentsline {subsection}{\numberline {27.1 }Ideal Gas Law}{126}{}%
-\contentsline {subsubsection}{\numberline {27.1.1 }Demo: Pressure and the Magdeburg hemisphere}{127}{}%
-\contentsline {subsubsection}{\numberline {27.1.2 }Moles}{127}{}%
-\contentsline {subsubsection}{\numberline {27.1.3 }How gases change with time}{127}{}%
-\contentsline {subsection}{\numberline {27.2 }Connection to thermodynamics}{128}{}%
-\contentsline {subsubsection}{\numberline {27.2.1 }Isovolumetric processes}{128}{}%
-\contentsline {subsubsection}{\numberline {27.2.2 }Isobaric processes}{129}{}%
-\contentsline {subsubsection}{\numberline {27.2.3 }Isothermal processes}{129}{}%
-\contentsline {subsubsection}{\numberline {27.2.4 }Adiabatic processes}{130}{}%
-\contentsline {subsubsection}{\numberline {27.2.5 }Conceptual question: Do heat and work depend on the path?}{130}{}%
-\contentsline {section}{\numberline {28 }Introduction to fluids}{131}{}%
-\contentsline {subsection}{\numberline {28.1 }Review of thermodynamics of gases}{131}{}%
-\contentsline {subsubsection}{\numberline {28.1.1 }Example \#1: expandable cube}{131}{}%
-\contentsline {subsection}{\numberline {28.2 }Hydrostatics}{132}{}%
-\contentsline {subsection}{\numberline {28.3 }Density}{133}{}%
-\contentsline {subsection}{\numberline {28.4 }Hydrostatic pressure}{134}{}%
-\contentsline {subsubsection}{\numberline {28.4.1 }Pressure demos}{135}{}%
-\contentsline {section}{\numberline {29 }Hydrostatics}{136}{}%
-\contentsline {subsection}{\numberline {29.1 }Archimedes' principle}{136}{}%
-\contentsline {subsubsection}{\numberline {29.1.1 }Demo: Cartesian diver}{137}{}%
-\contentsline {subsection}{\numberline {29.2 }Demo with objects sinking/floating in water}{137}{}%
-\contentsline {subsection}{\numberline {29.3 }Icebergs}{137}{}%
-\contentsline {subsection}{\numberline {29.4 }Measuring gas pressure}{137}{}%
-\contentsline {subsubsection}{\numberline {29.4.1 }Manometer}{138}{}%
-\contentsline {subsubsection}{\numberline {29.4.2 }Barometer}{138}{}%
-\contentsline {subsection}{\numberline {29.5 }Example \#1: Ranking exercise}{139}{}%
-\contentsline {subsection}{\numberline {29.6 }Introduction to fluid dynamics}{139}{}%
-\contentsline {section}{\numberline {30 }Fluid dynamics}{141}{}%
-\contentsline {subsection}{\numberline {30.1 }Pressure}{141}{}%
-\contentsline {subsection}{\numberline {30.2 }Ideal fluids}{141}{}%
-\contentsline {subsection}{\numberline {30.3 }Flux continuity}{141}{}%
-\contentsline {subsubsection}{\numberline {30.3.1 }Example \#1: Water flow through variable diameter pipe}{142}{}%
-\contentsline {subsection}{\numberline {30.4 }Bernoulli's Equation}{142}{}%
-\contentsline {subsubsection}{\numberline {30.4.1 }Example \#2: Water flow from a reservoir}{144}{}%
-\contentsline {section}{\numberline {31 }Fluid dynamics II}{146}{}%
-\contentsline {subsection}{\numberline {31.1 }Demo using Venturi tube}{146}{}%
-\contentsline {subsection}{\numberline {31.2 }Viscosity}{147}{}%
-\contentsline {subsubsection}{\numberline {31.2.1 }Example \#1: Application of Poiseuille's equation}{148}{}%
-\contentsline {section}{\numberline {32 }Oscillations}{150}{}%
-\contentsline {subsection}{\numberline {32.1 }Springs}{150}{}%
-\contentsline {subsection}{\numberline {32.2 }Simple pendulums}{152}{}%
-\contentsline {subsubsection}{\numberline {32.2.1 }Biological application}{153}{}%
-\contentsline {subsection}{\numberline {32.3 }Physical pendulums}{153}{}%
-\contentsline {section}{\numberline {33 }Damped and driven oscillations}{155}{}%
-\contentsline {subsection}{\numberline {33.1 }Simple harmonic motion}{155}{}%
-\contentsline {subsubsection}{\numberline {33.1.1 }Springs}{155}{}%
-\contentsline {subsubsection}{\numberline {33.1.2 }Pendulums}{155}{}%
-\contentsline {subsubsection}{\numberline {33.1.3 }Example \#1: Pendulum on Mars}{156}{}%
-\contentsline {subsubsection}{\numberline {33.1.4 }Example \#2: Oscillating spring}{156}{}%
-\contentsline {subsection}{\numberline {33.2 }Damped oscillations}{157}{}%
-\contentsline {subsubsection}{\numberline {33.2.1 }Example \#3: Damped pendulum}{158}{}%
-\contentsline {subsection}{\numberline {33.3 }Driven oscillations and resonance}{158}{}%
-\contentsline {subsubsection}{\numberline {33.3.1 }Demo: Pendulums of different lengths on a rod}{159}{}%
-\contentsline {subsubsection}{\numberline {33.3.2 }Example \#4: Cars on springs}{159}{}%
-\contentsline {section}{\numberline {34 }Introduction to waves}{160}{}%
-\contentsline {subsection}{\numberline {34.1 }Background}{160}{}%
-\contentsline {subsection}{\numberline {34.2 }Oscillations of fixed points}{161}{}%
-\contentsline {subsection}{\numberline {34.3 }Snapshots in time}{162}{}%
-\contentsline {subsection}{\numberline {34.4 }Wave speed}{163}{}%
-\contentsline {subsubsection}{\numberline {34.4.1 }Wave on a string}{163}{}%
-\contentsline {subsubsection}{\numberline {34.4.2 }Wave travelling through an ideal gas}{163}{}%
-\contentsline {subsubsection}{\numberline {34.4.3 }Electromagnetic waves}{164}{}%
-\contentsline {section}{\numberline {35 }Traveling waves, Doppler effect, and shock waves}{165}{}%
-\contentsline {subsection}{\numberline {35.1 }Review of traveling waves}{165}{}%
-\contentsline {subsubsection}{\numberline {35.1.1 }Example \#1: Find wave frequency}{165}{}%
-\contentsline {subsubsection}{\numberline {35.1.2 }Example \#2: Analysis of wave model}{166}{}%
-\contentsline {subsubsection}{\numberline {35.1.3 }Example \#3: Wave on spider silk}{166}{}%
-\contentsline {subsection}{\numberline {35.2 }Doppler effect}{167}{}%
-\contentsline {subsubsection}{\numberline {35.2.1 }Example \#4: Doppler effect on a bicycle}{168}{}%
-\contentsline {section}{\numberline {36 }Wave superposition and standing waves}{169}{}%
-\contentsline {subsection}{\numberline {36.1 }Wave superposition}{169}{}%
-\contentsline {subsection}{\numberline {36.2 }Standing waves}{172}{}%
-\contentsline {section}{\numberline {37 }Standing waves and music}{175}{}%
-\contentsline {subsection}{\numberline {37.1 }Wave superposition}{175}{}%
-\contentsline {subsection}{\numberline {37.2 }Standing waves}{175}{}%
-\contentsline {subsubsection}{\numberline {37.2.1 }Strings}{175}{}%
-\contentsline {subsubsection}{\numberline {37.2.2 }Open-open tubes}{176}{}%
-\contentsline {subsubsection}{\numberline {37.2.3 }Open-closed tubes}{176}{}%
-\contentsline {subsubsection}{\numberline {37.2.4 }Wave speed}{177}{}%
-\contentsline {subsection}{\numberline {37.3 }Musical notes}{177}{}%
+\contentsline {subsection}{\numberline {17.3 }Example problems}{82}{}%
+\contentsline {section}{\numberline {18 }Impulse and momentum}{86}{}%
+\contentsline {subsection}{\numberline {18.1 }Demos}{86}{}%
+\contentsline {subsection}{\numberline {18.2 }Impulse}{87}{}%
+\contentsline {subsection}{\numberline {18.3 }Momentum}{87}{}%
+\contentsline {subsection}{\numberline {18.4 }Example \#1: Snowball sticks to wall}{88}{}%
+\contentsline {subsection}{\numberline {18.5 }Example \#2: Tennis ball bouncing off of a wall}{88}{}%
+\contentsline {subsection}{\numberline {18.6 }System vs. environment}{89}{}%
+\contentsline {section}{\numberline {19 }Conservation of momentum}{90}{}%
+\contentsline {subsection}{\numberline {19.1 }Example \#1: Impulse of ball hitting the ground}{90}{}%
+\contentsline {subsection}{\numberline {19.2 }Example \#2: Baseball struck by a bat}{91}{}%
+\contentsline {subsection}{\numberline {19.3 }Example \#3: Person running on a cart}{91}{}%
+\contentsline {subsection}{\numberline {19.4 }Example \#3: Ice skaters push off of each other}{92}{}%
+\contentsline {subsection}{\numberline {19.5 }Example \#4: Spaceship explodes into three parts}{93}{}%
+\contentsline {section}{\numberline {20 }Angular momentum}{94}{}%
+\contentsline {subsection}{\numberline {20.1 }Background}{94}{}%
+\contentsline {subsection}{\numberline {20.2 }Example \#1: Figure skater}{95}{}%
+\contentsline {subsection}{\numberline {20.3 }Example \#2: ???}{95}{}%
+\contentsline {subsection}{\numberline {20.4 }Demos with rotating stand}{96}{}%
+\contentsline {section}{\numberline {21 }Introduction to energy}{98}{}%
+\contentsline {subsection}{\numberline {21.1 }Work-energy theorem}{98}{}%
+\contentsline {subsection}{\numberline {21.2 }Work}{99}{}%
+\contentsline {subsubsection}{\numberline {21.2.1 }Example \#1: Pushing a book across a table}{99}{}%
+\contentsline {subsubsection}{\numberline {21.2.2 }Example \#2: Pulling a crate}{100}{}%
+\contentsline {subsection}{\numberline {21.3 }Kinetic Energy}{101}{}%
+\contentsline {subsection}{\numberline {21.4 }Gravitational Potential Energy}{101}{}%
+\contentsline {subsubsection}{\numberline {21.4.1 }Example \#3: Ball dropped from rest}{102}{}%
+\contentsline {subsubsection}{\numberline {21.4.2 }Example \#4: Box sliding down a frictionless ramp}{102}{}%
+\contentsline {section}{\numberline {22 }Thermal energy}{103}{}%
+\contentsline {subsection}{\numberline {22.1 }Background}{103}{}%
+\contentsline {subsection}{\numberline {22.2 }Thermal Energy Due to Friction}{103}{}%
+\contentsline {subsubsection}{\numberline {22.2.1 }Example \#1: Sledding down a hill}{104}{}%
+\contentsline {subsection}{\numberline {22.3 }Thermal energy of inelastic collisions}{105}{}%
+\contentsline {subsection}{\numberline {22.4 }Thermal Energy of Perfectly Elastic Collisions}{106}{}%
+\contentsline {subsection}{\numberline {22.5 }Thermal Energy of Elastic Collisions}{106}{}%
+\contentsline {subsubsection}{\numberline {22.5.1 }Example \#2: Ball bouncing on the ground}{107}{}%
+\contentsline {section}{\numberline {23 }Elastic potential energy}{108}{}%
+\contentsline {subsection}{\numberline {23.1 }Background}{108}{}%
+\contentsline {subsection}{\numberline {23.2 }Example \#1: Object rolling down a ramp}{108}{}%
+\contentsline {subsection}{\numberline {23.3 }Example \#2: Tennis ball bouncing off of a basketball}{109}{}%
+\contentsline {subsection}{\numberline {23.4 }Elastic potential energy}{110}{}%
+\contentsline {subsubsection}{\numberline {23.4.1 }Example \#3: How much energy stored in a spring?}{110}{}%
+\contentsline {subsubsection}{\numberline {23.4.2 }Example \#4: Spring shoots marble off a table}{111}{}%
+\contentsline {section}{\numberline {24 }Thermodynamics I}{112}{}%
+\contentsline {subsection}{\numberline {24.1 }Background}{112}{}%
+\contentsline {subsection}{\numberline {24.2 }First Law of Thermodynamics}{112}{}%
+\contentsline {subsection}{\numberline {24.3 }Second Law of Thermodynamics}{114}{}%
+\contentsline {subsection}{\numberline {24.4 }Specific and Latent Heat}{115}{}%
+\contentsline {subsubsection}{\numberline {24.4.1 }Example \#1: Vaporization of mercury}{116}{}%
+\contentsline {section}{\numberline {25 }Thermodynamics II}{117}{}%
+\contentsline {subsection}{\numberline {25.1 }Laws of thermodynamics; specific heat and latent heat}{117}{}%
+\contentsline {subsection}{\numberline {25.2 }Example \#1: Melting snowpack}{117}{}%
+\contentsline {subsection}{\numberline {25.3 }Example \#2: Place ice in water}{118}{}%
+\contentsline {subsection}{\numberline {25.4 }Example \#3: Place hot metal in water}{118}{}%
+\contentsline {subsection}{\numberline {25.5 }Bomb calorimeter}{119}{}%
+\contentsline {subsection}{\numberline {25.6 }Climbing Mt. Juneau}{119}{}%
+\contentsline {section}{\numberline {26 }Heat transfer}{122}{}%
+\contentsline {subsection}{\numberline {26.1 }Background}{122}{}%
+\contentsline {subsection}{\numberline {26.2 }Conduction}{122}{}%
+\contentsline {subsubsection}{\numberline {26.2.1 }Example \#1: Heat transfer through a floor.}{123}{}%
+\contentsline {subsection}{\numberline {26.3 }Advection/convection}{123}{}%
+\contentsline {subsection}{\numberline {26.4 }Electromagnetic radiation}{124}{}%
+\contentsline {subsection}{\numberline {26.5 }Evaporative cooling}{124}{}%
+\contentsline {subsection}{\numberline {26.6 }Refrigerators}{125}{}%
+\contentsline {section}{\numberline {27 }Thermodynamics of gases}{127}{}%
+\contentsline {subsection}{\numberline {27.1 }Ideal Gas Law}{127}{}%
+\contentsline {subsubsection}{\numberline {27.1.1 }Demo: Pressure and the Magdeburg hemisphere}{128}{}%
+\contentsline {subsubsection}{\numberline {27.1.2 }Moles}{128}{}%
+\contentsline {subsubsection}{\numberline {27.1.3 }How gases change with time}{128}{}%
+\contentsline {subsection}{\numberline {27.2 }Connection to thermodynamics}{129}{}%
+\contentsline {subsubsection}{\numberline {27.2.1 }Isovolumetric processes}{129}{}%
+\contentsline {subsubsection}{\numberline {27.2.2 }Isobaric processes}{130}{}%
+\contentsline {subsubsection}{\numberline {27.2.3 }Isothermal processes}{130}{}%
+\contentsline {subsubsection}{\numberline {27.2.4 }Adiabatic processes}{131}{}%
+\contentsline {subsubsection}{\numberline {27.2.5 }Conceptual question: Do heat and work depend on the path?}{131}{}%
+\contentsline {section}{\numberline {28 }Introduction to fluids}{132}{}%
+\contentsline {subsection}{\numberline {28.1 }Review of thermodynamics of gases}{132}{}%
+\contentsline {subsubsection}{\numberline {28.1.1 }Example \#1: expandable cube}{132}{}%
+\contentsline {subsection}{\numberline {28.2 }Hydrostatics}{133}{}%
+\contentsline {subsection}{\numberline {28.3 }Density}{134}{}%
+\contentsline {subsection}{\numberline {28.4 }Hydrostatic pressure}{135}{}%
+\contentsline {subsubsection}{\numberline {28.4.1 }Pressure demos}{136}{}%
+\contentsline {section}{\numberline {29 }Hydrostatics}{137}{}%
+\contentsline {subsection}{\numberline {29.1 }Archimedes' principle}{137}{}%
+\contentsline {subsubsection}{\numberline {29.1.1 }Demo: Cartesian diver}{138}{}%
+\contentsline {subsection}{\numberline {29.2 }Demo with objects sinking/floating in water}{138}{}%
+\contentsline {subsection}{\numberline {29.3 }Icebergs}{138}{}%
+\contentsline {subsection}{\numberline {29.4 }Measuring gas pressure}{138}{}%
+\contentsline {subsubsection}{\numberline {29.4.1 }Manometer}{139}{}%
+\contentsline {subsubsection}{\numberline {29.4.2 }Barometer}{139}{}%
+\contentsline {subsection}{\numberline {29.5 }Example \#1: Ranking exercise}{140}{}%
+\contentsline {subsection}{\numberline {29.6 }Introduction to fluid dynamics}{140}{}%
+\contentsline {section}{\numberline {30 }Fluid dynamics}{142}{}%
+\contentsline {subsection}{\numberline {30.1 }Pressure}{142}{}%
+\contentsline {subsection}{\numberline {30.2 }Ideal fluids}{142}{}%
+\contentsline {subsection}{\numberline {30.3 }Flux continuity}{142}{}%
+\contentsline {subsubsection}{\numberline {30.3.1 }Example \#1: Water flow through variable diameter pipe}{143}{}%
+\contentsline {subsection}{\numberline {30.4 }Bernoulli's Equation}{143}{}%
+\contentsline {subsubsection}{\numberline {30.4.1 }Example \#2: Water flow from a reservoir}{145}{}%
+\contentsline {section}{\numberline {31 }Fluid dynamics II}{147}{}%
+\contentsline {subsection}{\numberline {31.1 }Demo using Venturi tube}{147}{}%
+\contentsline {subsection}{\numberline {31.2 }Viscosity}{148}{}%
+\contentsline {subsubsection}{\numberline {31.2.1 }Example \#1: Application of Poiseuille's equation}{149}{}%
+\contentsline {section}{\numberline {32 }Oscillations}{151}{}%
+\contentsline {subsection}{\numberline {32.1 }Springs}{151}{}%
+\contentsline {subsection}{\numberline {32.2 }Simple pendulums}{153}{}%
+\contentsline {subsubsection}{\numberline {32.2.1 }Biological application}{154}{}%
+\contentsline {subsection}{\numberline {32.3 }Physical pendulums}{154}{}%
+\contentsline {section}{\numberline {33 }Damped and driven oscillations}{156}{}%
+\contentsline {subsection}{\numberline {33.1 }Simple harmonic motion}{156}{}%
+\contentsline {subsubsection}{\numberline {33.1.1 }Springs}{156}{}%
+\contentsline {subsubsection}{\numberline {33.1.2 }Pendulums}{156}{}%
+\contentsline {subsubsection}{\numberline {33.1.3 }Example \#1: Pendulum on Mars}{157}{}%
+\contentsline {subsubsection}{\numberline {33.1.4 }Example \#2: Oscillating spring}{157}{}%
+\contentsline {subsection}{\numberline {33.2 }Damped oscillations}{158}{}%
+\contentsline {subsubsection}{\numberline {33.2.1 }Example \#3: Damped pendulum}{159}{}%
+\contentsline {subsection}{\numberline {33.3 }Driven oscillations and resonance}{159}{}%
+\contentsline {subsubsection}{\numberline {33.3.1 }Demo: Pendulums of different lengths on a rod}{160}{}%
+\contentsline {subsubsection}{\numberline {33.3.2 }Example \#4: Cars on springs}{160}{}%
+\contentsline {section}{\numberline {34 }Introduction to waves}{161}{}%
+\contentsline {subsection}{\numberline {34.1 }Background}{161}{}%
+\contentsline {subsection}{\numberline {34.2 }Oscillations of fixed points}{162}{}%
+\contentsline {subsection}{\numberline {34.3 }Snapshots in time}{163}{}%
+\contentsline {subsection}{\numberline {34.4 }Wave speed}{164}{}%
+\contentsline {subsubsection}{\numberline {34.4.1 }Wave on a string}{164}{}%
+\contentsline {subsubsection}{\numberline {34.4.2 }Wave travelling through an ideal gas}{164}{}%
+\contentsline {subsubsection}{\numberline {34.4.3 }Electromagnetic waves}{165}{}%
+\contentsline {section}{\numberline {35 }Traveling waves, Doppler effect, and shock waves}{166}{}%
+\contentsline {subsection}{\numberline {35.1 }Review of traveling waves}{166}{}%
+\contentsline {subsubsection}{\numberline {35.1.1 }Example \#1: Find wave frequency}{166}{}%
+\contentsline {subsubsection}{\numberline {35.1.2 }Example \#2: Analysis of wave model}{167}{}%
+\contentsline {subsubsection}{\numberline {35.1.3 }Example \#3: Wave on spider silk}{167}{}%
+\contentsline {subsection}{\numberline {35.2 }Doppler effect}{168}{}%
+\contentsline {subsubsection}{\numberline {35.2.1 }Example \#4: Doppler effect on a bicycle}{169}{}%
+\contentsline {section}{\numberline {36 }Wave superposition and standing waves}{170}{}%
+\contentsline {subsection}{\numberline {36.1 }Wave superposition}{170}{}%
+\contentsline {subsection}{\numberline {36.2 }Standing waves}{173}{}%
+\contentsline {section}{\numberline {37 }Standing waves and music}{176}{}%
+\contentsline {subsection}{\numberline {37.1 }Wave superposition}{176}{}%
+\contentsline {subsection}{\numberline {37.2 }Standing waves}{176}{}%
+\contentsline {subsubsection}{\numberline {37.2.1 }Strings}{176}{}%
+\contentsline {subsubsection}{\numberline {37.2.2 }Open-open tubes}{177}{}%
+\contentsline {subsubsection}{\numberline {37.2.3 }Open-closed tubes}{177}{}%
+\contentsline {subsubsection}{\numberline {37.2.4 }Wave speed}{178}{}%
+\contentsline {subsection}{\numberline {37.3 }Musical notes}{178}{}%
