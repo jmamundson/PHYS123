@@ -10,27 +10,33 @@ Objectives:
 Recall from last class:
 \begin{itemize}
 \item $W=F_{ext}\cdot d=\Delta{E}$; note that $F_{ext}$ and $d$ should point in the same direction. This is the work-energy theorem.
-\item If $F_{ext}=0\Rightarrow \Delta{E}=0$. This is called the conservation of energy. Conservation of energy, as with conservation of momentum, is especially useful when we aren't interested in time scales.
+\item If $F_{ext}=0\Rightarrow \Delta{E}=0$. This is called conservation of energy (as long as there is no heat flow into or out of the system). Conservation of energy, as with conservation of momentum, is especially useful when we aren't interested in time scales.
 \item Total energy of a system is $E=K+U+E_{th}+...$
-\item One way to think of energy is the ability of a system to do work on another system
+\item Eenergy is the ability of a system to do work on another system
 \item An external force applied to a system does work on the system. It therefore increases the total energy of the system.
 \item When the system does work on the environment, the total energy of the system decreases.
 \item Many different types of energy: $K$, $U$, $E_{th}$, $...$
-\item Kinetic energy: $K=\frac{1}{2}mv^2$
+\item Translational kinetic energy: $K=\frac{1}{2}mv^2$
+\item Rotational kinetic energy: $K_{rot} = \frac{1}{2}I\omega^2$
 \item Gravitational potential energy: $\Delta U_g=mg\Delta y$
 \end{itemize}
 
 In lab you witnessed changes in thermal energy due to friction and due to collisions.
 
-[Insert graph of kinetic energy vs. time for inelastic collision.]
-\vspace{5cm}
+[Graph of kinetic energy vs. time for inelastic collision.]
+\vspace{4cm}
 
-The kinetic energy of the cart(s) was not conserved because it was getting transformed into thermal energy.
+The kinetic energy of the cart(s) was not conserved because it was getting transformed into thermal energy. You may have also observed a brief drop in kinetic energy as energy was transformed from kinetic energy to elastic potential energy and back.
 
-\subsection{Thermal Energy Due to Friction}
+\subsection{Friction}
 We'll start with a simple system: a box is pulled across a horizontal, rough surface. What is the work done on the box by friction?
 
-$$\sum F_x=F_t=ma_x$$
+\pagebreak
+
+[Diagram of box sliding on the floor.]
+\vspace{4cm}
+
+$$\sum F_x=F_t-F_k=ma_x$$
 The only external force acting on the system is the tension from the rope, which has to equal the frictional force between the box and the floor (otherwise the box wouldn't move with constant speed). Defining the work is therefore easy:
 $$W=F_t\Delta{x}=F_k\Delta{x}$$
 This work causes molecules at the box's surface to vibrate (i.e., heat up), so we refer to this as thermal energy.
@@ -38,54 +44,77 @@ $$\boxed{\Delta{E_{th}}=F_k\Delta{x}=\mu_kF_n\Delta{x}}$$
 
 (In the case of your experiments, its actually a bit more complicated because thermal energy was created on the spinning axles. The idea is basically the same though.)
 
-\subsubsection{Example \#1: Sledding down a hill}
-You sled down a 3-m tall hill. The hill is frictionless, but there is some soft snow at the bottom that has a coefficient of kinetic friction of $\mu_k=0.05$. The ground at the bottom of the hill is horizontal. How far will you slide before coming to rest?
+\subsubsection*{Example \#1: Sledding down a hill}
+You sled down a 3-m tall hill that has a slope of 15$^\circ$. The hill is frictionless, but there is some soft snow at the bottom that has a coefficient of kinetic friction of $\mu_k=0.5$. The ground at the bottom of the hill is horizontal. How far will you slide before coming to rest?
 
 [Insert diagram of hill.]
 \vspace{5cm}
 
-How would we have solved this previously? Its fairly involved, but we could do this using forces and kinematics. But its super easy using conservation of energy.
+How would we have solved this previously? It's fairly involved, but we could do this using forces and kinematics. It's super easy using conservation of energy.
 
-$$\Delta{E}=\Delta{K}+\Delta{U_g}+\Delta{E_{th}}=0$$.
+$$\Delta{E}=\Delta{K}+\Delta{U_g}+\Delta{E_{th}}=0$$
 You start at rest and finish at rest, so $\Delta{K}=$. This equation therefore becomes
 $$mg\Delta{y}+F_k\Delta{x}=0,$$
 where $\Delta{x}$ is the distance that you travel after reaching the bottom of the hill. Recall that the frictional force is given by
 $$F_k=\mu_kF_n$$
 In this problem, it easy to see that $F_n=F_g=mg$ when you are sliding on horizontal ground. So, this means that
 $$mg\Delta{y}+\mu_k mg\Delta{x}=0$$
-$$\Delta{y}+\mu_k \Delta{x}=0\Rightarrow \boxed{\Delta{x}=\frac{-\Delta{y}}{\mu_k}=60\mbox{ m}}$$
+$$\Delta{y}+\mu_k \Delta{x}=0\Rightarrow \boxed{\Delta{x}=\frac{-\Delta{y}}{\mu_k}=6\mbox{ m}}$$
 Note that the solution does not depend on the angle or length of the hill!
 
+\subsection{Elastic collisions}
+Elastic collisions are defined as collisions in which no thermal energy is produced.
+$$\boxed{\Delta E_{th}=0}$$
 
-\subsection{Thermal energy of inelastic collisions}
-Extreme case: An object collides inelastically with a stationary object (e.g., wall, floor, etc). All of the kinetic energy is converted to thermal energy, so $\Delta{E_{th}}=K_i$, where $K_i$ is the kinetic energy before the collision. 
+[Diagram of elastic collision showing velocity, momentum, and thermal energy. Make one cart initially stationary.]
+\vspace{4cm}
 
-In the case that both objects move, the result is a bit different. What did you see in lab?
+To analyze the situation we need both conservation of momentum and conservation of energy.
 
-[Insert diagrams of velocity vs. time, momentum vs. time, and kinetic energy vs. time.]
-\vspace{5cm}
+Conservation of momentum tells us that
+$$m_1v_{1,i} = m_1v_{1,f} + m_2v_{2,f}$$
+Even if we know $v_{1,i}$, we can't compute the final velocities without some additional information. Since there is no thermal energy being produced, we know that
+$$\Delta E = 0 = \Delta K,$$
+which means that
+$$\frac{1}{2}m_1v_{1,i}^2 = \frac{1}{2}m_1v_{1,f}^2 + \frac{1}{2}m_2v_{2,f}^2$$
+Doing some algebra, which gets messy, we find that
+$$\boxed{v_{1,f} = \left(\frac{m_1-m_2}{m_1+m_2}\right)v_{1,i}}$$
+$$\boxed{v_{2,f} = \left(\frac{2m_1}{m_1+m_2}\right)v_{1,i}}$$
+
+What happens if the masses are the same? If $m_1>m_2$? If $m_2>m_1$? [Do calculations with different masses.]
+
+\subsection{Perfectly inelastic collisions}
+Inelastic collisions are collisions in which thermal energy is produced. Perfectly inelastic collisions are collisions in which the objects stick together. Extreme case: An object collides perfectly inelastically with a stationary object (e.g., wall, floor, etc). All of the kinetic energy is converted to thermal energy, so $\Delta{E_{th}}=K_i$, where $K_i$ is the kinetic energy before the collision. 
+
+In the case that both objects are able to move, the result is a bit different. What did you see in lab?
+
+[Diagrams of velocity vs. time, momentum vs. time, and kinetic energy vs. time.]
+\vspace{8cm}
 
 You should've seen that momentum was conserved, but kinetic energy was not. And because we know that the object's stick together, its easy to determine how much thermal energy is generated during the collision. (Is it easy? How would we do it?)
 
 Start with conservation of momentum. We'll consider the specific case where one of the carts is initially stationary. (We could do the more general problem, but it gets messy.)
 $$P_i=m_1v_i=(m_1+m_2)v_f=P_f$$
-$$v_f=\frac{m_1}{m_1+m_2}v_i$$
+$$\boxed{v_f=\frac{m_1}{m_1+m_2}v_i}$$
 
 Now we want to figure out how much thermal energy is generated, which we do by using conservation of energy.
 $$\Delta{E}=0=\Delta{K}+\Delta{E_{th}}$$
 $$\Delta{E_{th}}=-\Delta{K}=-(K_f-K_i)=K_i-K_f$$
-Recalling that for each object in a system
-$$K=\frac{1}{2}mv^2$$
-we find that 
-$$K_i=\frac{1}{2}m_1v_i\ds^2$$
-$$K_f=\frac{1}{2}(m_1+m_2)v_f\ds^2$$
-Now let's plug $v_f$ into the $K_f$,
-$$K_f=\frac{1}{2}(m_1+m_2)\left(\frac{m_1}{m_1+m_2}v_i\right)^2=\frac{1}{2}\frac{m_1\ds^2}{m_1+m_2}v_i\ds^2$$
-Oh, but notice that this is the same as
-$$K_f=K_i\left(\frac{m_1}{m_1+m_2}\right)$$
+$$\Delta E_{th} = \frac{1}{2}m_1v_f^2+\frac{1}{2}m_2v_f^2-\frac{1}{2}m_1v_i^2$$
+Putting this together and doing a bunch of algebra, we arrive at
+$$\boxed{\Delta E_{th} = K_i\left(\frac{m_2}{m_1+m_2}\right)}$$
+%% Recalling that for each object in a system
+%% $$K=\frac{1}{2}mv^2$$
+%% we find that 
+%% $$K_i=\frac{1}{2}m_1v_i\ds^2$$
+%% $$K_f=\frac{1}{2}(m_1+m_2)v_f\ds^2$$
+%% Now let's plug $v_f$ into the $K_f$,
+%% $$K_f=\frac{1}{2}(m_1+m_2)\left(\frac{m_1}{m_1+m_2}v_i\right)^2=\frac{1}{2}\frac{m_1\ds^2}{m_1+m_2}v_i\ds^2$$
+%% Oh, but notice that this is the same as
+%% $$K_f=K_i\left(\frac{m_1}{m_1+m_2}\right)$$
 
-Okay, now taking $K_i-K_f$,
-$$\Delta{E_{th}}=K_i-K_i\left(\frac{m_1}{m_1+m_2}\right)=\boxed{K_i\left(1-\frac{m_1}{m_1+m_2}\right)}$$
+%% Okay, now taking $K_i-K_f$,
+%% $$\Delta{E_{th}}=K_i-K_i\left(\frac{m_1}{m_1+m_2}\right)=\boxed{K_i\left(1-\frac{m_1}{m_1+m_2}\right)}$$
 
 \begin{itemize}
 \item What if $m_2$ is really small (e.g., a car hitting a bug)? Almost none of the kinetic energy is transformed into thermal energy.
@@ -94,26 +123,34 @@ $$\Delta{E_{th}}=K_i-K_i\left(\frac{m_1}{m_1+m_2}\right)=\boxed{K_i\left(1-\frac
 \end{itemize}
 
 
+\subsection{General inelastic Collisions}
+Inelastic collisions are often described using a coefficient of restitution, $C_r$, which is a material property. Note that $0\leq C_r\leq 1$; $C_r=0$ for perfectly plastic collisions and $C_r=1$ for elastic collisions. The coefficient of restitution depends on the velocities of the objects relative to each other. For the situation in which one cart is initially stationary, we can write that
+$$C_r = \frac{v_{1,f}-v_{2,f}}{v_{1,i}}$$
 
-\subsection{Thermal Energy of Perfectly Elastic Collisions}
-Perfectly elastic collisions involve no change in kinetic energy (i.e., kinetic energy is conserved). We can use $P_i=P_f$ and $K_i=K_f$ to solve for the motion of objects that collide elastically.
+From this, we can ask how much thermal energy is generated during a collision. As before, conservation of momentum tells us that
+$$m_1v_{1,i} = m_1v_{1,f}+m_2v_{2,f}$$
+Using the coefficient of restitution and doing some algebra, we find that
+$$\boxed{v_{1,f}=\left(\frac{m_1-m_2C_r}{m_1+m_2}\right)v_i}$$
+$$\boxed{v_{2,f}=m_1\left(\frac{1+C_r}{m_1+m_2}\right)v_i}$$
+These reduce to the solutions that we found for elastic and perfectly inelastic collisions when $C_r=1$ and $C_r=0$, respectively.
 
-\subsection{Thermal Energy of Elastic Collisions}
-Elastic collisions are often described using a coefficient of restitution.
-$$v_f=C_rv_i$$
-where $C_r$ is empirically determined and $0\leq C_r \leq 1$.
+As before, we can use conservation of energy to write
+$$\Delta{E}=0=\Delta{K}+\Delta{E_{th}}$$
+$$\Delta{E_{th}}=-\Delta{K}=-(K_f-K_i)=K_i-K_f$$
+$$\Delta E_{th} = \frac{1}{2}m_1v_f^2+\frac{1}{2}m_2v_f^2-\frac{1}{2}m_1v_i^2$$
+Inserting our solutions for $v_{1,f}$ and $v_{2,f}$ and doing a LOT of algebra, we can show that
+$$\boxed{\Delta E_{th}=K_i\left(\frac{m_2}{m_1+m_2}\right)\left(C_r^2-1\right)}$$
+This also reduces to the solutions that we found for elastic and perfectly inelastic collisions when $C_r=1$ and $C_r=0$, respectively. Viewed this way, a perfectly plastic collision is one that produces the maximum amount of thermal energy, and an elastic collision is one that produces no thermal energy.
 
-From this, we can ask how much heat is generated during a collision?
+%% Again, we'll consider a simple case to keep the algebra relatively simple. Let's consider a cart moving on a frictionless track that collides with a wall. Define the cart and the track/ground as being the system, so that there are no external forces.
 
-Again, we'll consider a simple case to keep the algebra relatively simple. Let's consider a cart moving on a frictionless track that collides with a wall. Define the cart and the track/ground as being the system, so that there are no external forces.
-
-$$0=\Delta{E}=\Delta{K}+\Delta{E_{th}}$$
-Here, $\Delta{E_{th}}$ refers to the thermal energy generated by the collision. So,
-$$0=\frac{1}{2}mv_f\ds^2-\frac{1}{2}mv_i\ds^2+\Delta{E_{th}}$$
-$$0=\frac{1}{2}m(C_rv_i)\ds^2-\frac{1}{2}mv_i\ds^2+\Delta{E_{th}}$$
-$$0=\frac{1}{2}mC_r\ds^2v_i\ds^2-\frac{1}{2}mv_i\ds^2+\Delta{E_{th}}$$
-$$0=\frac{1}{2}mv_i\ds^2(C_r\ds^2-1)+\Delta{E_{th}}$$
-$$\Delta{E_{th}}=\frac{1}{2}mv_i\ds^2(1-C_r\ds^2)=K_i(1-C_r\ds^2)$$
+%% $$0=\Delta{E}=\Delta{K}+\Delta{E_{th}}$$
+%% Here, $\Delta{E_{th}}$ refers to the thermal energy generated by the collision. So,
+%% $$0=\frac{1}{2}mv_f\ds^2-\frac{1}{2}mv_i\ds^2+\Delta{E_{th}}$$
+%% $$0=\frac{1}{2}m(C_rv_i)\ds^2-\frac{1}{2}mv_i\ds^2+\Delta{E_{th}}$$
+%% $$0=\frac{1}{2}mC_r\ds^2v_i\ds^2-\frac{1}{2}mv_i\ds^2+\Delta{E_{th}}$$
+%% $$0=\frac{1}{2}mv_i\ds^2(C_r\ds^2-1)+\Delta{E_{th}}$$
+%% $$\Delta{E_{th}}=\frac{1}{2}mv_i\ds^2(1-C_r\ds^2)=K_i(1-C_r\ds^2)$$
 
 \subsubsection{Example \#2: Ball bouncing on the ground}
 A ball is dropped from a height of 1 m. The coefficient of restitution between the ball and the floor is 0.8. How high does the ball bounce?
