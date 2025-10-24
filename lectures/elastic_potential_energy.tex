@@ -42,7 +42,8 @@ Today I'm going to introduce one more type of energy, but before doing so let's 
 
 %What does this mean? If the hill is frictionless, it doesn't matter how steep it is. If friction is significant, and you want to go fast, then pick the steepest part of the hill!
 
-\subsection{Example \#1: Object rolling down a ramp}
+\subsection{Example exercises involving kinetic energy}
+\subsubsection*{Example \#1: Object rolling down a ramp}
 Let's look at the velocity of an object {\it rolling} down a ramp. Define the system as the being the object and the ramp, so there are no external forces. We will assume that the object starts at rest.
 $$\Delta{E}=0=\Delta{K}+\Delta{U_g}$$
 In this problem, there is no sliding, and so $\Delta{E_{th}}=0$. In this problem we have to worry about rotational kinetic energy.
@@ -65,8 +66,8 @@ Notice that $-\Delta{y}/\Delta{x}=\sin\theta$, so this gives
 $$\boxed{a=\frac{2mg\sin\theta}{m+\frac{I}{r^2}}}$$
 This is exactly the same solution as what we arrived at previously.
 
-\subsection{Example \#2: Tennis ball bouncing off of a basketball}
-Mass of tennis ball = 0.075 kg
+\subsubsection*{Example \#2: Tennis ball bouncing off of a basketball}
+Mass of tennis ball = 0.075 kg\\
 Mass of basketball = 0.50 kg
 
 [Insert diagram.]
@@ -94,13 +95,13 @@ For the masses given,
 $$v_{1f}\approx -2.5v_{1i}$$ 
 
 \subsection{Elastic potential energy}
-We need to define one more type of energy (for now), which is elastic potential energy. Springs store energy. If we compress or extend the spring at a constant rate, we can find how much energy is stored in the spring. We'll apply an external force to the spring, so that
+We need to define one more type of energy, which is elastic potential energy. Springs store energy. If we compress or extend the spring at a constant rate, we can find how much energy is stored in the spring. We'll apply an external force to the spring, so that
 $$W=\Delta{E}=\Delta{U_s}$$
 $W$ is the work needed to compress or extend the spring, and is
 $W=F_{avg}\Delta{x},$
 where $\Delta{x}$ is the displacement of the spring. The force that we apply to compress or extend the spring has to balance the spring force (recall that $F_s=-k\Delta{x}$).
 
-[Insert diagram of applied force, varying linearly with $x$.]
+[Diagram of applied force, varying linearly with $x$.]
 \vspace{5cm}
 
 
@@ -112,44 +113,36 @@ We typically define $U_s=0$ when the spring is in its equilibrium length, so we 
 $$\boxed{U_s=\frac{1}{2}k\Delta{x}\ds^2}$$
 Note that this is always positive. The spring stores energy whether it is in extension or compression.
 
-\subsubsection{Example \#3: How much energy stored in a spring?}
+\subsection{Example exercises involving elastic potential energy}
+\subsubsection*{Example \#3: How much energy stored in a spring?}
 How far must you stretch a spring to store 200 J if $k=1000$ N/m?
 
 $$U_s=\frac{1}{2}k\Delta{x}^2$$
 $$\Delta{x}=\sqrt{\frac{2U_s}{k}}=0.63\mbox{ m}$$
 
-\subsubsection{Example \#4: Spring shoots marble off a table}
+\subsubsection*{Example \#4: Spring shoots marble off a table}
 A spring is clamped to a table. You compress the spring a distance of 0.2 m, and use the spring to shoot a marble horizontally. The marble, which has a mass of 0.02 kg, travels a distance of 5 m (horizontally) and 1.5 m (vertically). What is the spring constant?
 
-There are (at least) a couple of ways to solve this, both making use of $\Delta{E}=0$.
+There are a couple of ways to solve this, both making use of $\Delta{E}=0$.
 
-Most direct way: let $t_i$ be when the spring is fully compressed, and $t_f$ be the time when the marble hits the ground. Conservation of energy tells us that:
+Let $t_i$ be when the spring is fully compressed and $t_f$ be the instant that the marble leaves the spring. As the spring is uncompressing the velocity of the marble is horizontal and there is no change in elevation. Conservation of energy tells us that
 
-$$0=\Delta{E}=\Delta{K}+\Delta{U_g}+\Delta{U_s}=\frac{1}{2}mv_f\ds^2-\frac{1}{2}mv_i\ds^2+mg\Delta{y}-\frac{1}{2}k\Delta{x}\ds^2$$
+$$0=\Delta{E}=\Delta{K}+\Delta{U_s}=\frac{1}{2}mv_f\ds^2-\frac{1}{2}mv_i\ds^2+\frac{1}{2}k\Delta{x_f}^2-\frac{1}{2}k\Delta{x_i}\ds^2$$
 
-We know that $v_i=0$, so this reduces to
-$$0=\frac{1}{2}mv_f\ds^2+mg\Delta{y}+\frac{1}{2}k\Delta{x}\ds^2$$
+We know that $v_i=0$ and $\Delta x_f=0$, so this reduces to
+$$0=\frac{1}{2}mv_f\ds^2-\frac{1}{2}k\Delta{x_i}\ds^2$$
+Solving for $k$,
+$$k=\frac{mv_f^2}{\Delta{x_i}^2}$$
 
-What is $v_f$? It is the final speed, so we need to find
-$$v_f=\sqrt{v_{x,f}\ds^2+v_{y,f}\ds^2}.$$
+$v_f$ is the speed of the marble as it leaves the spring; it is also the horizontal component of motion for a projectile motion problem. The marble travels a horizontally a distance of 5~m in the time that it falls 1.5~m.
 
-We can figure out $v_{x,f}\ds^2$ and $v_{y,f}\ds^2$ using kinematics. First let's find that it takes the marble to fall to the ground.
-$$\Delta{y}=v_{y,i}\Delta{t}+\frac{1}{2}a_y\Delta{t}^2\Rightarrow \boxed{\Delta{t}^2=\frac{-2\Delta{y}}{g}}$$
-So
-$$v_{x,f}\ds^2=\left(\frac{L}{\Delta{t}}\right)^2\Rightarrow \boxed{v_{x,f}\ds^2=\frac{gL^2}{-2\Delta{y}}}$$
+For projectile motion, we know that $a_y=-9.81$~m/s$^2$ and in this case $v_{y,i}=0$ and $\delta y=-1.5$~m. The time that it takes to fall is found using kinematics, and comes out to be
+$$\Delta t = \sqrt{\frac{g}{-2\Delta y}} = 0.55\mbox{ s}$$
+The horizontal component of velocity is
+$$v_x = \frac{L}{\Delta t} = L\sqrt{\frac{g}{-2\Delta y}} = 9.04\mbox{ m/s}$$
 
-How about $v_{y,f}\ds^2$?
-$$v_{y,f}-v_{y,i}=a_y\Delta{t}$$
-$$v_{y,f}^2=g^2\Delta{t}^2=g^2\frac{-2\Delta{y}}{g}\Rightarrow \boxed{v_{y,f}\ds^2=-2g\Delta{y}}$$
-
-This means that
-$$\boxed{v_f\ds^2=\frac{gL^2}{-2\Delta{y}}-2g\Delta{y}}$$
-
-Now, plugging this into the conservation of energy equation,
-$$0=\frac{1}{2}m\left(\frac{gL^2}{-2\Delta{y}}-2g\Delta{y}\right)+mg\Delta{y}-\frac{1}{2}k\Delta{x}^2$$
-$$0=\frac{mgL^2}{-4\Delta{y}}-mg\Delta{y}+mg\Delta{y}-\frac{1}{2}k\Delta{x}^2$$
-$$0=\frac{mgL^2}{-4\Delta{y}}-\frac{1}{2}k\Delta{x}^2$$
-$$k=\frac{mgL^2}{-2\Delta{y}\Delta{x}^2}=\boxed{48.9\mbox{ N/m}^2}$$
+Replacing $v_f$ with $v_x$ in solution for $k$,
+$$k=\frac{mgL^2}{-2\Delta{y}\Delta{x}^2}=\boxed{40.9\mbox{ N/m}^2}$$
 
 
 \clearpage
