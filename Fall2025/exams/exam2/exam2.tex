@@ -5,8 +5,8 @@
 \usepackage{amsmath}
 
 \usepackage[dvipsnames]{xcolor}
-\newcommand{\sol}[1]{{\color{NavyBlue} #1}}
-%\newcommand{\sol}[1]{{\color{White} #1}} % uncomment to hide solutions
+%\newcommand{\sol}[1]{{\color{NavyBlue} #1}}
+\newcommand{\sol}[1]{{\color{White} #1}} % uncomment to hide solutions
 
 
 \begin{document}
@@ -17,16 +17,11 @@ Exam \#2: Dynamics, momentum, and energy
 Name: \hfill /30\\
 
 \hrulefill\\
-1. Conceptual questions.
+1. A child rides a sled down a hill and onto level ground at the bottom of the hill, eventually coming
+to a stop when she bumps into a tree. Sketch the kinetic energy, gravitational potential energy, and thermal energy of the system as functions of the child's position. Include the child and the ground in the system, and assume that the coefficient of friction between the sled and the snow is constant. [6 pts]
 
-(a) In the motion picture \textit{It Happened One Night}, Clark Gable is standing inside a stationary bus in front of Claudette Colbert, who is seated. The bus suddenly starts moving forward and Clark falls into Claudette's lap. Why did he fall? [3 pts]
+%\sol{\includegraphics[trim={2cm 10cm 2cm 3cm}, clip, width=\textwidth]{./exam2_1_sol.pdf}}
 
-\sol{When the bus started moving, the friction between the floor and his feet pulled him forward. His center of mass was no longer above his feet, resulting in a gravitational torque that caused him to topple.}
-\vspace{5cm}
-
-(b) Suppose you are driving a car at a high speed. Why should avoid slamming on your brakes when you want to stop in the shortest possible distance (at least if you don't have antilock brakes)? [3 pts]
-
-\sol{If you slam on the brakes, the wheels will stop spinning and the force that slows you down will be the force of kinetic friction. If you allow the wheels to spin a little, for example by pumping the brakes, then the wheels won't skid and the force resisting your motion will be the force of static friction. The coefficient of static friction is larger than the coefficient of kinetic friction, meaning the that force of static friction is larger than the force of kinetic friction. Therefore you will slow down faster if you use static friction.}
 
 
 \clearpage
@@ -66,7 +61,7 @@ $$\boxed{v_f = 1.80 \mbox{ m/s}}$$
 }
 
 \vspace{2cm}
-(b) How much thermal energy was generated during the collision?
+(b) How much thermal energy was generated during the collision? [3 pts]
 
 \sol{Using conservation of energy,
 $$\Delta E = \Delta K + \Delta E_{th} = 0$$
@@ -101,6 +96,25 @@ $$0 = \frac{m_2^2}{m_1}v_2^2+m_2v_2^2 - kx_i^2 = m_2v_2^2\left(1+\frac{m_2}{m_1}
 $$ v_2 = x_i\sqrt{k\left(\frac{m_1}{m_2(m_1+m_2)}\right)} \rightarrow \boxed{\vec{v}_2=1.0\mbox{ m/s}}$$
 Plugging back into the result for $v_1$,
 $$\boxed{\vec{v}_1=-2.0\mbox{ m/s}}$$
+
+}
+
+\clearpage
+5. Two objects, with masses $m_1$ and $m_2$ , are supported by narrow posts as shown in the figure below. Calculate the normal forces acting on each of the posts. Ignore the width of the posts, and therefore assume that the normal forces are acting on the outside edges of the posts. [6 pts]
+
+\includegraphics[width=8cm]{./exam2_5.pdf}
+
+\sol{Let $L=4.0$~m. Summing the torques around the left edge,
+$$\sum \tau = N_2L - m_2g\frac{L}{2} - m_1g\frac{L}{8} = 0$$
+$$N_2 = \frac{1}{2}m_2g+\frac{1}{8}m_1g = \boxed{N_2 = 2575\mbox{ N}}$$
+
+Now summing the torques around the right edge,
+$$\sum \tau = -N_1L + m_2g\frac{L}{2} + m_1g\frac{7L}{8} = 0$$
+$$N_1 = \frac{1}{2}m_2g + \frac{7}{8}m_1g = \boxed{N_1 = 3311 \mbox{ N}}$$
+
+You could have also combined one of these with a force balance equation,
+$$\sum F_y = N_1+N_2-m_1g-m_2g = 0,$$
+and arrived at the same answers.
 
 }
 
