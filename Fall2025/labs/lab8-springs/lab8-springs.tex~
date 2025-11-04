@@ -1,0 +1,117 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{array}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage[small]{caption}
+\usepackage{graphpap}
+\usepackage{tabularx}
+
+
+\begin{document}
+\setlength{\parindent}{0in}
+
+%% EQUIP: Force Probe, Pulley, Track, Hangar, Weight, Tilt, Scale
+
+\begin{flushright}
+Physics 211: General Physics I\\
+Lab 8: Oscillations of Springs\\
+11/15/16 (due 11/29/16)
+\end{flushright}
+
+Name:
+
+\textbf{What you should turn in:} A formal lab report. The lab report should consist of the following parts:
+\begin{itemize}
+\item Introduction: Discuss the topic/theory that you are exploring. Indicate in a brief statement or two how you will test that theory. (20 pts)
+\item Methods: Describe the experimental set-up. (15 pts)
+\item Results: Present data, including qualitative descriptions, and graphs. Draw the reader's attention to important aspects of the graphs. You should not discuss all of the minutiae of the data. (35 pts)
+\item Discussion and Conclusions: Summarize and interpret your results. Discuss whether or not your observations are consistent with theory, and explain why the differences might occur. Do not simply state that there was experimental error -- if there may have been experimental error, describe how it affected your calculations. Discuss how your assumptions may have affected your results. (30 pts)
+\end{itemize}
+
+\textbf{Topics:}
+\begin{enumerate}
+\setlength{\parskip}{3pt}
+\item Hooke's Law
+\item Simple harmonic motion
+\item Energy associated with harmonic motion
+\end{enumerate}
+
+{\bf Objective:}\\ 
+Springs are used in many practical applications, ranging from closing screen doors to absorbing the shocks of highway bumps in automobile travel. Springs also serve as models for studying a number of complex physical phenomena including vibrations of atoms in a molecule, vibrations in crystals, motion of light, and the production and transmission of sound.  This lab consists of two sections designed to give you a better understanding of spring forces, simple harmonic motion (a type of oscillation), and the energy associated with motion of springs. You should repeat both parts of the lab using two different springs.   
+
+
+\clearpage
+\textbf{\MakeUppercase{Part 1: Determining the spring constant }}\\ 
+We have seen that the relationship between the force of a spring and the displacement away from the spring's equilibrium length is 
+\begin{equation}
+F_{sp}=-ky,
+\label{eq:Hooke}
+\end{equation} 
+where $k$ is the spring constant and $y$ is the change in equilibrium position of the end of the spring. $F_{sp}$ is a restoring force --- it tries to restore the spring to its equilibrium length. Equation \ref{eq:Hooke} is known as Hooke's Law (though its not really a law) and is only valid for small displacements. In this part of the lab you will test Hooke's Law and compute the spring constant of a spring.
+
+When a mass is added to a vertically hanging spring, and after the spring has stopped oscillating, 
+\begin{equation}
+\sum{F_y}=F_{sp}-F_g=0,
+\label{eq:F_y}
+\end{equation}
+where $F_g=mg$ is the gravitational force acting on the hanging mass. In other words, there is no acceleration in the $y$-direction. As a result, 
+\begin{equation}
+F_s=F_g
+\end{equation}
+and so
+\begin{equation}
+y=-\frac{1}{k}F_g.
+\label{eq:k}
+\end{equation}
+Equation \ref{eq:k} indicates that (1) Hooke's Law can be tested by hanging a variety of masses from a spring and seeing if $y$ ($y$-axis) vs. $F_g$ ($x$-axis) plots as a straight line and (2) the spring constant $k$ can be determined by finding the slope of that line. 
+
+You will use the LoggerPro motion sensor to test Hooke's Law and to find the spring constant of a spring. Select a spring and several masses to suspend from the spring. Be sure to choose masses that give spring displacements that are relatively easy to measure.
+
+Note that for the spring, ${y}$ is measured from the equilibrium point, so you should determine the motion sensor reading for the equilibrium (un-stretched) length. You will need to subtract the distance from the sensor to the equilibrium point from the measured distances. The easiest way to do this is to zero your sensor when the spring is at its equilibrium length. To do this, hook the mass hangar over the spring but use your hand to keep the spring from stretching. The press ctrl+0.
+
+Now, suspend 6 different masses from the spring and use the motion sensor to determine ${y}$. Be careful that the mass does not fall on the motion detector! Record the spring displacements and associated masses. Plot ${y}$ vs. $F_g$ and use the slope of the best-fit line to find the spring constant, keeping in mind that the slope of the line is equal to $-1/k$ (Equation \ref{eq:k}). \textbf{Include this plot in your lab report and indicate the value of \textit{k}.}
+
+%When finding the slope of the line, make sure that you set the $y$-intercept equal to 0 (Equation \ref{eq:k} does not have a $y$-intercept).
+
+%(Note that if you had not zeroed the motion sensor, you still would have calculated the same value of $k$. However, the y-intercept in your plot would not equal 0.)
+
+You will quite likely discover that the y-intercept of your line is not equal to zero (it should equal zero according to Hooke's Law). If this is the case, then the spring requires some non-zero force for it to start stretching.
+
+
+\clearpage
+\textbf{\MakeUppercase{Part 2: Oscillations and energy}}\\
+Using the same set-up as in Part 1, you will examine the relationship between the
+potential energy, kinetic energy, and total energy of the spring
+system. Place a mass on the spring, give the spring an initial displacement, and record the subsequent oscillations with the motion sensor. Record for about 1 min. Make sure that your initial displacement is not too large so that the spring does not oscillate wildly or become fully compressed. As in part 1, it is best if you zero the motion sensor at the equilibrium (un-stretched) length. \textbf{You should include plots of \textit{d} vs. \textit{t} and \textit{v} vs. \textit{t} in your lab report.} A system that oscillates due to a linear restoring force experiences sinusoidal variations in position, velocity, and acceleration. We refer to these types of motion as ``simple harmonic motion''. From your data, does it appear as though springs are harmonic oscillators?
+
+Once the system begins to oscillate, there are no external forces acting on the system and so the energy of the system is conserved:
+\begin{equation}
+\Delta{E(t)}=0=\Delta{K(t)}+\Delta{U_g(t)}+\Delta{U_s(t)}+\Delta{E_{th}(t)},
+\end{equation}
+where $K$ is the kinetic energy, $U_g$ is the gravitational potential energy, $U_s$ is the elastic potential energy, and $E_{th}$ is the thermal energy. The kinetic energy is given by 
+\begin{equation}
+\Delta{K(t)}=\frac{1}{2}m(v(t)^2-v_i^2).
+\end{equation}
+If the $y$-axis is defined such that $y=0$ is the elevation of the hangar when the spring has not yet been stretched, then the gravitational potential energy is
+\begin{equation}
+\Delta{U_g(t)}=mg\Delta{y(t)}=mg(y(t)-y_i)
+\end{equation}
+and the elastic potential energy is
+\begin{equation}
+\Delta{U_s(t)}=\frac{1}{2}k(y(t)^2-y_i^2).
+\end{equation}
+The spring constant $k$ was determined experimentally in Part 1, and $y(t)$ is the distance measured by the motion sensor \textit{if} you zeroed the sensor on the un-stretched spring and hangar. However, if you found that the y-intercept in part (a) was not zero, you will need to subtract the y-intercept from your measured distance.
+
+From the position and velocity data that you just collected, generate plots of $\Delta K(t)$, $\Delta U_g(t)$, and $\Delta U_s(t)$. \textbf{Include these plots in your lab report.} Discuss how these energy terms relate to each other. 
+
+If you add $\Delta K(t)+\Delta U_g(t)+\Delta U_s(t)$, do you find that $\Delta E_{th}(t)=0$? \textbf{Plot and submit a graph of $\Delta{E_{th}(t)}$.} You should find that $\Delta E_{th}(t)$ is a roughly straight line with no oscillations. Your actual results for $\Delta E_{th}(t)$ will be quite sensitive to the value that you determined for $k$. If your value for $k$ is far from correct, you will find that $\Delta E_{th}(t)$ oscillates in a sinusoidal fashion. If this is the case, try adjusting $k$ in order to make $\Delta E_{th}(t)$ a straight line. You should find that $\Delta E(t)$ gradually becomes negative. Why is this? How does $\Delta E(t)$ compare between the two different experiments?
+
+\clearpage
+\textbf{\MakeUppercase{Part 3: Oscillation frequency}}\\
+Using the smaller of the two springs, you should try to empirically determine the relationship between the mass hanging on a spring and its oscillation frequency. Using five different masses, time how long it takes the spring to undergo 10 oscillations. You'll want to perform each measurement a few times and average the results to reduce the error in your measurements. \textbf{Submit a graph of frequency vs. mass.}
+
+Try performing the same measurements when the spring is hanging into a bucket of water. How (and why) do your results differ?
+
+\end{document}
