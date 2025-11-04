@@ -119,9 +119,9 @@
 \contentsline {subsection}{\numberline {23.4 }Example exercises involving elastic potential energy}{111}{}%
 \contentsline {section}{\numberline {24 }Thermodynamics I}{113}{}%
 \contentsline {subsection}{\numberline {24.1 }Background}{113}{}%
-\contentsline {subsection}{\numberline {24.2 }First Law of Thermodynamics}{113}{}%
-\contentsline {subsection}{\numberline {24.3 }Second Law of Thermodynamics}{115}{}%
-\contentsline {subsection}{\numberline {24.4 }Specific and Latent Heat}{116}{}%
+\contentsline {subsection}{\numberline {24.2 }First Law of Thermodynamics}{114}{}%
+\contentsline {subsection}{\numberline {24.3 }Second Law of Thermodynamics}{116}{}%
+\contentsline {subsection}{\numberline {24.4 }Sensible and Latent Heat}{116}{}%
 \contentsline {subsubsection}{\numberline {24.4.1 }Example \#1: Vaporization of mercury}{117}{}%
 \contentsline {section}{\numberline {25 }Thermodynamics II}{118}{}%
 \contentsline {subsection}{\numberline {25.1 }Laws of thermodynamics; specific heat and latent heat}{118}{}%

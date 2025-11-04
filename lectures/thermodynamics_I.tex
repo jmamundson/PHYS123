@@ -8,17 +8,19 @@ Objectives:
 \end{itemize}
 
 \subsection{Background}  
-The last few lectures we have been discussing the idea of energy and work, and we've focussed primarily on mechanical energy. Recall the work-energy theorem:
+The last few lectures we have been discussing the idea of energy and work, and we've focused primarily on mechanical energy. Recall the work-energy theorem:
 $$W=\Delta{E}=\Delta{K}+\Delta{U_g}+\Delta{E_{th}}+...$$
 But what is thermal energy? Its energy associated with motion of particles (i.e., atoms, molecules, electrons, protons) within a material. For basic friction, we saw that
 $$\Delta{E_{th}}=F_k\Delta{x}$$
 As the thermal energy increases, more molecules vibrate and so the temperature of the system increases.
 
+[PhET friction demo: https://phet.colorado.edu/en/simulations/friction] 
+
 The thermal energy can also change if the molecular vibrations cause molecules outside of the system to vibrate --- this is a transfer of kinetic energy at the molecular scale, and it only happens when there is a temperature difference between the system and the environment. Thermal energy that is exchanged between a system and the environment due to a temperature difference is referred to as \textit{heat}.
 
-How is heat transferred between two objects? In general terms... Take two objects at different temperatures. This means that their molecules are vibrating at different rates. Place the objects next to each other, and there are essentially millions of collisions occurring between the objects. Elastic collisions transfer energy from the warm object to the cold object until the kinetic energy of the molecules is the same in both objects.
+How is heat transferred between two objects? In general terms... Take two objects at different temperatures. This means that their molecules are vibrating at different rates. Place the objects next to each other, and there are essentially millions of collisions occurring between the objects. Collisions transfer energy from the warm object to the cold object until the kinetic energy of the molecules is the same in both objects.
 
-[Insert diagram.]
+[Diagram illustrating transfer of heat between two solid objects.]
 \vspace{5cm}
 
 \subsection{First Law of Thermodynamics}
@@ -26,34 +28,36 @@ Let's modify the work-energy equation to account for heat.
 $$W+Q=\Delta{E},$$
 where $Q$ is the heat exchanged between the system and the environment. If $W,Q>0$, energy goes into the system. If $Q,W<0$, energy leaves the system. This equation is the first law of thermodynamics. It states that energy cannot be created or destroyed.
 
-Consider a system in which $\Delta{E}=\Delta{E_{th}}$ (no other forms of energy are changing). Let's say you pump air into a tire. What happens?
+Consider what happens when you pump air into a tire. The tire is not moving, and therefore $\Delta{E}=\Delta{E_{th}}$ (no other forms of energy are changing). What happens?
 \begin{itemize}
-\item You're doing work ($W>0$), so $\Delta{E_{th}}>0$ and the temperature increases (due to an increase in air pressure).
-\item Eventually heat is lost to the environment, $\Delta{E_{th}}<0$, and so $Q<0$.
+\item You're doing work ($W>0$), so $\Delta{E_{th}}>0$ and the temperature of the air in the tire increases (due to an increase in air pressure).
+\item Eventually heat is lost to the environment via radiation, $\Delta{E_{th}}<0$, and so $Q<0$.
 \end{itemize}
 
 Let's now consider a couple of common applications of the first law of thermodynamics.
 
-(1) Heat generally flows from warm reservoirs to cold reservoirs. Heat pumps work against this natural flow --- refrigerators use heat pumps. In a really simple model of a refrigerator, you have a cold reservoir (where you store food), a hot reservoir (the room), and a heat pump that runs on electricity. If we think of the heat pump as being the system, there is work being done on the system by electricity, and heat flowing into and out of the system.
+(1) Heat generally flows from warm reservoirs to cold reservoirs. Heat pumps work against this natural flow by using evaporation and condensation of a refrigerant (more on that later). Refrigerators use heat pumps. In a really simple model of a refrigerator, you have a cold reservoir (where you store food), a hot reservoir (the room), and a heat pump that runs on electricity. If we think of the heat pump as being the system, there is work being done on the system by electricity, and heat flowing into and out of the system.
 
 [Diagram of a heat pump.]
 \vspace{5cm}
 
-$$W_{in}+Q_c+Q_h=\Delta{E}$$
-If the energy of the heat pump is constant, then
-$$W_{in}+Q_c+Q_h=0$$
+$$W_{in}+Q_c-Q_h=\Delta{E}$$
+If the energy of the heat pump is constant, meaning that it isn't moving and is in steady-state so that it's temperature isn't changing, then
+$$W_{in}+Q_c-Q_h=0$$
 and so
 $$Q_h=W_{in}+Q_c$$
-This tells us that more heat flows out of the heat pump than flows in.
+\underline{More heat flows out of the heat pump than flows in.}
 
-(2) Heat engines are basically the opposite of heat pumps. They follow the natural flow of heat --- and take advantage of it to do work.
+\clearpage
+(2) Heat engines are basically the opposite of heat pumps. They take advantage of the natural natural flow of heat to do work.
 
 [Diagram of a heat engine.]\nopagebreak
 \vspace{5cm}
 
+For an engine that is in steady-state:
 $$Q_h-Q_c-W_{out}=0$$
 $$W_{out}=Q_h-Q_c$$
-The right hand side of this equation depends on temperature differences (we'll get to that later). So the larger the temperature difference, the more work that the engine can do.
+The right hand side of this equation depends on temperature differences (we'll get to that later). The larger the temperature difference, the more work that the engine can do.
 
 The efficiency of an engine is
 $$e=\frac{\mbox{what you get}}{\mbox{what you paid}}=\frac{Q_h-Q_c}{Q_h}$$
@@ -62,14 +66,16 @@ $$e=\frac{T_h-T_c}{T_h}=1-\frac{T_c}{T_h}$$.
 
 This is the maximum efficiency of an engine. Note that $e<1$ and $e$ increases as the temperature difference increases.
 
-
+\pagebreak
 \subsection{Second Law of Thermodynamics}
-We already saw that heat naturally flows from hot to cold.
+We already made use of the fact that heat naturally flows from hot to cold, which is a result from statistical mechanics.
 
 [Insert diagram. Molecules in a hot object have higher kinetic energy than molecules in a cold object.]
 \vspace{5cm}
 
-Hot molecules are more likely to increase the energy of the cold molecules... Sometimes its easier to think of this in terms of two gases that are initially separated. The hot molecules move faster and are therefore more likely to cross the initial boundary and warm up other molecules.
+Hot molecules are more likely to increase the energy of the cold molecules. Sometimes its easier to think of this in terms of two gases that are initially separated. The hot molecules move faster and are therefore more likely to cross the initial boundary and warm up other molecules.
+
+[PhET simulation of diffusion: https://phet.colorado.edu/en/simulations/diffusion]
 
 Its possible, but highly unlikely, that the system would evolve the other way (that the cold molecules would transfer energy to the warm molecules and cause them to vibrate more quickly). We use the term \textit{entropy} to describe this unlikeliness.
 
@@ -77,12 +83,12 @@ The Second Law of Thermodynamics tells us that the entropy of an \textit{isolate
 
 This explains why engines can't be 100\% efficient. If all incoming heat is converted to work, the entropy of the system would decrease.
 
-\subsection{Specific and Latent Heat}
+\subsection{Sensible and Latent Heat}
 What happens when heat is transferred to or away from an object?
 
 There are basically two possibilities. The object changes temperature or it changes phase (e.g., from a solid to a liquid).
 
-(1) The \textbf{specific heat}, $c$, is the amount of heat required to raise 1 kg of a substance by 1 K. So the heat required to change the temperature of an object by $\Delta{T}$ is
+(1) \textbf{Sensible heat} is the is the amount of heat required to change the temp of a substance without changing the state. The \textit{specific heat}, $c$, is the amount of heat required to raise 1 kg of a substance by 1 K. So the heat required to change the temperature of an object by $\Delta{T}$ is
 $$\boxed{Q=mc\Delta{T}}$$
 
 Specific heat is a material property and can vary widely. For mercury $c=140$ J/(kg K), whereas for water $c=4190$ J/(kg K). It actually takes a lot of heat to warm up/cool down water. This is important for biology (e.g., ocean temperatures are fairly constant).
@@ -95,8 +101,8 @@ This equation also tells us that it takes more heat to warm up/cool down large o
 (2) \textbf{Latent heat} or heat of transformation is the amount of heat needed to change the phase of a substance. Essentially, when a material changes phase, heat goes into breaking bonds.
 
 \begin{itemize}
-\item When a material changes from solid to liquid, or vice-versa, we refer to the latent heat of fusion, $L_f$.
-\item When a material changes from liquid to gas, or vice-versa, we refer to the latent heat of vaporization, $L_v$.
+\item When a material changes from solid to liquid, or vice-versa, we refer to the specific latent heat of fusion, $L_f$.
+\item When a material changes from liquid to gas, or vice-versa, we refer to the specific latent heat of vaporization, $L_v$.
 \item $L_f$ and $L_v$ are material properties and have units of J/kg.
 \end{itemize}
 
