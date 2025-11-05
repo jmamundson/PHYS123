@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.30)  4 NOV 2025 15:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.6.30)  4 NOV 2025 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1731,7 +1731,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [124
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (14.98834pt too wide) in paragraph at lines 54--55
+[]\OT1/cmr/m/n/10.95 We can think about the rate at which heat trav-els through
+ a unin-su-lated wood floor ($\OML/cmm/m/it/10.95 k \OT1/cmr/m/n/10.95 = 0\OML/
+cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 2$ W/(m$\OMS/cmsy/m/n/10.95 ^^A$\OT1/cmr/m/n
+/10.95 K)).
+ []
 
 
 
@@ -2336,7 +2341,7 @@ ts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "lecture notes.pdf" (188 pages, 605829 bytes).
+Output written on "lecture notes.pdf" (188 pages, 608086 bytes).
 PDF statistics:
  691 PDF objects out of 1000 (max. 8388607)
  465 compressed objects within 5 object streams

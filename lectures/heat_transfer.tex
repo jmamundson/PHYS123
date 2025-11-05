@@ -30,7 +30,7 @@ Three basic types of heat transfer, and all depend on temperature differences:
 \subsection{Conduction}
 When there is a temperature difference across an object, energy is transferred from the warm side (w/ fast molecules) to the cool side (w/ slow molecules). (We already saw this.)
 
-[Insert diagram; rod with fire on one end and ice on the other.
+[Diagram of rod with fire on one end and ice on the other.
 \vspace{5cm}
   
 The \textit{rate} at which heat is transferred depends on the object's composition, length, cross-sectional area, and the temperature difference.
@@ -47,13 +47,39 @@ Notice that the rate of heat transfer depends on $\Delta{T}$. What happens when 
 [Sketch of $\Delta{Q}/\Delta{t}$ of two objects equilibrating.]
 \vspace{5cm}
 
-\subsubsection{Example \#1: Heat transfer through a floor.}
-We can think about the rate at which heat travels through a floor. Let's say that the room temperature is 19.6$^\circ$C, the temperature below the floor is 16.2$^\circ$C, and the floor has an area of 22 m$^2$ and is 0.018 m thick.
+It's difficult for sea ice to become more than about a meter thick. Forming sea ice requires heat being pulled out of the ocean surface. Once ice forms, it insulates the ocean with a fairly low thermal conductivity. As it thickens, it becomes increasingly difficult to remove heat from the ocean.
+
+
+\subsubsection*{Example \#1: Heat transfer through a floor}
+We can think about the rate at which heat travels through a uninsulated wood floor ($k=0.2$~W/(m$\cdot$K)). Let's say that the room temperature is 19.6$^\circ$C, the temperature below the floor is 16.2$^\circ$C, and the floor has an area of 22 m$^2$ and is 0.018 m thick.
+
+[Diagram of heat flow through floor.]
+\vspace{3cm}
 
 The rate of heat transfer is 
 $$\frac{Q}{\Delta{t}}=\left(\frac{kA}{L}\right)\Delta{T}=830\mbox{ J/s}=830\mbox{ W}$$
 
 (Rate at which energy is changing is the power, and has units of watts.)
+
+Insulation typically has a thermal conductivity of about $k=0.05$~W/(m$\cdot$K) and a thickness on the order of 0.1~m. Both the wood floor and any insulation under it would resist heat flow, but let's ignore the wood. With the just the insulation itself, the rate of heat flow would be 37.4~W, which is over an order of magnitude smaller than the wood by itself.
+
+How do we include both?
+
+[Diagram showing two objects in contact with each other.]
+\vspace{4cm}
+
+For the wood floor,
+$$\frac{Q}{\Delta{t}}=\left(\frac{k_wA}{L_w}\right)(T_{in}-T_{mid})$$
+and for the insulation
+$$\frac{Q}{\Delta{t}}=\left(\frac{k_iA}{L_i}\right)(T_{mid}-T_{out})$$
+
+The heat flow through the wood has to equal the heat flow through the insulation. Solving for the temperature at the point where the wood and insulation meet,
+$$T_m = \frac{\frac{k_w}{L_w}T_{in}+\frac{k_i}{L_i}T_{out}}{\frac{k_w}{L_w}+\frac{k_i}{L_i}} = 19.45^\circ\mbox{C}$$
+
+Note: I converted back and forth between kelvin to do this calculation.
+
+The bottom of the wood is only slightly cooler than the inside of the room. Now, calculating $Q/\Delta t$ (using either equation), we get 35.8~W.
+
 
 \subsection{Advection/convection}
 Advection $\rightarrow$ transport of heat by a moving material\\
@@ -75,7 +101,7 @@ $$\frac{Q}{\Delta{t}}=e\sigma AT^4$$
 
 (We find this equation by modifying some other equations that we haven't seen yet...)
 
-$e$ is the emissivity (unitless); it is the ratio of energy radiated to energy absorbed. $e=0.97$ for humans\\
+$e$ is the emissivity (unitless); it is the ratio of energy radiated relative to a black body (absorbs all energy that it receives). $e=0.97$ for humans\\
 $\sigma$ is the Stefan-Boltzmann constant; $\sigma=5.67\times 10^{-8}\frac{\mbox{W}}{\mbox{m}^2\mbox{K}^4}$\\
 $A$ is the surface area\\
 $T$ is temperature in Kelvin
@@ -91,8 +117,10 @@ A fourth way that you can transfer energy out of a system is by evaporation. Let
 
 A 68 kg woman cycles at a constant 15 km/h. All of the metabolic energy that does not go to forward propulsion is converted to thermal energy in her body. If the only way her body has to keep cool is by evaporation, how many kilograms of water must she lose to perspiration each hour to keep her body temperature constant?
 
-The metabolic power of a 68 kg cyclist going 15 km/h is 480 W (480 J/s). This is the rate at which the cyclist is using energy and is essentially determined experimentally. 75\% of this is transformed into thermal energy. So 360 W of thermal energy is produced; this much must be released by evaporation to keep the cyclists temperature constant. So
+The metabolic power of a 68 kg cyclist going 15 km/h is 480 W (480 J/s). This is the rate at which the cyclist is using energy and is essentially determined experimentally. 75\% of this is transformed into thermal energy. 360 W of thermal energy is produced; this much must be released by evaporation to keep the cyclist's temperature constant. So
 $$\frac{Q}{\Delta{t}}=\frac{mL_v}{\Delta{t}}$$
+
+Using a specific latent heat of vaporization for water of $L_v=2.26\times 10^6$~J/kg, we find
 $$\frac{m}{\Delta{t}}=\frac{Q}{\Delta{t}}\frac{1}{L_v}=1.5\times 10^{-4}\mbox{ kg/s}=0.54\mbox{ kg/hr}$$
 
 This is about half a liter per hour. Seems reasonable.
@@ -103,7 +131,7 @@ When you perspire, warm water (sweat) moves to the outside of your body. It then
 \subsection{Refrigerators}
 How do refrigerators work? By making use of the thermodynamics of gases and liquids to get heat to flow from a cold reservoir to a warm reservoir. In particular, they utilize electromagnetic radiation, advection, conduction, and latent and specific heats.
 
-[Insert diagram.]\nopagebreak
+[Conceptual diagram of a refrigerator.]\nopagebreak
 \vspace{6cm}
 
 
