@@ -37,12 +37,15 @@ It is this pressure difference that creates ``suction''.
 
 Atmospheric pressure is actually quite large --- about 101.3 kPa at sea level. 
 
-\subsubsection{Demo: Pressure and the Magdeburg hemisphere}
-Pump air out of Magdeburg hemispheres, essentially creating a vacuum. By pumping air out, we are removing molecules and therefore reducing the number of collisions with the container, and so the pressure goes to 0. What is the force that is needed to overcome air pressure and pull apart the hemisphere?
+\subsubsection*{Demo: Pressure and the Magdeburg hemispheres}
+Pump air out of Magdeburg hemispheres, essentially creating a vacuum. By pumping air out, we are removing molecules and therefore reducing the number of collisions with the container, and so the pressure goes to 0. What is the force that is needed to overcome air pressure and pull apart the hemispheres?
 
 Pressure acts perpendicular to a surface. Here, we are really only concerned with the component of the pressure force that is parallel to the direction of the applied forces. So the area of interest is the cross-sectional area of the sphere.
 
-Let's say that the radius of the hemisphere is 4 cm. The cross-sectional area is therefore $\pi(0.05)^2=0.008\mbox{ m}^2$. This means that the force (from the atmospheric pressure) acting on either side of the hemisphere is $F=PA=800\mbox{ N}$. That force acts on both sides; you would need to apply a force of 1600 N to be able to open the hemisphere. (For comparison, the gravitational force acting on me is about 750 N.)
+[Diagram of horizontal forces acting on the hemisphere.]\nopagebreak
+\vspace{3cm}
+
+Let's say that the radius of the hemisphere is 4 cm. The cross-sectional area is therefore $\pi(0.04)^2=0.005\mbox{ m}^2$. This means that the force (from the atmospheric pressure) acting on either side of the hemisphere is $F=PA=510\mbox{ N}$. That force acts on both sides; you would need to apply a force of 510 N with each hand to be able to open the hemispheres. (For comparison, the gravitational force acting on me is about 750 N.)
 
 \subsubsection{Moles}
 What is $n$? Its the number of moles of gas in a particle.
@@ -130,10 +133,17 @@ In other words, the change in volume depends exponentially on the work that is d
 An adiabatic process is one which there is no heat transfer. Since $Q=0$,
 $W=\Delta E_{th}$. If you do work on the gas (you compress it), then the thermal energy (i.e., temperature) will increase. Conversely, if the gas does work on the environment then the gas will expand and cool.
 
+The derivation is tedious and involves calculus, so I'll just show the result:
+$$P_iV_i^\gamma = P_fV_f^\gamma$$
+where
+$$\gamma=\frac{c_p}{c_v}.$$
+For monatomic gases, $gamma=1.40$.
+
 [Diagram of adiabatic processes.]\nopagebreak
 \vspace{5cm}
 
-\subsubsection{Conceptual question: Do heat and work depend on the path?}
+\subsection{Examples}
+\subsubsection*{Conceptual question: Do heat and work depend on the path?}
 In the following diagram, the gas moves from an initial state ($P_i,V_i$) to a final state ($P_f,V_f$). Are the work and heat along each of these paths the same, and if not, how are they different?
 
 [Diagram of gas transformation from ($P_i,V_i$) to ($P_f,V_f$).]\nopagebreak
@@ -149,5 +159,36 @@ which must also mean that
 $$Q_1>Q_2$$
 
 
+\subsubsection*{Example \#1: expandable cube}
+An expandable cube, initially 20 cm on each side, contains 3.0 g of helium at 20$^\circ$C. 1000 J of heat is transferred into this gas. What are (a) the final pressure if the process is at a constant volume and (b) the final volume if the process is at constant pressure?
+
+Also given:\\
+3 g of He is 0.75 mol\\
+$C_v=12.5$ J/(mol$\cdot$K)\\
+$C_p=20.8$ J/(mol$\cdot$K)
+
+(a) Because this is at constant volume, and because
+$$\frac{PV}{T}=\mbox{constant},$$
+we have
+$$\frac{P}{T}=\mbox{constant}\Rightarrow\frac{P_i}{T_i}=\frac{P_f}{T_f}.$$
+We want to solve for the final pressure, so
+$$P_f=\frac{T_f}{T_i}P_i.$$
+
+We know that $T_i=293\mbox{ K}$. What are $T_f$ and $P_i$? Heating the gas will change its temperature
+$$Q=nC_v\Delta{T}\Rightarrow \Delta{T}=\frac{Q}{nC_v}=107\mbox{ K},$$
+so $T_f=400$ K. The initial pressure we can find using the ideal gas law.
+$$P_iV_i=nRT_i\Rightarrow P_i=\frac{nRT_i}{V_i}=228\mbox{ kPa}$$
+Plugging this into the equation for $P_f$ gives
+$$\boxed{P_f=311\mbox{ kPa}}$$
+
+(b) Because this is constant pressure, we have
+$$\frac{PV}{T}=\mbox{constant}\Rightarrow \frac{V}{T}=\mbox{constant}$$
+This means that
+$$\frac{V_i}{T_i}=\frac{V_f}{T_f}\Rightarrow V_f=\frac{T_f}{T_i}V_i$$
+
+The initial volume and temperature are given. We just need to calculate $T_f$.
+$$Q=nC_p\Delta{T}\Rightarrow \Delta{T}=\frac{Q}{nC_p}=64.1\mbox{ K},$$
+so $T_f=357\mbox{ K}$. Consequently, 
+$$\boxed{V_f=0.00975\mbox{ m}^3=9.75\mbox{ L}}$$.
 
 \clearpage

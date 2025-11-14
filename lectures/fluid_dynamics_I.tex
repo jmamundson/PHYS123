@@ -15,7 +15,7 @@ Objectives:
 \end{itemize}
 \item Pressure = force / area; depends on weight of overlying fluid
   \begin{itemize}
-  \item For liquids in hydrostatic equilibrium: $P=P_{atm}+\rho gh$ in an open container, or $P=P_{gas}+\rho gh$ in a closed container; assume that density is constant
+  \item For liquids in hydrostatic equilibrium: $P=P_{0}+\rho gh$, where $P_0$ is the pressure at the top of the liquid (could be atmospherice pressure or gas pressure)
   \item For gases (especially in closed containers): often assume constant pressure. Because the density is low, changes in pressure are small over short distances. If considering large distances, have to account for changes in density.  
   \item Pressure is constant along horizontal lines for a fluid that is in hydrostatic equilibrium.
   \end{itemize}
@@ -26,25 +26,31 @@ We will assume three things:
 \begin{enumerate}
 \item The fluid is incompressible. This is a good approximation for many liquids, especially water, and is not even a bad approximation for gases.
 \item The fluid flow is steady (laminar) and non-turbulent.
-  [Insert diagram.]
+
+  [Sketch of laminar and turbulent flow.]
   \vspace{3cm}
   
-The transition from laminar to turbulent flow depends on the fluid properties, the flow speed, and the geometry of the flow. [Discuss water coming from faucet.]
+  The transition from laminar to turbulent flow depends on the fluid properties, the flow speed, and the geometry of the flow.
+
+
+  [Show video of water coming from faucet.]
+
+  
 \item The fluid is non-viscous. Viscosity is a fluid's resistance to flow; think of it as internal friction. Water has a low viscosity, syrup has a high viscosity. (Later we'll take into account viscosity.)
 \end{enumerate}
 
 \subsection{Flux continuity}
-These assumptions lead to a nice continuity equation for fluid flow through a \textit{pipe}:
+The incompressibility assumption leads to a nice continuity equation, which is really a statement of mass conservation, for fluid flow through a \textit{pipe}:
 $$Q=vA=\mbox{constant}$$
 where $Q$ is the flux [m$^3$/s], $v$ is the velocity, and $A$ is the cross-sectional area. Note that for ideal fluids, the flow velocity does not vary across the channel.
 
 [Insert diagram of a pipe showing that $Q_1=Q_2$.]\nopagebreak
 \vspace{4cm}
 
-The continuity equation is different for open channel flow, because the depth of the channel can also change. In that case,
+Note that the continuity equation is different for open channel flow, because the depth of the channel can also change. In that case,
 $$\frac{\Delta V}{\Delta t}=Q_{in}-Q_{out}$$
 
-\subsubsection{Example \#1: Water flow through variable diameter pipe}
+\subsubsection*{Example \#1: Water flow through variable diameter pipe}
 Water enters a pipe with a diameter of 1 cm at 4 m/s. The pipe expands to 2 cm, then shrinks to 0.5 cm. (a) What is the flux? (b) What are the water speeds in each section of pipe?
 
 (a) Flux:
@@ -56,7 +62,7 @@ $$v_3=\frac{A_1v_1}{A_3}=16\mbox{ m/s}$$
 
 
 \subsection{Bernoulli's Equation}
-Ok, that's great, but what causes fluid motion? Fluid flow is constant through straight stretches of pipe, but accelerates or decelerates as the pipe diameter varies.
+The flux continuity equation tells us that fluid flow is constant through straight stretches of pipe, but accelerates or decelerates as the pipe diameter varies.
 
 For an ideal fluid in a pipe, there are no external forces acting on the fluid --- only pressure.
 
@@ -71,7 +77,7 @@ $\Delta{P}$ represents the pressure difference along the pipe. If $\Delta{P}>0$,
 
 [Demo of Bernoulli effect.]
 
-OK, so pressure gradients (differences) are one thing that causes fluid to flow. Gravity also causes fluids to flow. Pressure gradients and gravity both represent forces; we want to relate these things to fluid flow in a single equation. To do this, we'll use the work-energy theorem.
+To understand how pressure causes fluid flow, we'll use the work-energy theorem.
 
 Recall:
 $$W=\Delta E=\Delta K+\Delta U_g$$
@@ -79,7 +85,7 @@ Here we are assuming that the fluid is inviscid, so there is no change in therma
 
 We're going to look at what happens to a volume of water as it flows through a pipe that changes elevation and has a change in area.
 
-[Insert diagram.]\nopagebreak
+[Diagram of pipe used to derive Bernoulli's equation.]\nopagebreak
 \vspace{5cm}
 
 As the slug of water moves through the pipe, there a loss of volume on the left and a gain in volume on the right. 
@@ -106,18 +112,21 @@ $$\boxed{W=W_1+W_2=(P_1-P_2)\Delta V}$$
 Putting this all together,
 $$(P_1-P_2)\Delta V=\frac{1}{2}\rho \Delta V(v_2\ds^2-v_1\ds^2)+\rho \Delta V(h_2-h_1)$$
 Dividing by $\Delta V$ and re-arranging,
-$$P_1+\frac{1}{2}\rho v_1\ds^2+\rho gh_1=P_2+\frac{1}{2}\rho v_2\ds^2+\rho gh_2=\mbox{constant}$$
+$$\boxed{P_1+\frac{1}{2}\rho v_1\ds^2+\rho gh_1=P_2+\frac{1}{2}\rho v_2\ds^2+\rho gh_2=\mbox{constant}}$$
 This is referred to as Bernoulli's Equation.
 
 This quantity is constant along a streamline (a path that a particle takes) in an ideal fluid.
 
 Let's think about what this means by looking at the fluid flow through a pipe that has changes in elevation and diameter.
 
-[Insert diagram.]\nopagebreak
+[Diagram of a pipe with various diameters and elevations.]\nopagebreak
 \vspace{8cm}
 
-\subsubsection{Example \#2: Water flow from a reservoir}
+\subsubsection*{Example \#2: Water flow from a reservoir}
 Water flows from a reservoir, through an intake tube, and down to a turbine. The intake tube has a diameter of 100 cm and is 50 m below the reservoir surface. The water drops 200 m to the turbine; water flows into the turbine through a 50 cm diameter nozzle. (a) What is the water speed into the turbine? (b) By how much does the inlet pressure differ from hydrostatic pressure?
+
+[Diagram of reservoir and pipe.]\nopagebreak
+\vspace{4cm}
 
 (a) There is no flow at the surface of the reservoir, and the elevation at $y_3=0$. 
 $$P_{\rm atm}+\rho g y_1=P_{\rm atm}+\frac{1}{2}\rho_g v_3^2$$

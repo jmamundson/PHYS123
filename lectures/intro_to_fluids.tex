@@ -1,139 +1,172 @@
 \section{Introduction to fluids}
 Objectives:
 \begin{itemize}
-\item Hydrostatics
-  \begin{itemize}
-  \item Density
-  \item Pressure
-  \end{itemize}
+\item Density and pressure
+\item Archimedes' principle
+\item Measuring gas pressure
 \end{itemize}
 
-\subsection{Review of thermodynamics of gases}
-Today I'd like to start talking about fluids, but before doing that I think we should do an example related to the last lecture.
 
-Important ideas from last time:
-\begin{itemize}
-\item Ideal gas law: $PV=nRT$. For closed containers, we can saw that $\frac{PV}{T}=\mbox{constant}$.
-\item Pressure at sea level: $P=101.325$~kPa; this is equivalent to 101.325~kN acting on 1~m$^2$ or 10.1325~N on 1~cm$^2$
-\item Change in thermal energy of a gas is given by $\Delta{E_{th}}=\frac{3}{2}nR\Delta{T}$
-\item Work and heat (transfer) can change the total energy of a gas
-\item Isochoric or isovolumetric process: heat transferred into a gas container with no change in volume
-\item Isobaric process: pressure is constant, but volume and temperature can change due to work or heat transfer
-\item Isothermal process: no change in temperature (or thermal energy), so work done by a gas must balance with heat transfer into the gas
-\item The specific heat of a gas depends on whether the volume or pressure change...
-\end{itemize}
+\subsection{Definitions}
+We'll spend the next few lectures discussing the motion of fluids by using the ideas of forces and energy.
 
-\subsubsection{Example \#1: expandable cube}
-An expandable cube, initially 20 cm on each side, contains 3.0 g of helium at 20$^\circ$C. 1000 J of heat is transferred into this gas. What are (a) the final pressure if the process is at a constant volume and (b) the final volume if the process is at constant pressure?
+A \textit{fluid} is simply a substance that flows, and includes both gases and liquids.
 
-Also given:\\
-3 g of He is 0.75 mol\\
-$C_v=12.5$ J/(mol$\cdot$K)\\
-$C_p=20.8$ J/(mol$\cdot$K)
+In a \textit{gas}, the molecules move freely with few interactions.
 
-(a) Because this is at constant volume, and because
-$$\frac{PV}{T}=\mbox{constant},$$
-we have
-$$\frac{P}{T}=\mbox{constant}\Rightarrow\frac{P_i}{T_i}=\frac{P_f}{T_f}.$$
-We want to solve for the final pressure, so
-$$P_f=\frac{T_f}{T_i}P_i.$$
+In a \textit{liquid}, the molecules are weakly bound to each other but can slide past each other.
 
-We know that $T_i=293\mbox{ K}$. What are $T_f$ and $P_i$? Heating the gas will change its temperature
-$$Q=nC_v\Delta{T}\Rightarrow \Delta{T}=\frac{Q}{nC_v}=107\mbox{ K},$$
-so $T_f=400$ K. The initial pressure we can find using the ideal gas law.
-$$P_iV_i=nRT_i\Rightarrow P_i=\frac{nRT_i}{V_i}=228\mbox{ kPa}$$
-Plugging this into the equation for $P_f$ gives
-$$\boxed{P_f=311\mbox{ kPa}}$$
 
-(b) Because this is constant pressure, we have
-$$\frac{PV}{T}=\mbox{constant}\Rightarrow \frac{V}{T}=\mbox{constant}$$
-This means that
-$$\frac{V_i}{T_i}=\frac{V_f}{T_f}\Rightarrow V_f=\frac{T_f}{T_i}V_i$$
+\subsection{Density, pressure, and hydrostatic equilibrium}
+[Demo of balloons floating over dry ice.]
 
-The initial volume and temperature are given. We just need to calculate $T_f$.
-$$Q=nC_p\Delta{T}\Rightarrow \Delta{T}=\frac{Q}{nC_p}=64.1\mbox{ K},$$
-so $T_f=357\mbox{ K}$. Consequently, 
-$$\boxed{V_f=0.00975\mbox{ m}^3=9.75\mbox{ L}}$$.
 
-\subsection{Hydrostatics}
-That's all that I have to say (for now, anyway) about thermodynamics and gases. I'd like to now turn our attention to fluids. We'll first focus on hydrostatics --- fluids at rest.
+An important parameter for describing fluids is density: $\rho=\frac{m}{V}$. Variations in density cause fluid parcels to rise or sink. For example, small variations in water density have a large impact on the circulation of water bodies because dense water tends to sink whereas less dense water tends to rise to the surface.
 
-What is a fluid? Its a substance that flows and takes the shape of a container.
-
-[Diagram of container containing a fluid.]\nopagebreak
-\vspace{5cm}
-
-In a fluid, molecules are weakly bonded but can slide past each other.
-
-\subsection{Density}
-An important parameter for describing fluids is density.
-$$\rho=\frac{m}{V}$$
-
-Sometimes $\rho$ depends on pressure, sometimes it doesn't...
-
-Examples:\\
-sea water: $\sim 1030$ kg/m$^3$; it depends on salinity, temperature, and pressure
-
-fresh water: $\sim 1000$ kg/m$^3$; it depends on temperature\\
-\begin{itemize}
-\item at 20$^\circ$C, $\rho=998.2071$ kg/m$^3$
-\item at 4$^\circ$C, $\rho=999.9720$ kg/m$^3$
-\item at 0$^\circ$C, $\rho=998.8395$ kg/m$^3$
-\end{itemize} 
-
-ice: $\sim 917$ kg/m$^3$ (if bubble free, otherwise $<917$ kg/m$^3$)
-
-firn: $\sim 800$ kg/m$^3$
-
-fresh snow: $100$--$300$ kg/m$^3$
-
-Water is \underline{weird}. For most substances, the solid form is more dense than the liquid form. If this were also true for water, life wouldn't exist --- at least not as we know it. Its also weird that the densest fresh water is 4$^\circ$C.
-
-Ice that forms in a water body floats at the surface, and it insulates the water from cold air. The water at depth remains liquid.
-
-[Draw diagram.]\nopagebreak
-\vspace{5cm}
-
-Its very difficult to form thick lake ice or sea ice. ``Multi-year'' ice in the Arctic Ocean is just a few meters thick.
-
-One important process involving water is the overturning of lakes during spring and fall, which is due to the fact that the densest water is at 4$^\circ$C.
-
-[Draw diagrams showing overturning lakes and temperature profiles.]\nopagebreak
-\vspace{8cm}
-
-\subsection{Hydrostatic pressure}
 Why does dense material sink? To answer that, we need to think a bit about pressure.
 
-[Insert diagram with a column of water in a container.]\nopagebreak
+[Switch to slides that describe differences between liquid pressure and gas pressure.]
+
+Pressure is the force per area exerted by a fluid on a surface. We have already discussed this in the context of gases. It is a little bit different for liquids because liquids are weakly bonded to each other $\rightarrow$ discuss fluids in outerspace vs. on Earth $\rightarrow$ pressure arises due to temperature (especially for gases) and gravity (especially for liquids). But gas pressure is also affected by gravity, which is why the atmospheric pressure changes with altitude. Similarly, the pressure of liquids also depends on temperature because the density depends on temperature.
+
+
+[Diagram with a parcel of water in a container.]
 \vspace{5cm}
 
-Let's assume that the column is in hydrostatic equilibrium.
+Let's assume that the parcel is in hydrostatic equilibrium, meaning that it's not flowing.
 
-There is a force from the overlying water and air that acts on downward on the column of water. This force is equal to $$F_{down}=P_0A + mg=\rho Vg=\rho hAg$$
-
-From Newton's Third Law, there is a force pushing back on the column with an equal and opposite force. If, as before, we define pressure as $P=F/A$, then the force upward force exerted by the parcel of water is
-$$F=PA=P_0A+\rho hAg$$
-Dividing by $A$ gives
-$$\boxed{P=P_0+\rho gh}$$
+There is a gravitational force acting on the parcel, a force from the overlying atmosphere that acts on the parcel of water, and a force that acts upward on the parcel due to the pressure from below. Summing the forces in the vertical direction,
+$$\sum F_y = PA - F_g - P_oA = 0$$
+$$PA - \rho Vg - P_0A = 0$$
+$$PA - \rho Ahg - P_0A = 0$$
+$$\boxed{P = \rho gh + P_0}$$
 The hydrostatic fluid pressure depends on depth.
 
 This pressure acts equally in all directions. If that wasn't the case, the fluid parcel would change shape. (One way to check would be to put a pressure sensor in water -- basically a device with a spring that responds to the force from the water -- and rotate it about in the water column.) This tells us that in a static fluid, water pressure is constant along horizontal lines and the water surface rises to the same level everywhere.
 
-I always think its nice to have a reference value for physical units. A convenient one for pressure is to think about the water pressure below 1 m of water.
-$$P=\rho gh=1000\mbox{ kg/m}^3\times 9.81\mbox{ m/s}^2\times 1\mbox{ m}\approx 10^4\mbox{ Pa}$$
+I always think its nice to have a reference value for physical units. A convenient one for pressure is to think about the water pressure below 10 m of water.
+$$P=\rho gh+P_0=1000\mbox{ kg/m}^3\times 9.81\mbox{ m/s}^2\times 10\mbox{ m} + 10^5\mbox{ Pa} \approx 2\times 10^5\mbox{ Pa}$$
+This is about twice the atmospheric pressure. In other words, 10 m of water is equivalent to several kilometers of air.
 
-Note that the water pressure below 10 m of water is 10$^5$ Pa, which is basically the same as the atmospheric pressure at sea level. In other words, 10 m of water is equivalent to several kilometers of air.
+\subsubsection*{Demo: Water shooting out of 2 L bottle}
+Because water pressure increases with depth, the force acting on water molecules as they are pushed out of an opening will also depend on depth.
 
-Gas pressure also varies with elevation for the same reason as fluid pressure. However, since the density of gases are so low, the pressure variations are small over short distances. In a closed container, we treat gas pressure as constant.
+\subsection{Archimedes' principle}
+Now let's look at the forces acting on an object in water. 
 
-\subsubsection{Pressure demos}
-\begin{itemize}
-\item Bottle with pin holes at different elevations to show that pressure varies with depth
-\item Pipette to illustrate water pressure in a vacuum
-  $$P_0=\rho g d + P_{bubble}$$
-  $$P_{bubble} = P_0-\rho g d$$
-  If $d=10$~cm and $\rho=1000$~kg/m$^3$, then $P_{bubble}=100.344$~kPa
-\end{itemize}
+[Insert diagram of object submersed in water]
+\vspace{5cm}
+
+$$\sum F_y=F_{\mbox{below}}-F_{\mbox{above}}-F_g=F_{net}=ma_y$$
+The forces from below and above the object are due to pressure (recall that $F=PA$).
+$$\rho_w g(h+L)A-\rho_w ghA-\rho_o gLA=ma_y$$
+$$\rho_w gLA-\rho_o gLA=\rho_oLAa_y$$
+The upward force is referred to as the buoyant force. Notice that it is equal to the weight of the displaced fluid:
+$$F_b=\rho_wgLA$$
+This is referred to as ``Archimedes' Principle''. If the buoyant force exceeds the object's weight, the object will rise; if it is lower than the object's weight, the object will sink. 
+
+Dividing by $LA$ and re-arranging, we arrive at
+$$\frac{(\rho_w-\rho_o)}{\rho_o}g=a_y$$
+An object that is more dense than water will sink, and the rate at which it sinks depends on the density differences. (If this were an object falling through air, $\rho_o>>\rho-w$ and so $a_y=-g$.0
+
+\subsubsection*{Demo: Cartesian diver}
+Squeezing the bottle increases the water pressure, causing water to move into the diver and its density to increase.
+
+\subsubsection*{Demo: Weight in water}
+Suspend aluminum weight from a scale. Note that when the reading on the scale drops when its placed in water.
+
+With only a scale and water, can we determine the density of the hanging mass?
+
+Its weight is
+$$F_g = \rho Vg$$
+
+What is its volume? When submerged in water,
+$$\sum F_y = F_t-F_g+F_b = 0$$
+$$F_t-F_g + \rho_w V g = 0$$
+$$V=\frac{F_g - F_t}{\rho_w g}$$
+
+Using the 100 g aluminum mass, $F_g = 1 N$ and $F_t = 0.65 N$.
+$$V = 3.6\times 10^{-5}\mbox{ m}^3 = 36\mbox{ mL}$$
+Plugging back into $F_g$,
+$$\rho = \frac{F_g}{Vg}=2900\mbox{ kg m}^{-3}$$
+
+
+\subsubsection*{Example \#1: Buoy anchored to the ocean floor}
+A sphere completely submerged in water is tethered to the bottom with a string. The tension in the string is one-third the weight of the sphere. What is the density of the sphere?
+
+[Diagram of a mooring.]\nopagebreak
+\vspace{5cm}
+
+$$\sum F_y = F_b-F_g-F_t = ma_y = 0$$
+$$F_t = \frac{1}{3}F_g$$
+$$F_b-\frac{4}{3}F_g = 0$$
+$$\rho_wgV-\frac{4}{3}\rho gV=0$$
+$$\rho=\frac{3}{4}\rho_w=\boxed{750\mbox{ kg/m}^3}$$
+
+
+\subsubsection*{Icebergs}
+I'm sure you've all heard that 90\% of an iceberg is below the water surface. We can explain that using Archimedes' principle.
+
+Consider an iceberg floating at rest at the water surface. 
+
+[Insert diagram.]
+\vspace{5cm}
+
+$$\sum F_y=F_b-F_g=0$$
+
+$$F_b=m_dg=\rho_wV_dg,$$
+where $V_d$ is the volume of displaced water.
+
+$$F_g=m_ig=\rho_iV_ig$$
+
+Combining these gives
+$$\rho_wV_dg-\rho_iV_ig=0$$
+Dividing by $g$ and re-arranging gives
+$$\frac{V_d}{V_i}=\frac{\rho_i}{\rho_w}\approx 0.9$$
+90\% of the iceberg is submerged.
+
+
+\subsection{Measuring gas pressures}
+Fluids are often used to measure gas pressure (such as atmospheric pressure)
+
+\subsubsection{Manometer}
+[Insert diagram.]
+\vspace{5cm}
+
+In a fluid that is in hydrostatic equilibrium, the pressure is constant along horizontal lines. (If this wasn't the case the fluid would move upward or downward.)
+
+In a manometer, this means that 
+$$P_1=P_2$$
+where
+$$P_1=P_{gas}$$
+and
+$$P_2=P_o+\rho gh$$
+Therefore, the gas pressure is
+$$P_{gas}=P_o+\rho gh.$$
+
+For this to work though, we need to know the atmospheric pressure. For that, we need a barometer.
+
+\subsection{Barometer}
+[Insert diagram of a barometer.]\nopagebreak
+\vspace{5cm}
+
+In a barometer, 
+$$P_o=\rho gh,$$
+where $\rho$ is the fluid density and $h$ is the height of the column.
+
+You could use any fluid, but its best to use really dense fluids (that way the barometer can be small). If you use water (with a density of 1000 kg/m$^3$), you would need a column that is
+$$h=\frac{P_o}{\rho g}=10\mbox{ m}$$
+
+Mercury has a density of 13,534 kg/m$^3$. The column of mercury that you need is only 0.76 m tall --- this is about 30 in of mercury. For really accurate pressure readings, you need to account for thermal expansion of mercury, for which you need a thermometer.
+
+
+\subsubsection*{Demo of pipette holding water}
+Use a pipette or straw to illustrate water pressure in a vacuum
+$$P_0=\rho g d + P_{bubble}$$
+$$P_{bubble} = P_0-\rho g d$$
+If $d=10$~cm and $\rho=1000$~kg/m$^3$, then $P_{bubble}=100.344$~kPa
+
+What is the maximum height straw that you could conceivably use?
 
 
 \clearpage
