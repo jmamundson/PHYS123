@@ -161,11 +161,9 @@
 \contentsline {section}{\numberline {30 }Fluid dynamics II}{147}{}%
 \contentsline {subsection}{\numberline {30.1 }Demo using Venturi tube}{147}{}%
 \contentsline {subsection}{\numberline {30.2 }Viscosity}{148}{}%
-\contentsline {subsubsection}{\numberline {30.2.1 }Example \#1: Application of Poiseuille's equation}{149}{}%
 \contentsline {section}{\numberline {31 }Oscillations}{151}{}%
 \contentsline {subsection}{\numberline {31.1 }Springs}{151}{}%
 \contentsline {subsection}{\numberline {31.2 }Simple pendulums}{153}{}%
-\contentsline {subsubsection}{\numberline {31.2.1 }Biological application}{154}{}%
 \contentsline {subsection}{\numberline {31.3 }Physical pendulums}{154}{}%
 \contentsline {section}{\numberline {32 }Damped and driven oscillations}{156}{}%
 \contentsline {subsection}{\numberline {32.1 }Simple harmonic motion}{156}{}%
