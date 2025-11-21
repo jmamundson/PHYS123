@@ -16,34 +16,36 @@ Last class:
 \end{itemize}
 
 Displacement as a function of time:
-$$x(t)=A\cos(2\pi ft)=A\cos\left(2\pi\frac{t}{T}\right)$$ 
-Here $A$ is the amplitude of the oscillations.
+$$x(t)=x_i\cos(2\pi ft)=x_i\cos\left(2\pi\frac{t}{T}\right)$$ 
+Here $x_i$ is the initial amplitude of the oscillations and $f$ is the frequency.
 
-Velocity is the instantaneous slope of position. Graphically, we saw that this means that
-$$v(t)=-v_{max}\sin(2\pi ft)$$
+Velocity is the instantaneous slope of position. We saw that this means that
+$$v(t)=-v_{max}\sin(2\pi ft),$$
+where $v_{max}=2\pi f x_i$.
 
 Accleration is the slope of velocity. Graphically, we saw that this means that
-$$a(t)=-a_{max}\cos(2\pi ft)$$
+$$a(t)=-a_{max}\cos(2\pi ft),$$
+where $a_{max}=(2\pi f)^2x_i$.
 
 \subsubsection{Springs}
 \begin{itemize}
-\item Amplitude is $A=x_i$  
+\item $f=\frac{1}{2\pi}\sqrt{\frac{k}{m}}$ 
 \item From conservation of energy: $v_{max}=x_i\sqrt{\frac{k}{m}}$
 \item From Newton's Second Law: $a_{max}=x_i\frac{k}{m}$
-\item $T=\frac{1}{f}=2\pi\sqrt{\frac{m}{k}}$
+
 \end{itemize}
 
 \subsubsection{Pendulums}
-For pendulums, we use angular position instead of linear position and use the small angle approximation. Thus, the amplitude is $\theta_i$, which is the initial angular position. The equations work out to be identical (with different variables) to the equation for an oscillating spring. We found that
+For pendulums, we use angular position instead of linear position and use the small angle approximation. Thus, we replace $x$, $v$, and $a$ with $\theta$, $\omega$, and $\alpha$. The equations work out to be identical (with different variables) to the equation for an oscillating spring. We found that
 \begin{itemize}
-\item for a simple pendulum, $T=2\pi\sqrt{\frac{L}{g}}\approx 2\sqrt{L}$
-\item for a physical pendulum, $T=2\pi\sqrt{\frac{I}{mgl}}$, where $I$ is the moment of inertia around the axis of rotation and $d$ is the distance from the axis of rotation to the center of mass of the pendulum
+\item for a simple pendulum, $f=\frac{1}{2\pi}\sqrt{\frac{g}{L}}$ 
+\item for a physical pendulum, $f=\frac{1}{2\pi}\sqrt{\frac{mgl}{I}}$, where $I$ is the moment of inertia around the axis of rotation and $d$ is the distance from the axis of rotation to the center of mass of the pendulum
 \end{itemize}
 
-\subsubsection{Example \#1: Pendulum on Mars}
+\subsubsection*{Example \#1: Pendulum on Mars}
 The first astronauts to visit Mars are each allowed to take along some personal items to remind them of home. One astronaut takes along a grandfather clock, which, on Earth, has a pendulum that takes 1 second per swing, each swing corresponding to one tick of the clock. When the clock is set up on Mars, will it run faster or slower? How much faster or slower?
-$$T=2\pi\sqrt{L}{g}$$
-Gravitational acceleration is lower on Mars (3.711 m/s$^2$), so the pendulum will run slower. To find how much slower, we need to determine the length of the pendulum.
+$$T=\frac{1}{f}=2\pi\sqrt{\frac{L}{g}}$$
+Gravitational acceleration is lower on Mars (3.711 m/s$^2$), so the pendulum will run slower (the period of one oscillation is longer). To find how much slower, we need to determine the length of the pendulum.
 
 $$L = g\left(\frac{T}{2\pi}\right)^2 = 0.25\mbox{ m}$$
 
@@ -51,15 +53,18 @@ $$T_{Mars} = 2\pi\sqrt{\frac{0.25\mbox{ m}}{3.711\mbox{ m/s}^2}} = 1.63\mbox{ s}
 
 The clock runs 63\% slower. So when 24 hours have passed, the clock will only think that 14.7 hours have passed.
 
+We could also determine this more directly by computing the ratio of the the period on Mars to the period on Earth:
+$$\frac{T_{Mars}}{T_{Earth}} = \frac{2\pi\sqrt{\frac{L}{g_{Mars}}}}{2\pi\sqrt{\frac{L}{g_{Earth}}}} = \sqrt{\frac{g_{Earth}}{g_{Mars}}}=1.63$$
+The advantage to this method is that it shows that the result is independent of the pendulum length and only depends on the ratio of the gravitational accelerations.
 
-\subsubsection{Example \#2: Oscillating spring}
+\subsubsection*{Example \#2: Oscillating spring}
  A 204 g block is suspended from a vertical spring, causing the spring to stretch by 20 cm. The block is then pulled down an additional 10 cm and released. What is the speed of the block when it is 5.0 cm above the equilibrium position?
 
  $$v=v_{max}\sin(2\pi ft)$$
 
- (Be careful with sign here, and explain why its different than what we've done before.)
+ Note that I've dropped the negative sign from the above equation, which is because the initial displacement was negative.
 
- $$f=\frac{1}{2\pi}\sqrt\frac{k}{m}$$
+ $$f=\frac{1}{2\pi}.\sqrt\frac{k}{m}$$
  $$v_{max}=x_i\sqrt{\frac{k}{m}}$$
 
  This problem involves several steps. We need to find $v_{max}$, $f$, and $t$ to solve for the speed. However, $f$ and $v_{max}$ both depend on $k$, so we also need to figure that out. Let's start with that.
@@ -108,7 +113,7 @@ Including drag decreases the frequency ever so slightly. For a 2-cm diameter ste
 [Diagram of a damped oscillation.]\nopagebreak
 \vspace{5cm}
 
-\subsubsection{Example \#3: Damped pendulum}
+\subsubsection*{Example \#3: Damped pendulum}
 A 500 g mass on a string oscillates as a pendulum. The pendulum’s energy decays to 50\% of its initial value in 30 s. What is the value of the damping constant?
 
 This question is essentially asking when does $e^{-\frac{c}{2m}t}=0.5$? In this case, we aren't told anything about the drag coefficient, so we have to think of this more generally. Instead, this could be written as $e^{-\frac{t}{\tau}}=0.5$, where $\tau$ is the damping constant or e-folding time. Solving for $\tau$:
@@ -123,10 +128,10 @@ If the natural frequency matches the natural frequency of the system, you get la
 \vspace{5cm}
 
 
-\subsubsection{Demo: Pendulums of different lengths on a rod}
+\subsubsection*{Demo: Pendulums of different lengths on a rod}
 
 
-\subsubsection{Example \#4: Cars on springs}
+\subsubsection*{Example \#4: Cars on springs}
 Cars ride on springs; they therefore have a natural frequency. For a particular car, the natural frequency is 2 Hz. The car is driving 20 mph over a washboard road with bumps every 10 ft. What is the driving frequency? How does it compare to the natural frequency?
 
 $$v=\frac{\Delta{x}}{\Delta{t}}\Rightarrow T=\frac{\Delta{x}}{v}=\frac{10\mbox{ ft}}{20\mbox{ mph}}=0.35\mbox{ s}$$

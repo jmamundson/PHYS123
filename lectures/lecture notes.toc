@@ -169,13 +169,8 @@
 \contentsline {subsection}{\numberline {32.1 }Simple harmonic motion}{156}{}%
 \contentsline {subsubsection}{\numberline {32.1.1 }Springs}{156}{}%
 \contentsline {subsubsection}{\numberline {32.1.2 }Pendulums}{156}{}%
-\contentsline {subsubsection}{\numberline {32.1.3 }Example \#1: Pendulum on Mars}{157}{}%
-\contentsline {subsubsection}{\numberline {32.1.4 }Example \#2: Oscillating spring}{157}{}%
 \contentsline {subsection}{\numberline {32.2 }Damped oscillations}{158}{}%
-\contentsline {subsubsection}{\numberline {32.2.1 }Example \#3: Damped pendulum}{159}{}%
 \contentsline {subsection}{\numberline {32.3 }Driven oscillations and resonance}{159}{}%
-\contentsline {subsubsection}{\numberline {32.3.1 }Demo: Pendulums of different lengths on a rod}{160}{}%
-\contentsline {subsubsection}{\numberline {32.3.2 }Example \#4: Cars on springs}{160}{}%
 \contentsline {section}{\numberline {33 }Introduction to waves}{161}{}%
 \contentsline {subsection}{\numberline {33.1 }Background}{161}{}%
 \contentsline {subsection}{\numberline {33.2 }Oscillations of fixed points}{162}{}%
