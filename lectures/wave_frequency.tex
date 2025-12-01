@@ -8,7 +8,7 @@ Objectives:
 
 \subsection{Review of traveling waves}
 \begin{itemize}
-\item Wave model for waves produced by simple harmonic oscillator: $\Delta{y}(x,t)=A\cos\left(2\pi\frac{x}{\lambda}\pm 2\pi\frac{t}{T}\right)$
+\item Wave model for waves produced by simple harmonic oscillator: $\Delta{y}(x,t)=A\cos\left(2\pi\frac{x}{\lambda}\pm 2\pi\frac{t}{T}\right)=A\cos\left(2\pi\frac{x}{\lambda}\pm 2\pi ft\right)$
 \item Waves may be transverse or longitudinal
 \item Wave speed: $v=\frac{\lambda}{T}=\lambda f$
   \begin{itemize}
@@ -29,7 +29,8 @@ low frequency waves = long wavelength = low pitch (sound) or color red (EM waves
 
 The human ear can detect sounds between about 20 Hz and 20 kHz. Frequencies less than 20 Hz are referred to as infrasound. These waves travel large distances, and are used for detecting nuclear explosions, studying volcanoes and earthquakes, ... Frequencies greater than 20 kHz are referred to as ultrasound. Their short wavelengths make them useful for imaging soft tissue/fetuses.
 
-\subsubsection{Example \#1: Find wave frequency}
+\subsubsection{Example problems}
+\subsubsection*{Example \#1: Find wave frequency}
 A sinusoidal wave travels with speed 200 m/s. Its wavelength is 4.0 m. What is its frequency? 
 
 $$v=\frac{\lambda}{T}=\lambda f$$
@@ -37,30 +38,26 @@ $$v=\frac{\lambda}{T}=\lambda f$$
 $$f = \frac{v}{\lambda} = 50\mbox{ Hz}$$
 
 
-\subsubsection{Example \#2: Analysis of wave model}
-A traveling wave has displacement given by $y(x,t)=(2.0\mbox{ cm})\times\cos(2\pi x-4\pi t)$, where x is measured in cm and t in s.
+\subsubsection*{Example \#2: Analysis of wave model}
+The displacement of traveling longitudinal wave is given by
+$$\Delta{x} = 5.2\cos(5.5x + 72t),$$
+where $\Delta {x}$ is in cm and $x$ is in m. What are the wavelength, frequency, speed, and travel direction of the wave?
 
-(a) Draw a snapshot graph of this wave at t=0 s.
+Solving this is simply a matter of comparing the equation to the wave model. From that, we see:
 
-(b) On the same set of axes, use a dotted line to show the snapshot graph of the wave at t=1/8 s.
+$$2\pi \frac{x}{\lambda} = 5.5x$$
+which means that
+$$\lambda = \frac{2\pi}{5.5} = 1.14\mbox{ m}$$
 
-(c) What is the speed of the wave?
+$$2\pi ft = 72t$$
+which means that
+$$f = \frac{72}{2\pi} = 11.5\mbox{ Hz}$$
 
-[Snapshot graph.]\nopagebreak
-\vspace{5cm}
-
-Discuss phase shift using sum and difference identity.
-
-$$v=\frac{\lambda}{T}$$
-
-$$\frac{2\pi}{\lambda}=2\pi \Rightarrow \lambda=1\mbox{ cm}$$
-$$\frac{2\pi}{T}=4\pi \Rightarrow T = 2\mbox{ s}$$
-$$\boxed{v=0.5\mbox{ cm/s}}$$
+The wave speed is $v=\lambda f = 13.1\mbox{ m/s}$. The plus sign indicates that the wave is traveling in the negative x-direction.
 
 
 
-
-\subsubsection{Example \#3: Wave on spider silk}
+\subsubsection*{Example \#3: Wave on spider silk}
 A female orb spider has a mass of 0.50 g. She is suspended from a tree branch by a 1.1 m length of 0.0020-mm-diameter silk. Spider silk has a density of 1300 kg/m$^3$. If you tap the branch and send a vibration down the thread, how long does it take to reach the spider?
 
 $$v=\sqrt{\frac{F_t}{\mu}}$$
@@ -76,7 +73,7 @@ $$v=\sqrt{\frac{4mg}{\rho \pi d^2}} = \frac{2}{d}\sqrt\frac{mg}{\rho \pi}=1.10\t
 The time that it takes to travel a distance $L$ is
 $$\Delta t = \frac{L}{v} = 10^{-3}\mbox{ s} = 1.0\mbox{ ms}$$
   
-\subsection{Doppler effect}
+\subsection{Doppler effect for moving sources and stationary observers}
 Many wave sources emit spherical waves (this is difficult to visualize). The sound that is heard depends on whether or not the source is moving. This is referred to as the Doppler Effect.
 
 [Diagram of stationary source and equally-spaced spherical waves.]\nopagebreak
@@ -85,36 +82,58 @@ Many wave sources emit spherical waves (this is difficult to visualize). The sou
 [Diagram of moving source, showing that frequency depends on position relative to the source.]\nopagebreak
 \vspace{5cm}
 
-If the wave is travelling to the right at speed $v_o$, and the source is travelling at $v_s$, the observed wavelength is 
-$$\lambda=v_oT-v_sT=(v_o-v_s)T_o=\frac{v_o-v_s}{f_o}.$$
-But you perceive the wavelength as 
-$$\lambda=\frac{v_o}{f}$$
+If the wave is traveling to the right at speed $v$, and the source is travelling at $v_s$, the observed wavelength is 
+$$\lambda_o=vT-v_sT=(v-v_s)T_o=\frac{v-v_s}{f}.$$
+But you perceive/observe the wavelength as 
+$$\lambda_o=\frac{v}{f_o}$$
 Setting these equal gives
-$$\frac{v_o}{f}=\frac{v_o-v_s}{f_o}$$
+$$\frac{v}{f_o}=\frac{v-v_s}{f}$$
 Taking the inverse
-$$\frac{f}{v_o}=\frac{f_o}{v_o-v_s}$$
-Multiplying by $v_o$ gives
-$$\boxed{f=\frac{f_o}{1-v_s/v_o}}$$
+$$\frac{f_o}{v}=\frac{f}{v-v_s}$$
+Multiplying by $v$ gives
+$$\boxed{f_o=\left(\frac{v}{v-v_s}\right)f, \mbox{ source approaching}}$$
 
 This is for an object moving toward you. For an object moving away from you, the result is
-$$\boxed{f=\frac{f_o}{1+v_s/v_o}}$$
+$$\boxed{f_o=\left(\frac{v}{v+v_s}\right)f, \mbox{ source receding}}$$
 
-If the object is moving toward you and $v_s=v_0$, the equation blows up. This is when you get a shock wave (``sonic boom'' for sound waves). If $v_s>v_0$ you get a negative frequency, which doesn't make sense.
+If the object is moving toward you and $v_s=v$, the equation blows up. This is when you get a shock wave (``sonic boom'' for sound waves). Shock waves occure if $v_s\geq v$.
 
 [Demo: Animations of sound waves illustrating the Doppler effect and shock waves]
 
 [Demo: Whirling tuning fork.]
 
-\subsubsection{Example \#4: Doppler effect on a bicycle}
-A whistle you use to call your hunting dog has a frequency of 21 kHz, but your dog is ignoring it. You suspect the whistle may not be working, but you can’t hear sounds above 20 kHz. To test it, you ask a friend to blow the whistle, then you hop on your bicycle. In which direction should you ride (toward or away from your friend) and at what minimum speed to know if the whistle is working?
+\subsubsection*{Example \#4: Doppler effect on a bicycle}
+A whistle you use to call your hunting dog has a frequency of 21 kHz, but your dog is ignoring it. You suspect the whistle may not be working, but you can’t hear sounds above 20 kHz. To test it, you ask a friend to blow the whistle while riding a bicycle. In which direction should they ride (toward or away from you) and at what minimum speed to know if the whistle is working?
 
-You need to ride away from your friend to reduce the frequency, and you need to use the equation
-$$f=\frac{f_o}{1+v_s/v_o}$$
+You need to ride them to ride away from you to reduce the frequency, and you need to use the equation
+$$f_o=\left(\frac{v}{v+v_s}\right)f$$
 Solving for $v_s$:
-$$v_s = \left(\frac{f_o}{f}-1\right)v_o$$
+$$v_s = \left(\frac{f}{f_o}-1\right)v$$
 
-$v_o=343\mbox{ m/s}$, $f_o=21\mbox{ kHz}$, $f=20\mbox{ kHz}$
+$v=343\mbox{ m/s}$, $f=21\mbox{ kHz}$, $f_o=20\mbox{ kHz}$
 
-$$v_s=17.1\mbox{ m/s}$$
+$$\boxed{v_s=17.2\mbox{ m/s}}$$
+
+What if you blew the whistle while your friend bike toward or away from you? You might think it's the same result, but it's not. In the first case, the movement of the source is changing the physical character of the waves, whereas in the second the movement is changing the rate at which the person encounters the waves. We need to use a different equation (see next section):
+
+$$f_o = \left(\frac{v+v_o}{v}\right)f$$
+Solving for $v_o$,
+$$v_o = v\left(1-\frac{f_o}{f}\right)=\boxed{16.3\mbox{ m/s}}$$
+
+
+
+
+\subsection{Doppler effect for stationary sources and moving observers}
+If you are traveling toward the source, the time that it takes to pass from the first wavefront to the second wavefront is $T_o$. The distance that you travel is
+$$v_oT_o = \lambda - vT_o \Rightarrow (v+v_o)T_o = \lambda$$
+We also know that the wavelength is
+$$\lambda = vT$$
+Setting these equations equal to each other,
+$$(v+v_o)T_o=vT\rightarrow \boxed{f_o = \left(\frac{v+v_o}{v}\right)f,\mbox{ moving toward source}}$$
+
+You can use a similar to analysis to show that
+$$\boxed{f_o = \left(\frac{v-v_o}{v}\right)f, \mbox{ moving away from source}}$$
+
+
 
 \clearpage

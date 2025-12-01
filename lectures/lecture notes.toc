@@ -182,19 +182,17 @@
 \contentsline {subsection}{\numberline {33.5 }Example problems}{165}{}%
 \contentsline {section}{\numberline {34 }Traveling waves, Doppler effect, and shock waves}{167}{}%
 \contentsline {subsection}{\numberline {34.1 }Review of traveling waves}{167}{}%
-\contentsline {subsubsection}{\numberline {34.1.1 }Example \#1: Find wave frequency}{167}{}%
-\contentsline {subsubsection}{\numberline {34.1.2 }Example \#2: Analysis of wave model}{168}{}%
-\contentsline {subsubsection}{\numberline {34.1.3 }Example \#3: Wave on spider silk}{168}{}%
-\contentsline {subsection}{\numberline {34.2 }Doppler effect}{169}{}%
-\contentsline {subsubsection}{\numberline {34.2.1 }Example \#4: Doppler effect on a bicycle}{170}{}%
-\contentsline {section}{\numberline {35 }Wave superposition and standing waves}{171}{}%
-\contentsline {subsection}{\numberline {35.1 }Wave superposition}{171}{}%
-\contentsline {subsection}{\numberline {35.2 }Standing waves}{174}{}%
-\contentsline {section}{\numberline {36 }Standing waves and music}{177}{}%
-\contentsline {subsection}{\numberline {36.1 }Wave superposition}{177}{}%
-\contentsline {subsection}{\numberline {36.2 }Standing waves}{177}{}%
-\contentsline {subsubsection}{\numberline {36.2.1 }Strings}{177}{}%
-\contentsline {subsubsection}{\numberline {36.2.2 }Open-open tubes}{178}{}%
-\contentsline {subsubsection}{\numberline {36.2.3 }Open-closed tubes}{178}{}%
-\contentsline {subsubsection}{\numberline {36.2.4 }Wave speed}{179}{}%
-\contentsline {subsection}{\numberline {36.3 }Musical notes}{179}{}%
+\contentsline {subsubsection}{\numberline {34.1.1 }Example problems}{167}{}%
+\contentsline {subsection}{\numberline {34.2 }Doppler effect for moving sources and stationary observers}{169}{}%
+\contentsline {subsection}{\numberline {34.3 }Doppler effect for stationary sources and moving observers}{170}{}%
+\contentsline {section}{\numberline {35 }Wave superposition and standing waves}{172}{}%
+\contentsline {subsection}{\numberline {35.1 }Wave superposition}{172}{}%
+\contentsline {subsection}{\numberline {35.2 }Standing waves}{175}{}%
+\contentsline {section}{\numberline {36 }Standing waves and music}{178}{}%
+\contentsline {subsection}{\numberline {36.1 }Wave superposition}{178}{}%
+\contentsline {subsection}{\numberline {36.2 }Standing waves}{178}{}%
+\contentsline {subsubsection}{\numberline {36.2.1 }Strings}{178}{}%
+\contentsline {subsubsection}{\numberline {36.2.2 }Open-open tubes}{179}{}%
+\contentsline {subsubsection}{\numberline {36.2.3 }Open-closed tubes}{179}{}%
+\contentsline {subsubsection}{\numberline {36.2.4 }Wave speed}{180}{}%
+\contentsline {subsection}{\numberline {36.3 }Musical notes}{180}{}%
