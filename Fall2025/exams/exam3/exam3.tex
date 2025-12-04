@@ -20,17 +20,18 @@ Name: \hfill /30\\
 
 %\sol{\includegraphics[trim={2cm 10cm 2cm 3cm}, clip, width=\textwidth]{./exam2_1_sol.pdf}}
 
+1. Make a sketch that shows how the elastic potential energy, gravitational potential energy, and kinetic energy change during one oscillation of a spring that is hanging vertically. Let $t=0$ correspond to the time that the spring is at its equilibrium length and the mass on the spring is moving upward. [6 pts]
 
+
+\sol{
+
+\begin{center}
+\includegraphics[width=12cm]{./exam3_1.jpg}
+\end{center}
+}
 
 \clearpage
-
-
-
-
-
-
-\clearpage
-2. A hypodermic syringe contains medicine with the density of water ($\rho = 1000\mbox{ kg/m}^3$). The barrel of the syringe has a cross-sectional area of $A_1 = 2.5 \times 10^{-5}\mbox{ m}^2$; the needle has a cross-sectional area of $A_2 = 1.0 \times 10^{-8}\mbox{ m}^2$. A force of magnitude 2.00 N is exerted on the plunger, making medicine squirt from the needle. Determine the medicine’s flow speed through the needle. Assume that atmospheric pressure is 101.3~kPa and that the syringe is horizontal. [8 pts]
+2. A hypodermic syringe contains medicine with the density of water ($\rho = 1000\mbox{ kg/m}^3$). The barrel of the syringe has a cross-sectional area of $A_1 = 2.5 \times 10^{-5}\mbox{ m}^2$; the needle has a cross-sectional area of $A_2 = 1.0 \times 10^{-8}\mbox{ m}^2$. A force of magnitude 2.00 N is exerted on the plunger, making medicine squirt from the needle. Determine the medicine’s flow speed through the needle. Assume that atmospheric pressure is 101.3~kPa and that the syringe is horizontal. Note that when the plunger is not being pushed, the pressure $P_1$ must equal atmospheric pressure, otherwise the medicine would be flowing into or out of the syringe. In other words, when a force is exerted on the plunger, the pressure at $P_1$ must equal atmospheric pressure plus whatever additional pressure is provided by the plunger. [8 pts]
 \begin{center}
 \includegraphics[width=8cm]{./exam3_2.pdf}
 \end{center}
@@ -40,22 +41,20 @@ Bernoulli's Equation:
 $$P_1 + \frac{1}{2}\rho v_1^2 + \rho g y_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g y_2$$
 Since the syringe is horizontal, $y_1=y_2$ and therefore
 $$P_1 + \frac{1}{2}\rho v_1^2 = P_2 + \frac{1}{2}\rho v_2^2$$
-From the definition of pressure, 
-$$P_1 = \frac{F}{A_1}$$
+From the definition of pressure and the note in the question, 
+$$P_1 = \frac{F}{A_1}+P_{atm}$$
 and from flux continuity,
 $$v_1 = \frac{A_2}{A_1}v_2.$$ 
 The needle is open to the atmosphere, meaning that $P_2 = P_{atm}$. Putting this together, 
-$$\frac{F}{A_1}-P_{atm} = \frac{1}{2}\rho v_2^2\left(1-\left(\frac{A_2}{A_1}\right)^2\right)$$
+$$\frac{F}{A_1} = \frac{1}{2}\rho v_2^2\left(1-\left(\frac{A_2}{A_1}\right)^2\right)$$
 and therefore
-$$v_2 = \sqrt{\frac{2(F/A_1-P_{atm})}{\rho\left(1-\left(\frac{A_2}{A_1}\right)^2\right)}}$$
+$$v_2 = \sqrt{\frac{2F}{A_1\rho\left(1-\left(\frac{A_2}{A_1}\right)^2\right)}} = \boxed{0.4\mbox{ m/s}}$$
 
 }
 
-Use gauge pressure or increase force?
-
 
 \clearpage
-3. A monatomic ideal gas in expands from point $A$ to point $B$ along the path shown in the diagram. Assume that the number of moles of gas remains fixed. (a) Determine the work done by the gas. (b) The temperature of the gas at point $A$ is 185~K. What is its temperature at point $B$? (c) How much heat has been added or removed from the gas during the process? [8 pts]
+3. A monatomic ideal gas expands from point $A$ to point $B$ along the path shown in the diagram. Assume that the number of moles of gas remains fixed. (a) Determine the work done by the gas. (b) The temperature of the gas at point $A$ is 185~K. What is its temperature at point $B$? (c) How much heat has been added or removed from the gas during the process? [8 pts]
 
 \begin{center}
 \includegraphics[width=8cm]{./exam3_3.jpg}
