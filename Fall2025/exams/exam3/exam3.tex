@@ -1,0 +1,120 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[top=1in,bottom=1in,left=1in,right=1in]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\usepackage[dvipsnames]{xcolor}
+\newcommand{\sol}[1]{{\color{NavyBlue} #1}}
+%\newcommand{\sol}[1]{{\color{White} #1}} % uncomment to hide solutions
+
+
+\begin{document}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{11pt}
+Exam \#3: Thermodynamics, fluids, oscillations, and waves
+
+Name: \hfill /30\\
+
+\hrulefill\\
+
+%\sol{\includegraphics[trim={2cm 10cm 2cm 3cm}, clip, width=\textwidth]{./exam2_1_sol.pdf}}
+
+
+
+\clearpage
+
+
+
+
+
+
+\clearpage
+2. A hypodermic syringe contains medicine with the density of water ($\rho = 1000\mbox{ kg/m}^3$). The barrel of the syringe has a cross-sectional area of $A_1 = 2.5 \times 10^{-5}\mbox{ m}^2$; the needle has a cross-sectional area of $A_2 = 1.0 \times 10^{-8}\mbox{ m}^2$. A force of magnitude 2.00 N is exerted on the plunger, making medicine squirt from the needle. Determine the medicine’s flow speed through the needle. Assume that atmospheric pressure is 101.3~kPa and that the syringe is horizontal. [8 pts]
+\begin{center}
+\includegraphics[width=8cm]{./exam3_2.pdf}
+\end{center}
+
+\sol{
+Bernoulli's Equation:
+$$P_1 + \frac{1}{2}\rho v_1^2 + \rho g y_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g y_2$$
+Since the syringe is horizontal, $y_1=y_2$ and therefore
+$$P_1 + \frac{1}{2}\rho v_1^2 = P_2 + \frac{1}{2}\rho v_2^2$$
+From the definition of pressure, 
+$$P_1 = \frac{F}{A_1}$$
+and from flux continuity,
+$$v_1 = \frac{A_2}{A_1}v_2.$$ 
+The needle is open to the atmosphere, meaning that $P_2 = P_{atm}$. Putting this together, 
+$$\frac{F}{A_1}-P_{atm} = \frac{1}{2}\rho v_2^2\left(1-\left(\frac{A_2}{A_1}\right)^2\right)$$
+and therefore
+$$v_2 = \sqrt{\frac{2(F/A_1-P_{atm})}{\rho\left(1-\left(\frac{A_2}{A_1}\right)^2\right)}}$$
+
+}
+
+Use gauge pressure or increase force?
+
+
+\clearpage
+3. A monatomic ideal gas in expands from point $A$ to point $B$ along the path shown in the diagram. Assume that the number of moles of gas remains fixed. (a) Determine the work done by the gas. (b) The temperature of the gas at point $A$ is 185~K. What is its temperature at point $B$? (c) How much heat has been added or removed from the gas during the process? [8 pts]
+
+\begin{center}
+\includegraphics[width=8cm]{./exam3_3.jpg}
+\end{center}
+\sol{
+
+(a) The work done by the gas is the area under the curve. The gas is expanding, so $W_{gas}>0$. The area is 
+$$W_{gas} = 2\times 10^5\mbox{ Pa}\times 8.0\mbox{ m}^3 + 2\times10^5\mbox{ Pa}\times 2.0\mbox{ m}^3 = \boxed{2\times 10^6\mbox{ J}}$$
+
+
+(b) Since the number of moles is fixed,
+$$\frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2}$$
+The initial and final pressure are the same, implying that
+$$T_2 = \frac{V_2}{V_1}T_1 = \boxed{925\mbox{ K}}$$
+
+(c) The first law of thermodynamics tells us that
+$$Q+W = \Delta E_{th}$$
+$W=-W_{gas}$, which we determined in part (a). The change in thermal energy is given by
+$$\Delta E_{th} = \frac{3}{2}nR\Delta T$$
+Since we know the initial pressure, volume, and temperature, we can use the ideal gas law to write
+$$nR = \frac{P_iV_i}{T_i}$$
+Putting this together,
+$$Q=\frac{3}{2}\frac{P_iV_i}{T_i}\Delta T + W_{gas} = \boxed{4.4\times 10^6\mbox{ J}}$$
+
+}
+
+
+
+\clearpage
+
+4. The lowest note on a guitar with standard tuning is E2 (``low E''), which has a frequency of 82.4~Hz. When you pluck the string you produce sound at 82.4~Hz and also at several harmonics. If you press down on the low E string while plucking it, you create different notes (as well as different harmonics) by effectively changing the length of the string. If the low E string has a length of $L$, how far down the string should you press it so that the fundamental frequency of the new note is the same as the second harmonic of E2? [4 pts]
+
+\sol{
+The harmonics of a string that is pinned on both ends are given by
+$$f_m = \frac{mv}{2L}$$
+
+The fundamental frequency of low E is
+$$f_1 = \frac{v}{2L}$$
+
+When you shorten the string by pressing on it, the new fundamental frequency will be
+$$f_1^\star = \frac{v}{2L^\star}$$
+where $^\star$ indicates new values.
+
+We want $f_1^\star = f_2 = 2f_1$. In other words,
+$$\frac{2v}{2L} = \frac{v}{2L^\star}$$
+Solving for $L^\star$,
+$$\boxed{L^\star = \frac{L}{2}}$$
+
+Pressing the string at its midpoint will make E3 the fundamental frequency, which is the first harmonic of 
+
+}
+
+
+
+
+
+
+
+
+\end{document}
+
+
