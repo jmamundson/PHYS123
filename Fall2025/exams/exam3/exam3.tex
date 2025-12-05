@@ -5,8 +5,8 @@
 \usepackage{amsmath}
 
 \usepackage[dvipsnames]{xcolor}
-\newcommand{\sol}[1]{{\color{NavyBlue} #1}}
-%\newcommand{\sol}[1]{{\color{White} #1}} % uncomment to hide solutions
+%\newcommand{\sol}[1]{{\color{NavyBlue} #1}}
+\newcommand{\sol}[1]{{\color{White} #1}} % uncomment to hide solutions
 
 
 \begin{document}
@@ -18,15 +18,14 @@ Name: \hfill /30\\
 
 \hrulefill\\
 
-%\sol{\includegraphics[trim={2cm 10cm 2cm 3cm}, clip, width=\textwidth]{./exam2_1_sol.pdf}}
 
 1. Make a sketch that shows how the elastic potential energy, gravitational potential energy, and kinetic energy change during one oscillation of a spring that is hanging vertically. Let $t=0$ correspond to the time that the spring is at its equilibrium length and the mass on the spring is moving upward. [6 pts]
 
 
 \sol{
-
+There are a couple of different ways you could show this. In my sketch I subtracted the initial energy from each of the terms, so that all of the plots start at 0. The elastic potential and gravitational potential energies should be out of phase with each other, and the kinetic energy should oscillate twice as fast. The kinetic energy reaches a maximum twice during each oscillation: once as the spring is contracting and once as it is extending.
 \begin{center}
-\includegraphics[width=12cm]{./exam3_1.jpg}
+%\includegraphics[width=12cm]{./exam3_1.jpg}
 \end{center}
 }
 
@@ -84,7 +83,6 @@ $$Q=\frac{3}{2}\frac{P_iV_i}{T_i}\Delta T + W_{gas} = \boxed{4.4\times 10^6\mbox
 
 
 \clearpage
-
 4. The lowest note on a guitar with standard tuning is E2 (``low E''), which has a frequency of 82.4~Hz. When you pluck the string you produce sound at 82.4~Hz and also at several harmonics. If you press down on the low E string while plucking it, you create different notes (as well as different harmonics) by effectively changing the length of the string. If the low E string has a length of $L$, how far down the string should you press it so that the fundamental frequency of the new note is the same as the second harmonic of E2? [4 pts]
 
 \sol{
@@ -108,6 +106,28 @@ Pressing the string at its midpoint will make E3 the fundamental frequency, whic
 }
 
 
+
+\clearpage
+5. The figure below is a snapshot of a transverse traveling wave at $t=0$~s. The wave is traveling to the left at 1~m/s. Write down the wave model for this wave. [4 pts]
+
+\begin{center}
+\includegraphics[width=12cm]{./exam3_5.eps}
+\end{center}
+
+\sol{
+The amplitude and wavelength of the wave can be directly seen from the graph.
+$$A=2\mbox{ cm}$$
+$$\lambda = 3\mbox{m}$$
+The wave speed is given, which means that the period can be calculated using
+$$v=\frac{\lambda}{T}$$
+$$T=\frac{\lambda}{v}=3\mbox{ s}$$
+Therefore the wave models is
+$$\boxed{\Delta y(x,t) = 2\cos\left(2\pi\frac{x}{3}+2\pi\frac{t}{3}\right)}$$
+
+
+
+
+}
 
 
 
